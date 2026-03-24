@@ -14,6 +14,7 @@ export default defineConfig({
                 // and ensure the path points to where it lives (e.g., './wellness.html')
                 
                 customer: resolve(__dirname, 'customer.html'),
+                blog: resolve(__dirname, 'blog.html'),
                
             },
         },
