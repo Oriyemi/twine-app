@@ -3,37 +3,400 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>blog</title>
       <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./input.css">
 </head>
-<body>
-     <header class="m-5 ">
-        <nav class=" flex items-center justify-between  p-4 sticky top-0 ">
+<body class="bg-[#E7E7E7]">
+    <header class="m-5 ">
+        <nav class=" flex  items-center justify-between  p-4 sticky top-0 ">
            <img src="./assets/images/logo.webp" alt="logo" class="w-20 text-black"> 
 
            <div class="hidden md:flex items-center gap-8 text-gray-700 font-medium">
-              <a href="" class="hover:text-black flex items-center gap-1">Product 
+              <a href="" class="hover:text-black flex items-center gap-1 text-sm">Product 
                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
               </a>
-              <a href="/customer.html" class="hover:text-black">Customers</a>
-              <a href="/blog.html" class="hover:text-black">Blog</a>
-              <a href="#" class="hover:text-black">Pricing</a>
+              <a href="/customer.html" class="hover:text-black text-sm">Customers</a>
+              <a href="/blog.html" class="hover:text-black text-sm">Blog</a>
+              <a href="/pricing.html" class="hover:text-black text-sm">Pricing</a>
            </div>
            
            <div class="hidden md:block items-center gap-6">
-             <a href="#" class="text-gray-400 hover:text-black">Log in</a>
-             <a href="#" class="bg-black text-white px-5 py-2.5 rounded-lg font-medium hover:bg-gray-800 transition-colors">
+             <a href="#" class="text-black hover:text-black text-sm mr-6">Log in</a>
+             <a href="#" class="bg-black text-sm text-white px-5 py-2.5 rounded-lg font-medium hover:bg-gray-800 transition-colors">
                Book a demo
               </a>
             </div>
-            <button class="md:hidden block p-2">
+            <button class="md:hidden block p-2 ">
              <img src="./assets/images/hambuger.webp" alt="hamburger" class="w-6 h-6 md:hidden">
             </button>
            
 
         </nav>
     </header>
+    
+        
+  <div class="mx-auto max-w-7xl px-5 py-8 grid grid-cols-1 lg:grid-cols-[320px_minmax(0,1fr)] gap-8 xl:gap-12 items-start">
+
+    <!-- Left intro section -->
+    <div class="text-center lg:text-left ">
+      <h1 class="font-['Times_New_Roman'] text-4xl md:text-4xl lg:text-5xl text-black font-bold">
+        The Twine blog
+      </h1>
+
+      <p class="mt-3 text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl">
+        Thoughts on the future of collaboration,<br />
+        knowledge sharing, GTM, product, and more.
+      </p>
+
+      <div class="w-full py-10">
+        <p class="text-[#717171] text-sm mb-4">For more Twine</p>
+
+        <div class="flex items-center justify-center lg:justify-start gap-6 text-[#717171]">
+          <a href="#" class="flex items-center gap-2 hover:text-black transition">
+            <span>Youtube</span>
+          </a>
+          <a href="#" class="flex items-center gap-2 hover:text-black transition">
+            <span>LinkedIn</span>
+          </a>
+          <a href="#" class="flex items-center gap-2 hover:text-black transition">
+            <span>X</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right blog cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      
+      <!-- First Card -->
+      <div class="flex flex-col">
+        <img src="./assets/images/ai fluency.png" alt="ai fluency" class="w-full h-auto object-cover">
+        <div class="flex flex-col items-start my-3">
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pb-3">Jul 30 .7 min read</a>
+          <a href="#" class="font-['Times_New_Roman'] text-3xl font-medium">The AI fluency tax</a>
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pt-3">why now is the worst time to be comfortable with small wins</a>
+        </div>
+      </div>
+
+      <!-- Second Card -->
+      <div class="flex flex-col">
+        <img src="./assets/images/sunset.webp" alt="sunset" class="w-full h-auto object-cover">
+        <div class="flex flex-col items-start my-3">
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pb-3">Jun 25 .7 min read</a>
+          <a href="#" class="font-['Times_New_Roman'] text-3xl font-medium">Don't compete with robots</a>
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pt-3">Reclaim your craft by automating the busywork away</a>
+        </div>
+      </div>
+
+      <!-- Third Card -->
+      <div class="flex flex-col">
+        <img src="./assets/images/abadon car.webp" alt="abandoned car" class="w-full h-auto object-cover">
+        <div class="flex flex-col items-start my-3">
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pb-3">May 20 .5 min read</a>
+          <a href="#" class="font-['Times_New_Roman'] text-3xl font-medium">Product playbook: s-1 teardowns</a>
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pt-3">Business strategy seperate great PMs from good ones</a>
+        </div>
+      </div>
+
+      <!-- Fourth Card -->
+      <div class="flex flex-col">
+        <img src="./assets/images/tortoise.webp" alt="tortoise" class="w-full h-auto object-cover">
+        <div class="flex flex-col items-start my-3">
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pb-3">May 22 .8 min read</a>
+          <a href="#" class="font-['Times_New_Roman'] text-3xl font-medium">Not all feedback is created equal</a>
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pt-3">Building systems of actions , not collections of repositories</a>
+        </div>
+      </div>
+
+      <!-- Fifth Card -->
+      <div class="flex flex-col">
+        <img src="./assets/images/illusion.webp" alt="illusion" class="w-full h-auto object-cover">
+        <div class="flex flex-col items-start my-3">
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pb-3">Apr 29 .7 min read</a>
+          <a href="#" class="font-['Times_New_Roman'] text-3xl font-medium">The illusion of customer centricity</a>
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pt-3">The seven hidden failure points holding you back.</a>
+        </div>
+      </div>
+
+      <!-- Sixth Card -->
+      <div class="flex flex-col">
+        <img src="./assets/images/lying in grass.png" alt="grass" class="w-full h-auto object-cover">
+        <div class="flex flex-col items-start my-3">
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pb-3">Mar 26 .4 min read</a>
+          <a href="#" class="font-['Times_New_Roman'] text-3xl font-medium">Playbook poison</a>
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pt-3">Don't let frameworks kill your startup</a>
+        </div>
+      </div>
+         <!-- seventh -->
+      <div class="flex flex-col">
+        <img src="./assets/images/stair.webp" alt="stairs" class="w-full h-auto object-cover">
+        <div class="flex flex-col items-start my-3">
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pb-3">Mar 11 .4 min read</a>
+          <a href="#" class="font-['Times_New_Roman'] text-3xl font-medium">The feedback fallacy</a>
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pt-3">Why your perfect system is the problem.</a>
+        </div>
+      </div>
+      <!-- eight -->
+
+      <div class="flex flex-col">
+        <img src="./assets/images/purple cal.webp" alt="purple" class="w-full h-auto object-cover">
+        <div class="flex flex-col items-start my-3">
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pb-3">Feb 18 .3 min read</a>
+          <a href="#" class="font-['Times_New_Roman'] text-3xl font-medium">Twine raises US$1.5m to build the AI-powered connective tissue for modern organisations</a>
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pt-3">Accelerating our mission to help teams make better decisions with connected intelligence.</a>
+        </div>
+      </div>
+      <!-- ninth -->
+      <div class="flex flex-col">
+        <img src="./assets/images/robot sitting.png" alt="robot" class="w-full h-auto object-cover">
+        <div class="flex flex-col items-start my-3">
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pb-3">Feb 14 .4 min read</a>
+          <a href="#" class="font-['Times_New_Roman'] text-3xl font-medium">Rising above the CRUD</a>
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pt-3">Rethinking how AI transforms product development.</a>
+        </div>
+      </div>
+      <!-- tenth -->
+      <div class="flex flex-col">
+        <img src="./assets/images/dog on street.webp" alt="dog" class="w-full h-auto object-cover">
+        <div class="flex flex-col items-start my-3">
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pb-3">Feb 6 .4 min read</a>
+          <a href="#" class="font-['Times_New_Roman'] text-3xl font-medium">Stop talking, start doing</a>
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pt-3">Why action beats analysis in early- stage startups.</a>
+        </div>
+      </div>
+      <!-- eleveth -->
+      <div class="flex flex-col">
+        <img src="./assets/images/wall brick.jpeg" alt="wall" class="w-full h-auto object-cover">
+        <div class="flex flex-col items-start my-3">
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pb-3">Jan 7 .4 min read</a>
+          <a href="#" class="font-['Times_New_Roman'] text-3xl font-medium">The Intel Trap: Why success can breed inefficiency</a>
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pt-3">Rich with intelligence, starved for action.</a>
+        </div>
+      </div>
+      <!-- twelveth card -->
+      <div class="flex flex-col">
+        <img src="./assets/images/india castle.png" alt="india" class="w-full h-auto object-cover">
+        <div class="flex flex-col items-start my-3">
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pb-3">Dec  12 .4 min read</a>
+          <a href="#" class="font-['Times_New_Roman'] text-3xl font-medium">The rise of customer intelligence ops</a>
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pt-3">Why CS automated data routing is the new differentiator.</a>
+        </div>
+      </div>
+      <!-- thirdteen -->
+      <div class="flex flex-col">
+        <img src="./assets/images/robot.webp" alt="robot" class="w-full h-auto object-cover">
+        <div class="flex flex-col items-start my-3">
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pb-3">Dec 11 .4 min read</a>
+          <a href="#" class="font-['Times_New_Roman'] text-3xl font-medium">The product manager of 2025</a>
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pt-3">AI is transforming who need to be.</a>
+        </div>
+      </div>
+      <!-- fourteen -->
+      <div class="flex flex-col">
+        <img src="./assets/images/sand hand.webp" alt="hand" class="w-full h-auto object-cover">
+        <div class="flex flex-col items-start my-3">
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pb-3">Nov 6 .5 min read</a>
+          <a href="#" class="font-['Times_New_Roman'] text-3xl font-medium">10 tips to extract product feedback that your team will actually use</a>
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pt-3">The dos and don'ts when gathering product feedback.</a>
+        </div>
+      </div>
+      <!-- fifteen -->
+      <div class="flex flex-col">
+        <img src="./assets/images/moon in hand.webp" alt="moon" class="w-full h-auto object-cover">
+        <div class="flex flex-col items-start my-3">
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pb-3">Oct 31 .4 min read</a>
+          <a href="#" class="font-['Times_New_Roman'] text-3xl font-medium">AI's hidden power: Bridging teams, not just automating tasks</a>
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pt-3">The true power lies in its ability to connect people through data.</a>
+        </div>
+      </div>
+      <!-- sixteen -->
+      <div class="flex flex-col">
+        <img src="./assets/images/ballons.png" alt="ballons" class="w-full h-auto object-cover">
+        <div class="flex flex-col items-start my-3">
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pb-3">Oct 17 .4 min read</a>
+          <a href="#" class="font-['Times_New_Roman'] text-3xl font-medium">Turn Customer Success into product success</a>
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pt-3">Unlock that wealth of CS knowledge throuhout your organization.</a>
+        </div>
+      </div>
+      <!-- seventeen -->
+      <div class="flex flex-col">
+        <img src="./assets/images/birds talking.jpeg" alt="bird" class="w-full h-auto object-cover">
+        <div class="flex flex-col items-start my-3">
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pb-3">Oct 3 .4 min read</a>
+          <a href="#" class="font-['Times_New_Roman'] text-3xl font-medium">How growing companies can maintain their collaborative spirit</a>
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pt-3">The future belongs to companies that can grow without growing apart.</a>
+        </div>
+      </div>
+      <!-- eighteen -->
+      <div class="flex flex-col">
+        <img src="./assets/images/window.jpeg" alt="cat window" class="w-full h-auto object-cover">
+        <div class="flex flex-col items-start my-3">
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pb-3">Sep 19 .4 min read</a>
+          <a href="#" class="font-['Times_New_Roman'] text-3xl font-medium">Finding product breathroughs hididng in plain sight</a>
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pt-3">Tap into the goldmine of data your company has already acquired.</a>
+        </div>
+      </div>
+      <!-- nineteen -->
+      <div class="flex flex-col">
+        <img src="./assets/images/man walking.webp" alt="walking man" class="w-full h-auto object-cover">
+        <div class="flex flex-col items-start my-3">
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pb-3">Sep 5 .4 min read</a>
+          <a href="#" class="font-['Times_New_Roman'] text-3xl font-medium">Aligning product development with revenue growth</a>
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pt-3">Balancing business impact with end user impact.</a>
+        </div>
+      </div>
+      <!-- twenty card -->
+      <div class="flex flex-col">
+        <img src="./assets/images/bird and man reading.webp" alt="oscrich" class="w-full h-auto object-cover">
+        <div class="flex flex-col items-start my-3">
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pb-3">Aug 22 .5 min read</a>
+          <a href="#" class="font-['Times_New_Roman'] text-3xl font-medium">Lost in translation</a>
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pt-3">Breaking down how intel gets lost from reps to product teams.</a>
+        </div>
+      </div>
+      <!-- twenty-one -->
+      <div class="flex flex-col">
+        <img src="./assets/images/phone.webp" alt="phone" class="w-full h-auto object-cover">
+        <div class="flex flex-col items-start my-3">
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pb-3">Aug 8 .6 min read</a>
+          <a href="#" class="font-['Times_New_Roman'] text-3xl font-medium">What sales taught me about product</a>
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pt-3">The humbling experience of a producr person running GTM.</a>
+        </div>
+      </div>
+      <!-- TWENTY-TWO -->
+      <div class="flex flex-col">
+        <img src="./assets/images/cat.png" alt="CAT" class="w-full h-auto object-cover">
+        <div class="flex flex-col items-start my-3">
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pb-3">Jul 25 .4 min read</a>
+          <a href="#" class="font-['Times_New_Roman'] text-3xl font-medium">How to win friends and influence product</a>
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pt-3">Tactics for CSMs to build relationships with product managers.</a>
+        </div>
+      </div>
+      <!-- twenty-three -->
+      <div class="flex flex-col">
+        <img src="./assets/images/dock pyramid.png" alt="pyramid" class="w-full h-auto object-cover">
+        <div class="flex flex-col items-start my-3">
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pb-3">Jul 17 .7 min read</a>
+          <a href="#" class="font-['Times_New_Roman'] text-3xl font-medium">Winning as a team</a>
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pt-3">Five principles to maximize product and GTM alignment.</a>
+        </div>
+      </div>
+      <!-- twenty-four -->
+      <div class="flex flex-col">
+        <img src="./assets/images/man standing.webp" alt="man" class="w-full h-auto object-cover">
+        <div class="flex flex-col items-start my-3">
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pb-3">Jul 11 .4 min read</a>
+          <a href="#" class="font-['Times_New_Roman'] text-3xl font-medium">Human stories over story points</a>
+          <a href="#" class="text-sm font-medium leading-5 text-[#717171] font-instrument max-w-2xl ml-1 pt-3">Don't lose sight of what actually matters.</a>
+        </div>
+      </div>
+      
+      
+
+    </div>
+  </div>
+</section>
+<footer class=" px-6 md:px-20 text-[#1a1a1a] m-20">
+        <div class="gap-35  grid grid-cols-1 md:grid-cols-12 ">
+    
+       <div class="hidden md:block md:col-span-3 space-y-6">
+         <div class="flex items-center gap-2">
+          <div >
+          <div><img src="./assets/images/logo.webp" alt="logo"></div>
+        </div>
+        
+      </div>
+      <p class="text-gray-500 leading-relaxed max-w-60">
+        Twine closes the gap between customer conversations and company action.
+      </p>
+       </div>
+
+    <div class="md:col-span-6 grid grid-cols-2 md:grid-cols-3 gap-10">
+      <div class="space-y-4">
+        <h4 class="text-xs font-medium text-gray-400 uppercase tracking-wider">Product</h4>
+        <ul class="space-y-3 text-[15px]">
+          <li><a href="#" class="hover:text-gray-600">Baseline agent</a></li>
+          <li><a href="#" class="hover:text-gray-600">Personal agent</a></li>
+          <li><a href="#" class="hover:text-gray-600">Focus agents</a></li>
+          <li><a href="#" class="hover:text-gray-600">Integrations</a></li>
+          <li><a href="#" class="hover:text-gray-600">Security</a></li>
+          <li><a href="#" class="hover:text-gray-600">Pricing</a></li>
+          <li><a href="#" class="hover:text-gray-600">Changelog</a></li>
+          <li><a href="#" class="hover:text-gray-600">Status</a></li>
+        </ul>
+        <div class="pt-10 space-y-4">
+          <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Use Cases</h4>
+          <ul class="space-y-3 text-[15px]">
+            <li><a href="#" class="hover:text-gray-600">Product</a></li>
+            <li><a href="#" class="hover:text-gray-600">Customer Success</a></li>
+            <li><a href="#" class="hover:text-gray-600">Leadership</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="space-y-4">
+        <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Resources</h4>
+        <ul class="space-y-3 text-[15px]">
+          <li><a href="#" class="hover:text-gray-600">Help center</a></li>
+          <li><a href="#" class="hover:text-gray-600">Blog</a></li>
+          <li><a href="#" class="hover:text-gray-600">Guides</a></li>
+          <li><a href="#" class="hover:text-gray-600">Legal</a></li>
+          <li><a href="#" class="hover:text-gray-600">Trust center</a></li>
+        </ul>
+        <div class="pt-10 space-y-4">
+          <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Community</h4>
+          <ul class="space-y-3 text-[15px]">
+            <li><a href="#" class="hover:text-gray-600">Customer</a></li>
+            <li><a href="#" class="hover:text-gray-600">Community</a></li>
+          </ul>
+        </div>
+        <div class="pt-10 space-y-4">
+          <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Company</h4>
+          <ul class="space-y-3 text-[15px]">
+            <li><a href="#" class="hover:text-gray-600">About</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="space-y-4">
+        <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Twine in action</h4>
+        <ul class="space-y-3 text-[15px]">
+          <li><a href="#" class="hover:text-gray-600 font-medium">Book a demo</a></li>
+          <li><a href="#" class="hover:text-gray-600">Sign in</a></li>
+        </ul>
+        <div class="md:col-span-3 space-y-12">
+          <div class="space-y-4">
+            <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Social</h4>
+            <ul class="space-y-3 text-[15px]">
+              <li><a href="#" class="hover:text-gray-600">LinkedIn</a></li>
+              <li><a href="#" class="hover:text-gray-600">Youtube</a></li>
+              <li><a href="#" class="hover:text-gray-600">X</a></li>
+            </ul>
+          </div>
+          <div class="space-y-4 pt-4">
+            <div class="flex gap-3">
+              <div class=" bg-[#DED6D1] rounded-4xl" >
+                <img src="./assets/images/aicpa.svg" alt="AICPA certification badge with stars" class="w-15">
+              </div>
+              <div class=" bg-[#DED6D1] rounded-4xl" >
+                <img src="./assets/images/gdpr.png" alt="gdpr" class="w-15">
+              </div>
+            </div>
+            <div class="text-sm text-gray-500 leading-snug">
+              <p>End-to-end encryption.</p>
+              <p>Never trained on your data.</p>
+              <a href="#" class="text-black font-semibold underline underline-offset-4 decoration-1">Learn more</a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    
+       </div>
+      </footer>
 
      <script src="./perfumer.js"></script>
 </body>
