@@ -15,6 +15,7 @@ export default defineConfig({
                 
                 customer: resolve(__dirname, 'customer.html'),
                 blog: resolve(__dirname, 'blog.html'),
+                pricing:resolve(__dirname,'pricing.html' ),
                
             },
         },
