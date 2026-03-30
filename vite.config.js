@@ -12,13 +12,15 @@ export default defineConfig({
                 main: resolve(__dirname, 'index.html'),
                 // Replace 'other' with the actual name of your second HTML file
                 // and ensure the path points to where it lives (e.g., './wellness.html')
-                
+                product: resolve(__dirname, 'product.html'),
                 customer: resolve(__dirname, 'customer.html'),
                 blog: resolve(__dirname, 'blog.html'),
-<<<<<<< HEAD
-=======
                 pricing:resolve(__dirname,'pricing.html' ),
->>>>>>> 21a0b8fc3a3e3c4ca4b73cff22bbc55feee9da76
+
+                pricing: resolve(__dirname, 'pricing.html'),
+                product: resolve(__dirname, 'product.html'),
+                
+feat/develop
                
             },
         },
