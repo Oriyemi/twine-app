@@ -20,7 +20,7 @@ export default defineConfig({
                 pricing: resolve(__dirname, 'pricing.html'),
                 product: resolve(__dirname, 'product.html'),
                 
-feat/develop
+
                
             },
         },
