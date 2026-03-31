@@ -28,9 +28,20 @@
                Book a demo
               </a>
             </div>
-            <button class="md:hidden block p-2" id="hamburger-btn">
-            <img src="./assets/images/hambuger.webp" alt="hamburger" class="w-6 h-6" id="hamburger-icon">
-          </button>
+                         <button id="hamburger" class="md:hidden block p-2">
+        <img src="./assets/images/hambuger.webp" alt="hamburger" class="w-6 h-6">
+    </button>
+
+    <div id="navigator" class="hidden bg-[#FAFAFA]  w-85 md:w-150 h-130 p-4 absolute inset-0 mx-auto rounded-2xl z-10 top-14 ">
+        <button id="closeBtn" class="absolute top-2 right-2 text-xl">
+            &times; 
+        </button>
+
+        <a href="/product.html" class="block border-b p-4">Product</a>
+        <a href="/customer.html" class="block border-b p-4">Customers</a>
+        <a href="/blog.html" class="block border-b p-4">Blog</a>
+        <a href="/pricing.html" class="block p-4">Pricing</a>
+    </div>
         </nav>
     </header>
     
@@ -645,7 +656,7 @@
   </div>
 </footer>
 
-    
+    <script src="./hamburger.js"></script>
     <script src="./twine.js"></script>
 </body>
 </html>
