@@ -9,30 +9,43 @@
 </head>
 <body>
    <header class="m-5 ">
-        <nav class=" flex  items-center justify-between  p-4 sticky top-0 ">
-           <img src="./assets/images/logo.webp" alt="logo" class="w-20 text-black"> 
+       <nav class="flex items-center justify-between p-4 sticky top-0">
+        <img src="./assets/images/logo.webp" alt="logo" class="w-20 text-black">
 
-           <div class="hidden md:flex items-center gap-8 text-gray-700 font-medium">
-              <a href="/product.html" class="hover:text-black flex items-center gap-1 text-sm">Product 
-               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-              </a>
-              <a href="/customer.html" class="hover:text-black text-sm">Customers</a>
-              <a href="/blog.html" class="hover:text-black text-sm">Blog</a>
-              <a href="/pricing.html" class="hover:text-black text-sm">Pricing</a>
-           </div>
-           
-           <div class="hidden md:block items-center gap-6">
-             <a href="#" class="text-black hover:text-black text-sm mr-6">Log in</a>
-             <a href="#" class="bg-black text-sm text-white px-5 py-2.5 rounded-lg font-medium hover:bg-gray-800 transition-colors">
-               Book a demo
-              </a>
-            </div>
-            <button class="md:hidden block p-2 ">
-             <img src="./assets/images/hambuger.webp" alt="hamburger" class="w-6 h-6 md:hidden">
-            </button>
-           
+       <div class="hidden md:flex items-center gap-8 text-gray-700 font-medium">
+        <a href="/product.html" class="hover:text-black flex items-center gap-1 text-sm">Product 
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+        </a>
+        <a href="/customer.html" class="hover:text-black text-sm">Customers</a>
+        <a href="/blog.html" class="hover:text-black text-sm">Blog</a>
+        <a href="/pricing.html" class="hover:text-black text-sm">Pricing</a>
+    </div>
 
-        </nav>
+    <div class="hidden md:block items-center gap-6">
+        <a href="#" class="text-black hover:text-black text-sm mr-6">Log in</a>
+        <a href="#" class="bg-black text-sm text-white px-5 py-2.5 rounded-lg font-medium hover:bg-gray-800 transition-colors">
+            Book a demo
+        </a>
+    </div>
+
+                  <button id="hamburger" class="md:hidden block p-2">
+        <img src="./assets/images/hambuger.webp" alt="hamburger" class="w-6 h-6">
+    </button>
+
+    <div id="navigator" class="hidden bg-[#FAFAFA] w-full sm:w-3/4  h-220 p-8  absolute  items-center inset-0 mx-auto rounded-2xl z-10 top-14">
+    <button id="closeBtn" class="absolute top-2 right-2 text-xl">
+        &times; 
+    </button>
+
+    <a href="/product.html" class="block border-b p-4">Product</a>
+    <a href="/customer.html" class="block border-b p-4">Customers</a>
+    <a href="/blog.html" class="block border-b p-4">Blog</a>
+    <a href="/pricing.html" class="block p-4">Pricing</a>
+  </div>
+
+</nav>
     </header>
     <!-- hero-section -->
      <section>
@@ -204,7 +217,7 @@
                    <div class="border-t border-black pt-5 mt-2 md:mt-14">
                        
                        <h1  class="font-['Times_New_Roman']  text-3xl font-medium">5* increase</h1>
-                       <p  class="font-medium">in actionable feedback captured from interactions</p>
+                       <p  class="font-medium ">in actionable feedback captured from interactions</p>
                    </div>
    
                   </div>
@@ -318,7 +331,7 @@
 
   </div>
 </footer>
-    
-    <script src="./perfumer.js"></script>
+    <script src="./hamburger.js"></script>
+    <!-- <script src="./twine.js"></script> -->
 </body>
 </html>
