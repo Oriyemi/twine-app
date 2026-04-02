@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product-Baseline</title>
+     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+  <link rel="stylesheet" crossorigin href="/assets/input-VpHW57WK.css">
+</head>
+<body>
+    <div class="relative w-full min-h-screen bg-[url('/assets/images/baselineimg.webp')] bg-cover bg-center">
+  <!-- Navigation bar on top -->
+  <header class="relative w-full">
+    <nav class="flex items-center justify-between p-4 sticky top-0 z-10  bg-opacity-70">
+      <img src="data:image/webp;base64,UklGRhYEAABXRUJQVlA4WAoAAAAwAAAANwAADwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBIzQEAAA2QLMm2aVvj6iBuz7Zt27Ztt201n22zadu2bdtecfZaax98QUQobNu2cbpbZ6JPIL7K20sOaBH8uHp19QFoTNK7Vys00a5F5F5e1QmaQ9t8LcKsCWNge4aqcHjxQxn8BX3MW9bAo+sUuntZTN/EweT4iWplMGL0CS6wBgzesx5AFvrkPgjv3etJG6WBS4VbwS2eIPlN8S8RFuvWLaruvok8v1nvw9JWfNXVbtn6svDOdsAoQ7rrMbSZLkL49wec89Ai7nWzno3hyP5Wo+5pl043/2yG8/a5FdOekNKak8xalCCegz3J8VfNEXcw+qBEH4CL099j/atmrOv6s/5BuSgDytvRwHSCVcvuyOZLqBtr8e97piV+95HdtuS/sqZk+HNsWOfko3Fn7JZQj34DfyVy6tCJ3Sb/CcdgDfzRU7Lt8B6XRo28fyihGWCiuu3yeBns7HR+SwSGGOELlF2YrcK5ko2K8JkM0LjuPdzs+TzheO9bIwVL9PI1j+9nrICrD+U6WGn3Av+PmFpccAQufUFh9DzzKbtxwR/cwFT0Co8X5ZSX/QNYuRz4mwS0Aui9jk/j56hHczt5BnOep7n/tDt1zYoIZ5Zw/3xKh8YAAFZQOCBSAAAA0AMAnQEqOAAQAD5tLJNGpCIhoTAYCACADYlpAAA6rXIgtoS6CIqAAP750oqM/H2q/g2gFbAyKuwSMm51DzphOyRX7zqeWpUVGiqr0+NcPMwAAA==" alt="logo" class="w-20 text-black">
+
+      <div class="hidden md:flex items-center gap-8 text-gray-700 font-medium">
+        <a href="/product.html" id="product" class="hover:text-black flex items-center gap-1 text-sm">
+    Product
+    <svg id="closenav" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+    </svg>
+</a>
+        <a href="/customer.html" class="hover:text-black text-sm">Customers</a>
+        <a href="/blog.html" class="hover:text-black text-sm">Blog</a>
+        <a href="/pricing.html" class="hover:text-black text-sm">Pricing</a>
+      </div>
+
+      <div class="hidden md:block items-center gap-6">
+        <a href="#" class="text-black hover:text-black text-sm mr-6">Log in</a>
+        <a href="#" class="bg-black text-sm text-white px-5 py-2.5 rounded-lg font-medium hover:bg-gray-800 transition-colors">
+          Book a demo
+        </a>
+      </div>
+
+        <button id="hamburger" class="md:hidden block p-2">
+        <img src="data:image/webp;base64,UklGRjQCAABXRUJQVlA4WAoAAAAwAAAADwAADwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBIJQAAAAEXIBBIYZMfEeFAJmDhpX8A94oSIaL/QtOEJZt3aCqk4D/mpwAAVlA4IBgAAAAwAQCdASoQABAAAUAmJaQAA3AA/v02aAA=" alt="hamburger" class="w-6 h-6">
+    </button>
+
+  <div id="navigator" class="hidden bg-[#FAFAFA] w-full sm:w-3/4  h-220 p-8  absolute  items-center inset-0 mx-auto rounded-2xl z-10 top-14">
+    <button id="closeBtn" class="absolute top-2 right-2 text-xl">
+        &times; 
+    </button>
+
+    <a href="/product.html" class="block border-b p-4">Product</a>
+    <a href="/customer.html" class="block border-b p-4">Customers</a>
+    <a href="/blog.html" class="block border-b p-4">Blog</a>
+    <a href="/pricing.html" class="block p-4">Pricing</a>
+  </div>
+    </nav>
+  </header>
+
+  <!-- product -->
+  <div id="navigatorcontent" class="hidden flex gap-20 bg-white p-6 rounded-lg shadow-lg max-w-4xl mx-auto">
+    <!-- Agents Section -->
+    <div class="mb-6">
+        <h2 class="text-gray-600 text-sm mb-4">Agents</h2>
+        <div class="grid grid-cols gap-4">
+            <div class="flex items-center space-x-2">
+                <div class="bg-[#615151]  p-2 inline-block">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAuklEQVR4AayS3Q3CMAyEgZEoA8A7jAFiC2ALfsaAdxYAsRHwXSQrkSlxVbW6a1Lf+epUnYx+rzmlGpEz2gLuyDUiZ5QBK8p7GEGepZl8wM6EyiqPXpYsCpix+8A17IoNRvU0CmDfH4MHaLRtMU/0/I4meBD2hH/hA844j9AQ6t5gjZ3XKOBEksjSivQNdM4x8gV6NBSm0ENHVc+rnOCK6wAjyCNv8vkA/edJqNzkuZleBlhtwaZG5IwvAAAA//8bPmcrAAAABklEQVQDAPpJIiHLKX2cAAAAAElFTkSuQmCC" alt="Leadership" class="w-6 h-6 text-[#bf92ea] "/>
+                </div>
+                <div>
+                    <h3 class="text-sm font-medium">Baseline agent</h3>
+                    <p class="text-sm text-gray-500">Extract feedback from calls, automatically</p>
+                </div>
+            </div>
+            <div class="flex items-center space-x-2">
+                <div class="bg-[#AFACD3] text-[#615151] p-2 inline-block">
+                    <img src="data:image/svg+xml,%3csvg%20width='1.12em'%20height='1em'%20viewBox='0%200%2020%2018'%20class='h-5%20w-5'%20data-icon='pixel/agent-personal'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill='currentColor'%20fill-rule='evenodd'%20d='M12%202h2v2h2v2h2v2h2v2h-2v2h-2v4h2v2h-4v-4h-2v2H8v-2H6v4H2v-2h2v-4H2v-2H0V8h2V6h2V4h2V2h2V0h4zM6%208v2h2V8zm6%200v2h2V8z'%20clip-rule='evenodd'%3e%3c/path%3e%3c/svg%3e" alt="Leadership" class="w-6 h-6 "/>
+                </div>
+                <div>
+                    <h3 class="text-sm font-medium">Personal agent</h3>
+                    <p class="text-sm text-gray-500">Relevant intel delivered where you work</p>
+                </div>
+            </div>
+            <div class="flex items-center space-x-2">
+                <div class="bg-[#A6BFBC] p-2 inline-block">
+                    <img src="data:image/svg+xml,%3csvg%20width='1em'%20height='1em'%20viewBox='0%200%2020%2020'%20class='h-5%20w-5'%20data-icon='pixel/agent-focus'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill='currentColor'%20fill-rule='evenodd'%20d='M11%203h2v2h2v4h2v6h2v2h-6v2h-2v-2H9v2H7v-2H5v2H3v-2H1V1h10zM9%2013v2h2v-2zm4%200v2h2v-2z'%20clip-rule='evenodd'%3e%3c/path%3e%3c/svg%3e" alt="Leadership" class="w-6 h-6  "/>
+                </div>
+                <div>
+                    <h3 class="text-sm font-medium">Focus agents</h3>
+                    <p class="text-sm text-gray-500">Top themes, prioritized by revenue impact</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Section -->
+    <div>
+        <h2 class="text-sm text-gray-600 mb-4">Team</h2>
+        <div class="grid grid-cols gap-4">
+            <div class="flex items-center space-x-2">
+                <div class="bg-gray-100 p-2 inline-block">
+                    <img src="data:image/svg+xml,%3csvg%20width='1em'%20height='1em'%20viewBox='0%200%2020%2020'%20class='h-5%20w-5'%20data-icon='pixel/for-product'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill='currentColor'%20d='M4%200h12v2H4zm0%2010h12v2H4zm2-8h2v6H6zm6%200h2v6h-2zM4%208h2v2H4zm2%206h2v2H6zm6%202h2v2h-2zM2%2010h2v4H2zm14%200h2v4h-2zm-2-2h2v2h-2zM0%2014h2v4H0zm18%200h2v4h-2zM2%2018h16v2H2z'%3e%3c/path%3e%3c/svg%3e" alt="Leadership" class="w-6 h-6 "/>
+                </div>
+                <div>
+                    <h3 class="font-medium text-sm">Product</h3>
+                    <p class="text-sm text-gray-500">Capture feedback, prioritize by revenue impact</p>
+                </div>
+            </div>
+            <div class="flex items-center space-x-2">
+                <div class="bg-gray-100 p-2 inline-block">
+                    <img src="data:image/webp;base64,UklGRo4CAABXRUJQVlA4WAoAAAAwAAAADwAADwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBIfwAAAAVwXFt7lDzYUwChAFybFGAzJi3hbxfagHuGvQ0MXYzfDy1EhMK2bRume/cNJOyIFVzk8N/3rniYmPcUowzMCW4wvLg/aXtC/hWbDhsdKaZgugSu83/JO+lBaSym5MNi9d+n7kt+HicRa6eJYtqN+YyGHNvny+L5az2908fKQQYAVlA4IBgAAAAwAQCdASoQABAAAUAmJaQAA3AA/v02aAA=" alt="Leadership" class="w-6 h-6 "/>
+                </div>
+                <div>
+                    <h3 class="font-medium text-sm">Customer Success</h3>
+                    <p class="text-sm text-gray-500">Eliminate notes, prevent churn, drive adoption</p>
+                </div>
+            </div>
+            <div class="flex items-center space-x-2">
+                <div class="bg-gray-100 p-2 inline-block">
+                    <img src="data:image/svg+xml,%3csvg%20width='1em'%20height='1em'%20viewBox='0%200%2020%2020'%20class='h-5%20w-5'%20data-icon='pixel/for-leadership'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20fill='currentColor'%3e%3cpath%20d='M18%2018h2v2h-2zm-4%200h2v2h-2zm-4%200h2v2h-2zm2%200h2v2h-2zm-6%200h2v2H6zm-4%200h2v2H2zm-2-2h2v4H0zm2-2h2v2H2zm2-4h2v4H4zm4-6h2v2H8zm2-4h2v4h-2zm6%2014h2v4h-2zm-4-8h2v4h-2zM8%208h2v2H8zm2%202h2v2h-2z'%3e%3c/path%3e%3cpath%20d='M12%208h2v2h-2zm-6%202h2v2H6zm0-4h2v4H6zm6-6h2v2h-2zm-2%204h2v2h-2zm4%206h2v4h-2z'%3e%3c/path%3e%3c/g%3e%3c/svg%3e" alt="Leadership" class="w-6 h-6 "/>
+                </div>
+                <div>
+                    <h3 class="text-sm font-medium">Leadership</h3>
+                    <p class="text-sm text-gray-500">Align teams, spot trends, build momentum</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!-- Content below the navigation -->
+  <div class="relative w-full p-3 min-h-screen flex flex-col text-white">
+    <!-- Text content -->
+   <div class="flex flex-col px-4  py-2 md:px-6">
+            <h1 class="text-2xl  md:text-4xl   font-serif  text-gray-900 max-w-2xl ">
+               <span class="text-[#5B6368]" >Baseline agent</span> <br>
+               What every company should know. <br>
+               Now, it’s automatic.
+           </h1>
+
+           
+
+        </div>
+        <div class="flex py-6 gap-3 px-4 md:px-6 ">
+           <button class="bg-[#141414] text-white px-2 py-1 rounded-sm font-medium transition-opacity hover:opacity-90 active:scale-95 ">Book a demo</button>
+           <button class="bg-[#d6d1c9] text-[#141414] px-2 py-1 rounded-sm font-medium transition-colors hover:bg-[#cec9c1] active:scale-95">Watch a demo</button>
+        </div>
+        <div>
+            <img src="/assets/baseline%20revenue-B6PZwqSX.webp" alt="hero image" class="mx-auto w-400">
+
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center justify-center m-6 md:m-26 gap-10">
+            <div>
+                <div class="w-7 h-7">
+                    <img src="data:image/webp;base64,UklGRlgDAABXRUJQVlA4WAoAAAAwAAAAEwAAEwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBILQEAAAmQc9u2seead2zbVmXbtlHZtm3bdupUtirbTj7bxouImAAA8Pgl8JL560/G9zz31GMgzOksaKKgqiVvJuDKAYLuSZvhPWl1ZcUNKb2hW0mu/32Uv3578vzq/uHyxfG7a/nPgFfhx4AnIPEx4GOx14sfz0Hmqx8vKCmoyAHATsVBDicF153wU3KeiNxK7ggCQpwMEBQCA4cQIL4rf2VxD3hUUiAhARQ17sCl5YloswDwbIoCr1+BYvIZIN4su1O5DwyNfAQHBz4ODwMblau64XogODkBgmZRtgvdC4QmJglNdIxzOrqKi/xHWETMw55rdfNo9Ckpz8b2NtcAGq9AfV9zVxtrF3MfPX9PegCYu3qdweunbGWnGMST+/J65j9gxXciobeqbDB62mMdAAAAVlA4IDQAAAAwAwCdASoUABQAPm0ylUekIqIhKAgAgA2JaQAAPZYaoBbwAP750YGRFjcZXSiHtOylgAAA" alt="runs-baseline"  class="w-full h-ful opacity-80">
+                </div>
+                <div>
+                 <h3 class="text-sm font-medium text-gray-900 leading-tight py-2">Runs in the background</h3>
+                 <p class="text-[#686565]    text-sm">Set up once and Twine continuously monitors customer conversations. See patterns across thousands of calls without watching a single recording. Tied to revenue impact.</p>
+                </div>
+            </div>
+            <div>
+                <div class="w-7 h-7">
+                    <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20class='shrink-0'%20data-icon='pixel/baseline-target'%20xmlns='http://www.w3.org/2000/svg'%3e%3csymbol%20id='ai:local:pixel/baseline-target'%20viewBox='0%200%2020%2021'%3e%3cg%20fill='none'%3e%3cg%20fill='%23161616'%20clip-path='url(%23svg-vr5lpw__a)'%3e%3cpath%20d='m11%20.82-.666.667.666.667v.333h-.334L10%201.821l-.666.666H9v-.333l.666-.667L9%20.821V.487h.334l.666.667.666-.667H11zm0%202-.666.667.666.667v.333h-.334L10%203.821l-.666.666H9v-.333l.666-.667L9%202.821v-.334h.334l.666.667.666-.667H11zm0%205-.666.667.666.667v.333h-.334L10%208.821l-.666.666H9v-.333l.666-.667L9%207.821v-.334h.334l.666.667.666-.667H11zm-2%202-.666.667.666.667v.333h-.334L8%2010.821l-.667.666H7v-.333l.667-.667L7%209.821v-.334h.333l.667.667.666-.667H9zm2%202-.666.667.666.667v.333h-.334L10%2012.821l-.666.666H9v-.333l.666-.667L9%2011.821v-.334h.334l.666.667.666-.667H11zm0%205-.666.667.666.667v.333h-.334L10%2017.821l-.666.666H9v-.333l.666-.667L9%2016.821v-.334h.334l.666.667.666-.667H11zm0%202-.666.667.666.667v.333h-.334L10%2019.821l-.666.666H9v-.333l.666-.667L9%2018.821v-.334h.334l.666.667.666-.667H11zm5-2-.666.667.666.667v.333h-.334L15%2017.821l-.666.666H14v-.333l.666-.667-.666-.666v-.334h.334l.666.667.666-.667H16zm2-2-.666.667.666.667v.333h-.334L17%2015.821l-.666.666H16v-.333l.666-.667-.666-.666v-.334h.334l.666.667.666-.667H18zm0-10-.666.667.666.667v.333h-.334L17%205.821l-.666.666H16v-.333l.666-.667L16%204.821v-.334h.334l.666.667.666-.667H18zm-2-2-.666.667.666.667v.333h-.334L15%203.821l-.666.666H14v-.333l.666-.667L14%202.821v-.334h.334l.666.667.666-.667H16zm-10%200-.667.667.667.667v.333h-.333L5%203.821l-.667.666H4v-.333l.667-.667L4%202.821v-.334h.333L5%203.154l.667-.667H6zm-2%202-.667.667.667.667v.333h-.333L3%205.821l-.667.666H2v-.333l.667-.667L2%204.821v-.334h.333L3%205.154l.667-.667H4zm0%2010-.667.667.667.667v.333h-.333L3%2015.821l-.667.666H2v-.333l.667-.667L2%2014.821v-.334h.333l.667.667.667-.667H4zm2%202-.667.667.667.667v.333h-.333L5%2017.821l-.667.666H4v-.333l.667-.667L4%2016.821v-.334h.333l.667.667.667-.667H6zm7-7-.666.667.666.667v.333h-.334L12%2010.821l-.666.666H11v-.333l.666-.667L11%209.821v-.334h.334l.666.667.666-.667H13zm5%200-.666.667.666.667v.333h-.334L17%2010.821l-.666.666H16v-.333l.666-.667L16%209.821v-.334h.334l.666.667.666-.667H18zm2%200-.666.667.666.667v.333h-.334L19%2010.821l-.666.666H18v-.333l.666-.667L18%209.821v-.334h.334l.666.667.666-.667H20zm-16%200-.667.667.667.667v.333h-.333L3%2010.821l-.667.666H2v-.333l.667-.667L2%209.821v-.334h.333l.667.667.667-.667H4zm-2%200-.667.667.667.667v.333h-.333L1%2010.821l-.667.666H0v-.333l.667-.667L0%209.821v-.334h.333l.667.667.667-.667H2z'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='svg-vr5lpw__a'%3e%3cpath%20fill='%23fff'%20d='M0%20.487h20v20H0z'%3e%3c/path%3e%3c/clipPath%3e%3c/defs%3e%3c/g%3e%3c/symbol%3e%3cuse%20href='%23ai:local:pixel/baseline-target'%3e%3c/use%3e%3c/svg%3e" alt="always" class="w-full h-ful opacity-80">
+                </div>
+                <div>
+                 <h3  class="text-sm font-medium text-gray-900 leading-tight py-2">Always-on radar</h3>
+                 <p class="text-[#686565]   leading-relaxed text-sm">A live pulse of your business, showing you what’s hurting your pipeline, what signals are emerging, and what customers love.</p>
+                </div>
+            </div>
+            <div>
+                <div class="w-7 h-7">
+                     <img src="data:image/webp;base64,UklGRnADAABXRUJQVlA4WAoAAAAwAAAAEwAAEwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBISQEAAAWQK9u2aVv92rZtRbZt2362M9u2bSO1bVvXttb5h4iYAL+OnpdA/ICMdI/MBcBZVqXhnGcTMMu2od/gzWJA63505y+dX9R1PPknJ9Vt4Ka6AaN6oy8ANXEpA4D02bNbEacPfvvS2gkoqVqZclJQHDumHrHOhgv7BFPUDr4drzQgJdWxzj6/eaUgI2xe/VT97gGlf8t05l8/IZhguO0jLJeZBNYVf9YICm02/oVZg4tBf8zbAwKY6jihfQVTVNY9X4nkOdoL65czVWdm8/xRflWL3lDlNKcDUF70fBsOs7aqOV97ToXOyVY5qW6N1PrtuIc/v4JwnFGLlPqP9Ui0+iffQMmADIODe9Du0fsEhK4IbEeyys26GwS9zb7z+TdhfcrSLYrXMTL3OWL/96pHIzDHrgG9VwsBrWfh2p1dr4D4AVl6Zc8DLvKKAFZQOCAwAAAA0AIAnQEqFAAUAD5tMpVHpCKiISgIAIANiWkAAD2joAD++dW+gQBzevFyVghtpAAA" alt="arrow" class="w-full h-ful opacity-80">
+                </div>
+                <div>
+                 <h3  class="text-sm font-medium text-gray-900 leading-tight py-2">Day one value</h3>
+                 <p class="text-[#686565] leading-relaxed text-sm">Just connect your calls and CRM. Baseline starts working instantly. Product, Sales, CS, and execs finally working from the same reality before lunchtime.</p>
+                </div>
+            </div>
+           </div>
+  </div>
+</div>
+<!-- baseline-staff -->
+ <div class="flex flex-col lg:flex-row gap-8  border-t mt-30 mx-4 ">
+  <div class="py-10 ">
+    <h1 class=" font-['Times_New_Roman'] text-5xl pb-4 max-w-7xl">Like having an analyst on staff.</h1>
+    <p class="text-[#5B6368]">(Only faster, cheaper, and always on time)</p>
+  </div>
+  <div class="flex flex-col  sm:flex md:flex-row gap-4">
+    <div class=" py-10 ">
+      <img src="/assets/baseline-proof-ChUdhcuq.webp" alt="baseline-proof" class="w-90 lg:w-120">
+      <h1 class="pt-6 text-2xl font-semibold sm:max-w-6xl sm:mx-auto ">
+       See the proof
+      </h1>
+      <p class="text-[#5B6368] text-lg md:text-2xl sm:max-w-6xl sm:mx-auto">Every insight comes backed by real clips and CRM data.</p>
+
+    </div>
+    <div class="py-10 ">
+      <img src="/assets/baseline-shift-BhBWt8VM.webp" alt="baseline-shift" class="w-90 lg:w-120">
+      <h1 class="font-semibold text-2xl pt-6">And the shifts</h1>
+      <p class="text-[#5B6368]  text-lg md:text-2xl">Highlights what’s rising, falling, or newly emerging over time.</p>
+    </div>
+  </div>
+ </div>
+  <!-- Baseline reports -->
+ <div class="flex flex-col md:flex-row gap-5 lg:gap-95 border-t mt-30 mx-8">
+  <div class="pt-4">
+    <h1 class="text-sm text-black font-medium">Baseline reports</h1>
+  </div>
+
+  <!-- Title  -->
+  <div class="lg:text-right ">
+    <h1 class="font-['Times_New_Roman'] text-4xl lg:text-5xl pb-4 max-w-7xl font-normal">The view your board thinks  you already have.</h1>
+    <p class="text-[#5B6368] text-sm">(Now you get these out of the box)</p>
+  </div>
+ </div>
+
+<!-- Intelligence Sections -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 mt-6 mx-6">
+  <!--  Product Intelligence -->
+  <div>
+    <img src="/assets/product%20intelligence-ByRQooSk.webp" alt="product intelligence" class="w-full h-auto ">
+    <h3 class="text-xl font-semibold pt-2">Product intelligence</h3>
+    <p class="text-[#5B6368]  text-lg  font-instrument ">The top 10 themes each week, with evidence and revenue context. Know what to build, fix, or drop before the roadmap drifts off course.</p>
+  </div>
+
+  <!-- Revenue Intelligence -->
+  <div>
+    <img src="/assets/revenue%20inte-CMo4tdhf.webp" alt="revenue intelligence" class="w-full h-auto ">
+    <h3 class="text-xl font-semibold pt-2">Revenue intelligence</h3>
+    <p class="text-[#5B6368]  text-lg  font-instrument ">A running pulse on what’s strategically blocking or advancing deals. Spot the patterns behind pipeline risk and revenue acceleration.</p>
+  </div>
+
+  <!--  Competitive Intelligence -->
+  <div>
+    <img src="/assets/competive%20inte-P-q-qVhx.webp" alt="competitive intelligence" class="w-full h-auto ">
+    <h3 class="text-xl font-semibold pt-2">Competitive intelligence</h3>
+    <p class="text-[#5B6368]  text-lg font-instrument ">A customer-powered leaderboard. Your biggest threats clearly flagged. See who you’re beating, who you’re losing to, and why.</p>
+  </div>
+
+  <!--  Customer Love Spotlight -->
+  <div>
+    <img src="/assets/customer%20love-BNLf8-kn.webp" alt="customer love" class="w-full h-auto ">
+    <h3 class="text-xl font-semibold pt-2">Customer love spotlight</h3>
+    <p class="text-[#5B6368]  text-lg  font-instrument ">Your strongest advocates and what they value most. Steal quotes for testimonials, decks, and campaigns - or just remind the team what’s working.</p>
+  </div>
+</div>
+<!--  -->
+ <div class="border-t mx-4 mt-20 flex flex-col lg:flex-row justify-between gap-10 items-center">
+  <!-- Text Content Section -->
+  <div class="mt-10 flex flex-col justify-start items-start md:mb-44 ">
+    <h4 class="font-['Times_New_Roman'] text-4xl lg:text-5xl pb-4 font-normal max-w-7xl">Clear, revenue-weighted themes that end debates and align teams.</h4>
+    <h4 class="font-['Times_New_Roman'] text-4xl lg:text-5xl pb-4 font-normal max-w-7xl">Delivered on schedule.</h4>
+  </div>
+
+  <!-- Information Boxes Section -->
+  <div class="mt-2 grid grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+    <!-- Product Box -->
+    <div class="p-3">
+      <h4 class="text-xl font-semibold">Product</h4>
+      <p class="text-[#686565] text-sm ">Prioritize with receipts. Debates end when everyone sees stack-ranked themes. Delivered with revenue impact attached.</p>
+    </div>
+    <!-- Sales Box -->
+    <div class="p-3">
+      <h4 class="text-xl font-semibold">Sales</h4>
+      <p class="text-[#686565] text-sm ">Back every ask with direct quotes, logos affected, and $$$ at risk. See fixes move fast. Kill blockers before deals stall.</p>
+    </div>
+    <!-- Customer Success Box -->
+    <div class="p-3">
+      <h4 class="text-xl font-semibold">Customer Success</h4>
+      <p class="text-[#686565] text-sm ">Trade anecdotes for evidence. Spot and escalate issues emerging across key accounts. Protect renewals, drive expansion.</p>
+    </div>
+    <!-- Product Marketing Box -->
+    <div class="p-3">
+      <h4 class="text-xl font-semibold">Product Marketing</h4>
+      <p class="text-[#686565] text-sm ">Learn how customers stack you against rivals. Lift crisp quotes for positioning, proof, and launch materials.</p>
+    </div>
+    <!-- Executives Box -->
+    <div class="p-3">
+      <h4 class="text-xl font-semibold">Executives</h4>
+      <p class="text-[#686565] text-sm ">A live pulse of the business. No waiting, no decks. See everyone operate from the same truth.</p>
+    </div>
+  </div>
+</div>
+   <div class="mx-auto text-center mt-50">
+     <h4 class=" font-['Times_New_Roman'] text-5xl">
+       Out of the chaos,<br>
+       into the clear.
+     </h4>
+   </div>
+
+   <!--  -->
+   <div class="flex flex-col lg:flex-row justify-center items-center gap-8 mt-16">
+    <div class="mx-6">
+      <h4 class="border-b mt-2 text-2xl text-start pb-2">Before</h4>
+      <div class="flex gap-4 ">
+        <div>
+          <img src="/assets/before-BdgybtZy.webp" alt="before" class="w-100  lg:w-full">
+        </div>
+        
+          <div class="mt-10">
+    <ul class="list-none">
+    <li class="flex items-start mb-3 text-md font-semibold ">
+      <img src="data:image/webp;base64,UklGRlYCAABXRUJQVlA4WAoAAAAwAAAAFwAAFwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBIOQAAAAEfMFUREQ6GkCS7mp/DuhzjITycw1mXnz9BRP8ngH82mMF9ClLugSiAioN1p+IQBaTcg/sUNJj5JwBWUDggJgAAANACAJ0BKhgAGAA+bTSWR6QjIiEoCACADYlpAAA9o6AA/vucwAAA" alt="Cross" class="w-5 h-5 mr-2">
+      Fragmented signals dictate million-dollar decisions
+    </li>
+    <li class="flex items-start mb-3 text-md font-semibold ">
+      <img src="data:image/webp;base64,UklGRlYCAABXRUJQVlA4WAoAAAAwAAAAFwAAFwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBIOQAAAAEfMFUREQ6GkCS7mp/DuhzjITycw1mXnz9BRP8ngH82mMF9ClLugSiAioN1p+IQBaTcg/sUNJj5JwBWUDggJgAAANACAJ0BKhgAGAA+bTSWR6QjIiEoCACADYlpAAA9o6AA/vucwAAA" alt="Cross" class="w-5 h-5 mr-2">
+      Blockers stay invisible until the quarter collapses
+    </li>
+    <li class="flex items-start mb-3 text-md font-semibold ">
+      <img src="data:image/webp;base64,UklGRlYCAABXRUJQVlA4WAoAAAAwAAAAFwAAFwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBIOQAAAAEfMFUREQ6GkCS7mp/DuhzjITycw1mXnz9BRP8ngH82mMF9ClLugSiAioN1p+IQBaTcg/sUNJj5JwBWUDggJgAAANACAJ0BKhgAGAA+bTSWR6QjIiEoCACADYlpAAA9o6AA/vucwAAA" alt="Cross" class="w-5 h-5 mr-2">
+      Opportunities vanish while teams argue
+    </li>
+    <li class="flex items-start mb-3 text-md font-semibold ">
+      <img src="data:image/webp;base64,UklGRlYCAABXRUJQVlA4WAoAAAAwAAAAFwAAFwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBIOQAAAAEfMFUREQ6GkCS7mp/DuhzjITycw1mXnz9BRP8ngH82mMF9ClLugSiAioN1p+IQBaTcg/sUNJj5JwBWUDggJgAAANACAJ0BKhgAGAA+bTSWR6QjIiEoCACADYlpAAA9o6AA/vucwAAA" alt="Cross" class="w-5 h-5 mr-2">
+      Everything’s urgent, everyone’s pissed
+    </li>
+  </ul>
+         </div>
+
+      </div>
+
+    </div>
+    <div class="mx-6 mb-20">
+      <h4 class="border-b mt-2 text-start text-2xl pb-2">After</h4>
+      <div class="flex gap-4 ">
+        <div>
+          <img src="/assets/after-TIPzY3vh.webp" alt="after" class="w-100  lg:w-full">
+        </div>
+         <div class="mt-10">
+    <ul class="list-none">
+    <li class="flex items-start mb-3 text-md font-semibold ">
+      <img src="data:image/webp;base64,UklGRm4CAABXRUJQVlA4WAoAAAAwAAAAFwAAFwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBIUQAAAAFvYCCSzOj/c2WQR0SE5gugm74Fq0iSnewjZ9bIk4IUpCAFEevj5ISvJyCi/xOA5jKlNUHbE/oR01aHHaAPripos0fr9CJUtTGiPUiqzxCtBQBWUDggJgAAANACAJ0BKhgAGAA+bTSWR6QjIiEoCACADYlpAAA9o6AA/vucwAAA" alt="Cross" class="w-5 h-5 mr-2">
+      The biggest opportunities, delivered
+    </li>
+    <li class="flex items-start mb-3 text-md font-semibold ">
+      <img src="data:image/webp;base64,UklGRm4CAABXRUJQVlA4WAoAAAAwAAAAFwAAFwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBIUQAAAAFvYCCSzOj/c2WQR0SE5gugm74Fq0iSnewjZ9bIk4IUpCAFEevj5ISvJyCi/xOA5jKlNUHbE/oR01aHHaAPripos0fr9CJUtTGiPUiqzxCtBQBWUDggJgAAANACAJ0BKhgAGAA+bTSWR6QjIiEoCACADYlpAAA9o6AA/vucwAAA" alt="Cross" class="w-5 h-5 mr-2">
+     Blockers spotted early enough to save deals 
+    </li>
+    <li class="flex items-start text-md font-semibold mb-3">
+      <img src="data:image/webp;base64,UklGRm4CAABXRUJQVlA4WAoAAAAwAAAAFwAAFwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBIUQAAAAFvYCCSzOj/c2WQR0SE5gugm74Fq0iSnewjZ9bIk4IUpCAFEevj5ISvJyCi/xOA5jKlNUHbE/oR01aHHaAPripos0fr9CJUtTGiPUiqzxCtBQBWUDggJgAAANACAJ0BKhgAGAA+bTSWR6QjIiEoCACADYlpAAA9o6AA/vucwAAA" alt="Cross" class="w-5 h-5 mr-2">
+      Competitive threats flagged before they hit pipeline
+    </li>
+    
+  </ul>
+         </div>
+      </div>
+
+    </div>
+
+   </div>
+
+   <div class="border-t mx-4 my-25">
+    <h4 class="font-['Times_New_Roman'] mt-12  text-5xl">Reclaim 10+ hours / week. <br>
+     Per team member.</h4>
+     <div class="flex gap-4 mt-4 ">
+      <p class="text-[#7d7d7d] text-sm hidden lg:block">See what your baseline agent <br> will surface this week ⟶</p>
+      <button class="bg-[#141414] text-white px-1 py-1  rounded-sm text-sm font-medium transition-opacity hover:opacity-90 active:scale-95 ">Book a demo</button>
+
+
+     </div>
+
+   </div>
+   <!--  -->
+   <div class="flex gap-4 px-5 overflow-x-auto items-stretch pb-10">
+    <div class="bg-[#e7e7e7] p-8 min-w-90 flex flex-col justify-between">
+      <div>
+        <img src="/assets/dylan-CahYZ995.webp" alt="dylan" class="w-32 mb-6 grayscale">
+        <h2 class="text-2xl mb-10 leading-tight font-instrument">“One import, and Twine did the work we’d been slogging through for hours every week. On day one, it uncovered product gaps we’d missed entirely.”</h2>
+      </div>
+      <div class="flex justify-between items-end mt-auto">
+        <div>
+          <p class="font-bold">Dylan Mathiesen</p>
+          <p class="text-gray-500">Head of Product</p>
+        </div>
+        <img src="data:image/webp;base64,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" alt="cascade" class="w-28 object-contain">
+      </div>
+    </div>
+     <div class="bg-[#e7e7e7] p-8 min-w-90 flex flex-col justify-between">
+      <div>
+        <img src="/assets/mansfield-BCVaqxz7.webp" alt="tom" class="w-32 mb-6 grayscale">
+        <h2 class="text-2xl mb-10 leading-tight font-instrument">“We went from bottlenecked communication to consistent, reliable feedback moving freely across the org. Effortlessly.”</h2>
+      </div>
+      <div class="flex justify-between items-end mt-auto">
+        <div>
+          <p class="font-bold">Tom Mansfield</p>
+          <p class="text-gray-500">CRO</p>
+        </div>
+        <img src="data:image/webp;base64,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" alt="hatch" class="w-28 object-contain">
+      </div>
+    </div>
+    <div class="bg-[#e7e7e7] p-8 min-w-90 flex flex-col justify-between">
+      <div>
+        <img src="data:image/webp;base64,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" alt="tom" class="w-32 mb-6 grayscale">
+        <h2 class="text-2xl mb-10 leading-tight font-instrument">“We went from bottlenecked communication to consistent, reliable feedback moving freely across the org. Effortlessly.”</h2>
+      </div>
+      <div class="flex justify-between items-end mt-auto">
+        <div>
+          <p class="font-bold">Tom Mansfield</p>
+          <p class="text-gray-500">CRO</p>
+        </div>
+        <img src="data:image/webp;base64,UklGRjgKAABXRUJQVlA4WAoAAAAwAAAA3wAAPwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBIbwcAAA2Qlm2bnUazCjqroLMKiANSBaQKAgpSFEAUAAogCgoKNjiYKthUQVMFvYZ5v8NMevi11xURECRJctQMLE7i6O7xXzD/Gd5sNS+tNd5fT9ntr4u2Pn9F2y+iXZ6yvGqWCKAo5uWpG/Kag++N45eMBRvt7T2DNU+8Tst5d/phvrWTI2EztF/NSjA/ftLzrMGyna2mj/PMqXUEexw/9+kv/ehcjS6s6scf47MjeQWZMAzdEOowROpi/UPYBq/U9hEIfPCwBCxPZv99m1Ck8Xzw//RrA4qHH/2WLP9QwBzpDuV89QMYvj4N8jfLMv6PO2FsOTP67/qzGjK9UwBa7Wz86DAWiyBxjKGi/55njRo+E2cIlHoTZW8KC0hiENVlGG2/4ffwg7rytS9iuCyFINv5Nsd2MLPGjK+9Jo8g+or7COu9T5mQ1HhnJtLxfQq2sriXoeEVFWIhmtiw5HIwalsVE1ubAjnel7YV0gg7eUUkuCsLfzjrNiBih73AJsAhdIri3OEHikm2pNBc3w78e3CF6qOwFHAYzI1ZUqsitMMrgejDII1+ksiNWSs4xEOWIPaVFJe1WWm4h62LBV/Wlz3WY+DBfUeSgVLszt6YYRmch60qaXwWkf/ddqyO/O6Ak2ezps0g3VeSR44nLtKJu39zjKFcjYCsBN3OiSdwID9wOBYANSHz2LigmE89J6KOGx8BCd5Vpef9Sjq/FMg+olyLaGkHdKc/sDramEokzDShqZN6PdIsUQbF8THvRsXWq/lKGP1U0vc9ebiknpKbhy9NDAD9LxR09bG2WjiCv9pz0xng6mKTKIpQqRBrSeokLWfUiXO0cCjeq/fG2WruyN0SwFz4H7y3tliUNJZaVEKMc8oHoMY4cWZgWtUTDBgprWFYYU06X6odCaZuhN2B4CLe9r7bFcgeM5hhJnWrEGwUL15pPF+XDVbb3UFKqfUJGPuL3d2kxwQGAKS0yHwiysfnyKGIyBCILwFHyuEEut5cE73gAOXrvxJwsRCPgbXSS2K8gzQrNt4vzw5TTvgfBAFpfoiMIMBLoJzA58GMZUTBOehlFnEk1KJbEnP0Xm91ANIIClw3VI17YHGN61vqJaWZHG2CR2IzoRGGkwMPrL0xit+53CseSJJipBnzGpHNXjjI0SN372qLcwTr4CcLCXwlkM8HK+Dqw8SJ7AWTWiwJ31t0Srr57ixBoZQx0W+FIPo/pDVv7DCFJebDGB+T8/dbNFII1A+INBqHcQiZzaEUGUK7r5F9woBYcXQkj6yTGEOlXrBTxagJR3QF6AgPGWZTUnVkduB8hphCnluFTUyzoI5qLJBDAUuzhlEsUGgKd3GZFCIr6+xN5OeTCO5aw6BMK5OkrWhXJTFEZUY8KIW7QJReZ6AU8bPKmzI73fphodgA/uSJkIzdV4Wp4kjh0rTdI2WVmekKfUadlgtR6dQ3jtDJYVKhzeAuLpPk99pCQXROdh5MGpkFyGhvGsrkSpB3qmwLxRSN0ZEMCVjop7lp1o8M7kmxjJ6FuNSRIRoLeUDnyGxH3CwmEQfr+gR3dgxSNXZSbHG6luKkzn3EzYJ0mVem0YbZPsFI05jgJv4ujLGhX4p0wLAxg5BSxeumsR2d6W5JxdFIN9K38po8msVyuldZyHZmwBi4eWqih0ijxCNNeC45a0OFxb0wr8mjG65OIp2o4ckYV7A6RpknfE+uEObzVFM0bkjGbqq30F030alNK85zUA3i2gAdmHuG91MZF4FclmnQyoOluLkxCvRZah0EAZB7euuE9WMZSdtzwy4jID/MUxM9YAajGFyVTDKcCCtcMNejGG+bcuhOuZ4gNvYnLy1MkY3/wz/LUZT9q2QCFtQpk6CROCsBYN1K2J6NKeuyD3KrjdfwpQGkwQ2KbNnKJ+uzao7BDsGrIwPEIiZ7Pcb1XbjzgLFo5JpvtlURse7GFjlDGBUlo3tPyBxpZZrM0DctezRFmqmxDOuxQnHuW8gpcE4YL4kEuS6y2jnwTX3gisV6R1GtyTXCWDDFZ1KqAblZ0IfEx05TpCEanmNntpv3LWoXRg8sZJu+66HGNbTYHzK4lLb6oyPFwl/9OJrCLVjvjoOxxY0LXvHfBNegKjREn+E6GHtfKYs03p131nyEn0GvH0NJRMR1ORhjOTeEf8l6J5vFvAi7Hg/q1nrhb/T8zX81LtUqR647d4rFBvtDRSjbkKgw7KB862fLtGlerHXWpHx4atLwMdnyNtXVaQAoMuEFLsqk4JGCIgUAwa2enSrPch7Ix2sAr4D+Wk9LhRWR0UfsqoethONlwxhMqzSsl9CgeRe0Pj/rR9dUPHLfGnNd1o7i6M7aHSJvdN5o8NoMZmSUxup8DQnKwDrcMYC3120MMA7SaZrKevBFOQuLSuzmL74HQqfOusLevQ4+ZQzD8gq4FIH/YCTdOlchs/F69pFrC+nMcV+5alZYM/gruJF7cSkZTc6DUE9gqXSKFPYghORY37+EyVSMp8GP71mcooajAHIWmAWWKmB+1JWNPmqiC/jb7KSF81/EzQAAVlA4INIAAABwDACdASrgAEAAPm0sk0akIiGhMTCc6IANiWkDJAdgA4QH2gCgxAEfJUTvlDF7qbueXrU/d7N72299PypNfzPAwVmUzPy25SlfFj2J7K6tKgy7UYh3xpcheQCnXwBD6X28I+oEYJTP3q4IcoAA/vqxxp0vzz6v5SUvda6nt4JPyvGsW+rd5l5tdlBP/8i1NbS11NefffRJjE7nfKW0Ls0c2m/HwTCth31ICp7LHSbOaCVJ2ma63mgcZBAL0J7nnyl3lo75ZQ+UG2sJoIC3+EEAAAA=" alt="hatch" class="w-28 object-contain">
+      </div>
+    </div>
+
+   </div>
+
+    <!-- footer -->
+      <footer class="bg-white py-10 px-6 md:px-20 text-[#1a1a1a]">
+  <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+  
+    <!-- Logo and Description Section (Visible on medium and up screens) -->
+    <div class="md:col-span-3 space-y-6">
+      <div class="flex items-center gap-2">
+        <div>
+          <img src="data:image/webp;base64,UklGRhYEAABXRUJQVlA4WAoAAAAwAAAANwAADwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBIzQEAAA2QLMm2aVvj6iBuz7Zt27Ztt201n22zadu2bdtecfZaax98QUQobNu2cbpbZ6JPIL7K20sOaBH8uHp19QFoTNK7Vys00a5F5F5e1QmaQ9t8LcKsCWNge4aqcHjxQxn8BX3MW9bAo+sUuntZTN/EweT4iWplMGL0CS6wBgzesx5AFvrkPgjv3etJG6WBS4VbwS2eIPlN8S8RFuvWLaruvok8v1nvw9JWfNXVbtn6svDOdsAoQ7rrMbSZLkL49wec89Ai7nWzno3hyP5Wo+5pl043/2yG8/a5FdOekNKak8xalCCegz3J8VfNEXcw+qBEH4CL099j/atmrOv6s/5BuSgDytvRwHSCVcvuyOZLqBtr8e97piV+95HdtuS/sqZk+HNsWOfko3Fn7JZQj34DfyVy6tCJ3Sb/CcdgDfzRU7Lt8B6XRo28fyihGWCiuu3yeBns7HR+SwSGGOELlF2YrcK5ko2K8JkM0LjuPdzs+TzheO9bIwVL9PI1j+9nrICrD+U6WGn3Av+PmFpccAQufUFh9DzzKbtxwR/cwFT0Co8X5ZSX/QNYuRz4mwS0Aui9jk/j56hHczt5BnOep7n/tDt1zYoIZ5Zw/3xKh8YAAFZQOCBSAAAA0AMAnQEqOAAQAD5tLJNGpCIhoTAYCACADYlpAAA6rXIgtoS6CIqAAP750oqM/H2q/g2gFbAyKuwSMm51DzphOyRX7zqeWpUVGiqr0+NcPMwAAA==" alt="logo" />
+        </div>
+      </div>
+      <p class="text-gray-500 leading-relaxed max-w-[60%]">
+        Twine closes the gap between customer conversations and company action.
+      </p>
+    </div>
+
+    <!-- Links Section -->
+    <div class="md:col-span-6 grid grid-cols-2 md:grid-cols-3 gap-10">
+      <!-- Product Links -->
+      <div class="space-y-4">
+        <h4 class="text-xs font-medium text-gray-400 uppercase tracking-wider">Product</h4>
+        <ul class="space-y-3 text-[15px]">
+          <li><a href="#" class="hover:text-gray-600">Baseline agent</a></li>
+          <li><a href="#" class="hover:text-gray-600">Personal agent</a></li>
+          <li><a href="#" class="hover:text-gray-600">Focus agents</a></li>
+          <li><a href="#" class="hover:text-gray-600">Integrations</a></li>
+          <li><a href="#" class="hover:text-gray-600">Security</a></li>
+          <li><a href="#" class="hover:text-gray-600">Pricing</a></li>
+          <li><a href="#" class="hover:text-gray-600">Changelog</a></li>
+          <li><a href="#" class="hover:text-gray-600">Status</a></li>
+        </ul>
+        <div class="pt-10 space-y-4">
+          <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Use Cases</h4>
+          <ul class="space-y-3 text-[15px]">
+            <li><a href="#" class="hover:text-gray-600">Product</a></li>
+            <li><a href="#" class="hover:text-gray-600">Customer Success</a></li>
+            <li><a href="#" class="hover:text-gray-600">Leadership</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Resources Links -->
+      <div class="space-y-4">
+        <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Resources</h4>
+        <ul class="space-y-3 text-[15px]">
+          <li><a href="#" class="hover:text-gray-600">Help center</a></li>
+          <li><a href="#" class="hover:text-gray-600">Blog</a></li>
+          <li><a href="#" class="hover:text-gray-600">Guides</a></li>
+          <li><a href="#" class="hover:text-gray-600">Legal</a></li>
+          <li><a href="#" class="hover:text-gray-600">Trust center</a></li>
+        </ul>
+        <div class="pt-10 space-y-4">
+          <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Community</h4>
+          <ul class="space-y-3 text-[15px]">
+            <li><a href="#" class="hover:text-gray-600">Customer</a></li>
+            <li><a href="#" class="hover:text-gray-600">Community</a></li>
+          </ul>
+        </div>
+        <div class="pt-10 space-y-4">
+          <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Company</h4>
+          <ul class="space-y-3 text-[15px]">
+            <li><a href="#" class="hover:text-gray-600">About</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Twine in Action Links -->
+      <div class="space-y-4">
+        <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Twine in action</h4>
+        <ul class="space-y-3 text-[15px]">
+          <li><a href="#" class="hover:text-gray-600 font-medium">Book a demo</a></li>
+          <li><a href="#" class="hover:text-gray-600">Sign in</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Social and Certifications Section -->
+    <div class="md:col-span-3 space-y-12">
+      <div class="space-y-4">
+        <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Social </h4>
+        <ul class="space-y-3 text-[15px]">
+          <li><a href="#" class="hover:text-gray-600">LinkedIn</a></li>
+          <li><a href="#" class="hover:text-gray-600">Youtube</a></li>
+          <li><a href="#" class="hover:text-gray-600">X</a></li>
+        </ul>
+      </div>
+      <div class="space-y-4 pt-4">
+        <div class="flex gap-3">
+          <div class="bg-[#DED6D1] rounded-4xl">
+            <img src="data:image/svg+xml,%3csvg%20width='1em'%20height='1em'%20class='h-full%20w-full'%20data-icon='gdpr'%20xmlns='http://www.w3.org/2000/svg'%3e%3csymbol%20id='ai:local:gdpr'%20viewBox='0%200%20144%20144'%3e%3cg%20fill='%23161616'%3e%3cpath%20d='m66.86%2031.5%201.353-5.854-4.541-3.937%206-.521%202.333-5.521%202.334%205.52%206%20.522-4.542%203.937L77.15%2031.5l-5.146-3.104zM47.524%2078.297q1.554.898%203.604.898%201.836%200%203.252-.732a5.5%205.5%200%200%200%202.236-2.12q.81-1.376.81-3.29v-1.836h-6.083v2.314h3.114q-.02.866-.4%201.514-.39.684-1.132%201.064-.732.372-1.777.372-1.153%200-2.003-.557-.84-.566-1.308-1.631-.47-1.065-.469-2.578%200-1.515.469-2.578.478-1.065%201.318-1.612.85-.555%201.963-.556.596%200%201.084.156.498.146.889.43.39.273.654.683.273.4.42.918h3.115a5.2%205.2%200%200%200-.674-1.972%205.4%205.4%200%200%200-1.347-1.553%206%206%200%200%200-1.895-1.016%207.1%207.1%200%200%200-2.295-.361q-1.923%200-3.467.889-1.542.888-2.45%202.568-.9%201.67-.9%204.033%200%202.295.86%203.975.87%201.67%202.412%202.578'%3e%3c/path%3e%3cpath%20fill-rule='evenodd'%20d='M65.443%2079h-5.156V64.45h5.205q2.198%200%203.78.878a5.9%205.9%200%200%201%202.43%202.5q.85%201.62.85%203.887%200%202.275-.859%203.906a5.94%205.94%200%200%201-2.441%202.51Q67.66%2079%2065.443%2079m-.137-2.637h-1.953v-9.277h1.963q1.368%200%202.295.488.938.479%201.406%201.504.48%201.026.479%202.637%200%201.62-.479%202.656-.468%201.026-1.406%201.514-.927.478-2.305.478M75.374%2064.45V79h3.066v-4.717h2.588q1.68%200%202.861-.615%201.191-.625%201.817-1.729.625-1.103.625-2.548%200-1.456-.625-2.569a4.3%204.3%200%200%200-1.788-1.738q-1.162-.635-2.812-.635zm3.066%207.372h2.09q.888%200%201.465-.312.585-.313.869-.86.293-.546.293-1.26%200-.731-.293-1.269a1.96%201.96%200%200%200-.87-.85q-.585-.302-1.474-.302h-2.08zm10.438-7.372V79h3.067v-5.156h2.249L96.954%2079h3.399l-3.09-5.645.065-.028.016-.007.05-.023q1.192-.556%201.816-1.602.625-1.044.625-2.49%200-1.445-.625-2.51-.614-1.075-1.787-1.66-1.162-.585-2.812-.586zm3.067%206.923h2.09q.888%200%201.464-.244.586-.245.87-.723.293-.48.293-1.2%200-.734-.293-1.222-.284-.497-.87-.752-.585-.263-1.474-.263h-2.08z'%20clip-rule='evenodd'%3e%3c/path%3e%3cpath%20d='m92.214%2032.077-1.355%205.854%205.146-3.104%205.146%203.104-1.354-5.854%204.542-3.938-6-.52-2.334-5.521-2.333%205.52-6%20.521zM108.429%2055.5l1.354-5.854-4.542-3.937%206-.521%202.334-5.52%202.333%205.52%206%20.52-4.542%203.938%201.354%205.854-5.145-3.104zm-40.215%2066.146-1.355%205.854%205.146-3.104%205.146%203.104-1.354-5.854%204.541-3.937-6-.521-2.333-5.521-2.333%205.521-6%20.521zm-25.354-.576%201.354-5.855-4.542-3.937%206-.521%202.333-5.521%202.334%205.521%206%20.521-4.542%203.937%201.354%205.855-5.146-3.105zM26.644%2097.646%2025.29%20103.5l5.146-3.104%205.146%203.104-1.355-5.854%204.542-3.937-6-.521-2.333-5.521-2.334%205.52-6%20.522zM114.859%2079.5l1.355-5.854-4.542-3.937%206-.521%202.333-5.521%202.334%205.52%206%20.522-4.542%203.937%201.354%205.854-5.146-3.104zm-5.076%2018.146-1.354%205.854%205.146-3.104%205.145%203.104-1.354-5.854%204.542-3.937-6-.521-2.333-5.521-2.334%205.52-6%20.522zM90.86%20121.07l1.353-5.855-4.541-3.937%206-.521%202.333-5.521%202.334%205.521%206%20.521-4.542%203.937%201.354%205.855-5.146-3.105zM20.214%2073.646%2018.859%2079.5l5.146-3.104%205.146%203.104-1.354-5.854%204.542-3.937-6-.521-2.334-5.521-2.333%205.52-6%20.522zM25.29%2055.5l1.354-5.854-4.541-3.937%206-.521%202.333-5.521%202.333%205.52%206%20.522-4.541%203.937%201.354%205.854-5.146-3.104zm18.924-23.423-1.355%205.854%205.146-3.104%205.146%203.104-1.354-5.854%204.542-3.938-6-.52-2.334-5.521-2.333%205.52-6%20.521z'%3e%3c/path%3e%3c/g%3e%3c/symbol%3e%3cuse%20href='%23ai:local:gdpr'%3e%3c/use%3e%3c/svg%3e" alt="AICPA certification badge with stars" class="w-15">
+          </div>
+          <div class="bg-[#DED6D1] rounded-4xl">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABqUlEQVR4AbSRTUsCURiF/ZhRCD+K1OyTFAoXLaOW1raf0CZC6D9Vq/oVCS1aCEGLFkFRKEY4ojg4oa0cdex5h3EY00UQDe/hPXPec8+9cyfg++PzPwGpVEoDVdBxIFybddipE8iC0WiUa7VaWRB3kBVNZj9DJgIwlDGuYjpNJBL5ZDJ5kk6nj9DPAoFAwe/3r8DLzN1yAxi8x2KxHYyHGBfBEtgYDofLuJ8JXrAsKy8e8aLZ5QbwplQqlR4L3uBFFtfot/QXugWKhGCp9OAKsMsbMC8Ku6gYg3RzMBjU4Kr08Uw6sL10nzdAdvGFQqEUg20+JacoSoGuGIahcbJPVVUzzKRsrxBvQFsEdm4Hg8EqO7dN07xCmwM+gjbRn4QDA9jlDQhx6xFMHUL2WLAbDoePCTrg0i5wR/v9/r544Cqwyw3gf69xYfVGo/HB4gd4iaBHPukcZ4lgXYBeFy+aXW6AvDGIs1s5EoncN5vNO13XbzRNK6Nfi0bgJTwu3jEmAkTEsNXtdl8JqoEvBzXRZCYeL6YCZIgxA9ZB1IHw8R8Qi4uZAe70F+QbAAD//y55MG8AAAAGSURBVAMA06nUIf0XC7MAAAAASUVORK5CYII=" alt="gdpr" class="w-15">
+          </div>
+        </div>
+        <div class="text-sm text-gray-500 leading-snug">
+          <p>End-to-end encryption.</p>
+          <p>Never trained on your data.</p>
+          <a href="#" class="text-black font-semibold underline underline-offset-4 decoration-1">Learn more</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</fo<script type="module"
+    <script type="module" src="./hamburger.js"></script>
+    <script src="./twine.js"></script>
+</body>
+</html>

@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+  <link rel="stylesheet" crossorigin href="/assets/input-VpHW57WK.css">
+</head>
+<body>
+     <header class="m-5 ">
+        <nav class=" flex  items-center justify-between  p-4 sticky top-0 ">
+           <img src="data:image/webp;base64,UklGRhYEAABXRUJQVlA4WAoAAAAwAAAANwAADwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBIzQEAAA2QLMm2aVvj6iBuz7Zt27Ztt201n22zadu2bdtecfZaax98QUQobNu2cbpbZ6JPIL7K20sOaBH8uHp19QFoTNK7Vys00a5F5F5e1QmaQ9t8LcKsCWNge4aqcHjxQxn8BX3MW9bAo+sUuntZTN/EweT4iWplMGL0CS6wBgzesx5AFvrkPgjv3etJG6WBS4VbwS2eIPlN8S8RFuvWLaruvok8v1nvw9JWfNXVbtn6svDOdsAoQ7rrMbSZLkL49wec89Ai7nWzno3hyP5Wo+5pl043/2yG8/a5FdOekNKak8xalCCegz3J8VfNEXcw+qBEH4CL099j/atmrOv6s/5BuSgDytvRwHSCVcvuyOZLqBtr8e97piV+95HdtuS/sqZk+HNsWOfko3Fn7JZQj34DfyVy6tCJ3Sb/CcdgDfzRU7Lt8B6XRo28fyihGWCiuu3yeBns7HR+SwSGGOELlF2YrcK5ko2K8JkM0LjuPdzs+TzheO9bIwVL9PI1j+9nrICrD+U6WGn3Av+PmFpccAQufUFh9DzzKbtxwR/cwFT0Co8X5ZSX/QNYuRz4mwS0Aui9jk/j56hHczt5BnOep7n/tDt1zYoIZ5Zw/3xKh8YAAFZQOCBSAAAA0AMAnQEqOAAQAD5tLJNGpCIhoTAYCACADYlpAAA6rXIgtoS6CIqAAP750oqM/H2q/g2gFbAyKuwSMm51DzphOyRX7zqeWpUVGiqr0+NcPMwAAA==" alt="logo" class="w-20 text-black"> 
+
+           <div class="hidden md:flex items-center gap-8 text-gray-700 font-medium">
+              <a href="/product.html" class="hover:text-black flex items-center gap-1 text-sm">Product 
+               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+              </a>
+              <a href="/customer.html" class="hover:text-black text-sm">Customers</a>
+              <a href="/blog.html" class="hover:text-black text-sm">Blog</a>
+              <a href="/pricing.html" class="hover:text-black text-sm">Pricing</a>
+           </div>
+           
+           <div class="hidden md:block items-center gap-6">
+             <a href="#" class="text-black hover:text-black text-sm mr-6">Log in</a>
+             <a href="#" class="bg-black text-sm text-white px-5 py-2.5 rounded-lg font-medium hover:bg-gray-800 transition-colors">
+               Book a demo
+              </a>
+            </div>
+                                    <button id="hamburger" class="md:hidden block p-2">
+        <img src="data:image/webp;base64,UklGRjQCAABXRUJQVlA4WAoAAAAwAAAADwAADwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBIJQAAAAEXIBBIYZMfEeFAJmDhpX8A94oSIaL/QtOEJZt3aCqk4D/mpwAAVlA4IBgAAAAwAQCdASoQABAAAUAmJaQAA3AA/v02aAA=" alt="hamburger" class="w-6 h-6">
+    </button>
+
+    <div id="navigator" class="hidden bg-[#FAFAFA] w-full sm:w-3/4  h-220 p-8  absolute  items-center inset-0 mx-auto rounded-2xl z-10 top-14">
+    <button id="closeBtn" class="absolute top-2 right-2 text-xl">
+        &times; 
+    </button>
+
+    <a href="/product.html" class="block border-b p-4">Product</a>
+    <a href="/customer.html" class="block border-b p-4">Customers</a>
+    <a href="/blog.html" class="block border-b p-4">Blog</a>
+    <a href="/pricing.html" class="block p-4">Pricing</a>
+  </div> 
+
+        </nav>
+    </header>
+    <!-- hero-section -->
+     <section>
+        <div class="flex flex-col items-center justify-center text-center py-8 px-10">
+             <p class="mt-3 text-4xl lg:text-5xl text-black font-['Times_New_Roman']  max-w-lg ">
+            Scale intelligence to match the revenue stakes.
+           </p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 m-3 gap-5">
+            <div class="bg-[#f6f6f6] flex flex-col p-5">
+                <h1 class="text-3xl mb-1 font-instruments">Start</h1>
+                <p class="text-[#787878] text-2xl font-instruments">from $10k / year</p>
+                <span class="border-t-2 border-[#d3d3d3] mt-10 "></span>
+                <div class="flex gap-35 items-start justify-between pt-3">
+                    <div>
+                        <h2>What you get</h2>
+                    </div>
+                    <div>
+                       
+                        <div class="space-y-8">
+                            <h2 class="text-md font-normal">Company-wide clarity, zero setup</h2>
+                            <div class="space-y-4">
+        
+                              <div class="space-y-3">
+                                 <div class="flex items-start space-x-2">
+                                 <i class="fa fa-check pt-3 text-sm" aria-hidden="true"></i>
+                                  <div>
+                                    <h3 class="font-normal text-sm ">Every customer call analyzed</h3>
+                                    <p class="text-gray-600 text-sm">Useful insights from every conversation, automatically.</p>
+                                 </div>
+                                </div>
+                              </div>
+                              <div class="space-y-3">
+                                 <div class="flex items-start space-x-2">
+                                 <i class="fa fa-check pt-3 text-sm" aria-hidden="true"></i>
+                                  <div>
+                                    <h3 class="font-normal text-sm pt-2">Deal blockers surfaced</h3>
+                                    <p class="text-gray-600 text-sm">See what’s slowing revenue and act before targets slip.</p>
+                                 </div>
+                                </div>
+                              </div>
+                              <div class="space-y-3">
+                                 <div class="flex items-start space-x-2">
+                                 <i class="fa fa-check pt-3 text-sm" aria-hidden="true"></i>
+                                  <div>
+                                    <h3 class="font-normal text-sm pt-2">Product insights, ranked</h3>
+                                    <p class="text-gray-600 text-sm">Know which improvements will unlock adoption, expansion, and retention.</p>
+                                 </div>
+                                </div>
+                              </div>
+                              <div class="space-y-3">
+                                 <div class="flex items-start space-x-2">
+                                 <i class="pt-3 text-sm fa fa-check" aria-hidden="true"></i>
+                                  <div>
+                                    <h3 class="font-normal text-sm pt-2">Real competitive signals</h3>
+                                    <p class="text-gray-600 text-sm">Clear visibility into threats, advantages, and fast-emerging rivals.</p>
+                                 </div>
+                                </div>
+                              </div>
+                              <div class="space-y-3">
+                                 <div class="flex items-start space-x-2">
+                                 <i class="fa fa-check pt-3 text-sm" aria-hidden="true"></i>
+                                  <div>
+                                    <h3 class="font-normal text-sm pt-2">Operational gaps exposed</h3>
+                                    <p class="text-gray-600 text-sm">Spot service friction before it impacts deals, renewals, or growth.</p>
+                                 </div>
+                                </div>
+                              </div>
+                              <div class="space-y-3">
+                                 <div class="flex items-start space-x-2">
+                                 <i class="fa fa-check pt-3 text-sm" aria-hidden="true"></i>
+                                  <div>
+                                    <h3 class="font-normal text-sm pt-2">Customer advocates, identified</h3>
+                                    <p class="text-gray-600 text-sm">Proof points you can use. Value drivers in customers’ own words.</p>
+                                 </div>
+                                </div>
+                              </div>
+                         </div>
+
+              <div class="space-y-4">
+                 <h2 class="text-md font-normal">Powerful actions that cut busywork</h2>
+                     <div class="space-y-3">
+                                 <div class="flex items-start space-x-2">
+                                  <i class="fa fa-check pt-3 text-sm" aria-hidden="true"></i>
+                                  <div>
+                                    <h3 class="font-normal text-sm pt-2">Briefings for every role</h3>
+                                    <p class="text-gray-600 text-sm">Each person sees what matters for their work. Alignment without meetings.</p>
+                                 </div>
+                                </div>
+                                 <div class="space-y-3">
+                                 <div class="flex items-start space-x-2">
+                                  <i class="fa fa-check pt-3 text-sm" aria-hidden="true"></i>
+                                  <div>
+                                    <h3 class="font-normal text-sm pt-2">Instant evidence</h3>
+                                    <p class="text-gray-600 text-sm">Revenue-backed proof for what to build, fix, or ship next.</p>
+                                 </div>
+                                </div>
+                              </div>
+                              </div>
+    </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="border-t-2 border-[#d3d3d3] mt-10 "></span>
+                <div class="flex justify-center gap-40">
+                    <div>
+                        <h2>Best for</h2>
+                    </div>
+                    <div>
+                        <h2 class="text-md font-normal">Early-stage companies who need reliable, always-on intelligence without operational overhead.</h2>
+                    </div>
+                </div>
+                <button class="text-[#AD49AD] text-sm bg-[#fbd8ff] p-3 mt-10 m-0 ">Book a demo</button>
+
+
+            </div>
+            <div class="bg-[#f6f6f6]  flex flex-col p-5">
+                 <h1 class="text-3xl mb-1 font-instruments">Scale</h1>
+                <p class="text-[#787878] text-2xl font-instruments">Custom pricing</p>
+                <span class="border-t-2 border-[#d3d3d3] mt-10 "></span>
+                <div class="flex gap-35 justify-between pt-3">
+                    <div>
+                        <h2>What you get</h2>
+                    </div>
+                    <div>
+                       
+                        <div class="space-y-8">
+                            <h2 class="text-md font-normal">Agents for each function</h2>
+                            <div class="space-y-4">
+        
+                              <div class="space-y-3">
+                                 <div class="flex items-start space-x-2">
+                                  <i class="fa fa-check pt-3 text-sm" aria-hidden="true"></i>
+                                  <div>
+                                    <h3 class="font-normal text-sm ">Patch-level intelligence</h3>
+                                    <p class="text-gray-600 text-sm">Early visibility into blockers and win-drivers for each region or segment.</p>
+                                 </div>
+                                </div>
+                              </div>
+                              <div class="space-y-3">
+                                 <div class="flex items-start space-x-2">
+                                  <i class="fa fa-check pt-3 text-sm" aria-hidden="true"></i>
+                                  <div>
+                                    <h3 class="font-normal text-sm pt-2">Product area clarity</h3>
+                                    <p class="text-gray-600 text-sm">Each product team gets a revenue-weighted view of what matters in their area.</p>
+                                 </div>
+                                </div>
+                              </div>
+                              <div class="space-y-3">
+                                 <div class="flex items-start space-x-2">
+                                  <i class="fa fa-check pt-3 text-sm" aria-hidden="true"></i>
+                                  <div>
+                                    <h3 class="font-normal text-sm pt-2">Live competitor battlecards</h3>
+                                    <p class="text-gray-600 text-sm">The intel your team needs to beat a specific competitor in the deals that matter.</p>
+                                 </div>
+                                </div>
+                              </div>
+                             
+                         </div>
+
+              <div class="space-y-4">
+                 <h2 class="text-md font-normal">Powerful actions that cut busywork</h2>
+                     <div class="space-y-3">
+                                 <div class="flex items-start space-x-2">
+                                  <i class="fa fa-check pt-3 text-sm" aria-hidden="true"></i>
+                                  <div>
+                                    <h3 class="font-normal text-sm pt-2">Your ideas, ranked by impact</h3>
+                                    <p class="text-gray-600 text-sm">See which concepts will move revenue, reduce churn, or accelerate adoption.</p>
+                                 </div>
+                                </div>
+                                 <div class="space-y-3">
+                                 <div class="flex items-start space-x-2">
+                                  <i class="fa fa-check pt-3 text-sm" aria-hidden="true"></i>
+                                  <div>
+                                    <h3 class="font-normal text-sm ">Customer matches on demand</h3>
+                                    <p class="text-gray-600 text-sm">Find ideal accounts for validation, launches, and expansion plays.</p>
+                                 </div>
+                                </div>
+                                <div class="space-y-3">
+                                 <div class="flex items-start space-x-2">
+                                 <i class="fa fa-check pt-3 text-sm" aria-hidden="true"></i>
+                                  <div>
+                                    <h3 class="font-normal text-sm pt-2">Smart enablement, personalized</h3>
+                                    <p class="text-gray-600 text-sm">Automatically equip reps with customer-specific talking points that cut through noise and move deals.</p>
+                                 </div>
+                                </div>
+                              </div>
+                              </div>
+                              </div>
+    </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="border-t-2 border-[#d3d3d3] mt-54 "></span>
+                 <div class="flex justify-center gap-40">
+                    <div>
+                        <h2>Best for</h2>
+                    </div>
+                    <div>
+                        <h2 class="text-md font-normal">Mid-market and high-growth companies where each function needs domain-specific intelligence and revenue leaders need alignment at scale.</h2>
+                    </div>
+                </div>
+                <button class="text-white text-sm bg-black p-3 mt-4 m-0 ">Talk to sales</button>
+
+            </div>
+        </div>
+        <!--  -->
+        <div class="bg-[#f6f6f6] flex lg:gap-30 flex-col lg:flex-row  mt-4 ">
+          <div class="w-1/2">
+            <h1 class="text-[1.4rem] lg:text-2xl px-4 pt-2">Enterprise security add-on</h1>
+            <p class="text-[#787878] text-2xl font-instruments px-4">Custom pricing</p>
+            
+          </div>
+          <span class="border-t-2 border-[#d3d3d3] mt-5 "></span>
+          <div class="flex flex-col lg:flex-row">
+             <div class="space-y-8 ">
+              <div class="space-y-4 flex flex-col lg:flex-row">
+                 <h2 class="text-md font-normal px-4 pt-3">The same intelligence engine, with enterprise-grade control</h2>
+                     <div class="space-y-3 px-4">
+                                 <div class="flex items-start space-x-2">
+                                  <i class="fa fa-check pt-3 text-sm" aria-hidden="true"></i>
+                                  <div>
+                                    <h3 class="font-normal text-sm pt-2">Full governance and auditability</h3>
+                                    
+                                 </div>
+                                </div>
+                                 <div class="space-y-3">
+                                 <div class="flex items-start space-x-2">
+                                 <i class="fa fa-check pt-3 text-sm" aria-hidden="true"></i>
+                                  <div>
+                                    <h3 class="font-normal text-sm ">Identity and access controls (SSO/SAML, SCIM)</h3>
+                                   
+                                 </div>
+                                </div>
+                                <div class="space-y-3">
+                                 <div class="flex items-start space-x-2">
+                                  <i class="fa fa-check pt-3 text-sm" aria-hidden="true"></i>
+                                  <div>
+                                    <h3 class="font-normal text-sm pt-2">Seamless security-stack integration (including SIEM)</h3>
+                                    
+                                 </div>
+                                </div>
+                              </div>
+                              <div class="space-y-3">
+                                 <div class="flex items-start space-x-2">
+                                  <i class="fa fa-check pt-3 text-sm" aria-hidden="true"></i>
+                                  <div>
+                                    <h3 class="font-normal text-sm pt-2">Advanced data protections and safeguards</h3>
+                                    
+                                 </div>
+                                </div>
+                              </div>
+                              <div class="space-y-3">
+                                 <div class="flex items-start space-x-2">
+                                  <i class="fa fa-check pt-3 text-sm" aria-hidden="true"></i>
+                                  <div>
+                                    <h3 class="font-normal text-sm pt-2 pb-4">A dedicated partnership: Priority support, rollout guidance, and terms shaped to your processes and risk posture</h3>
+                                    
+                                 </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                 <div class="flex justify-end items-center w-full ">
+                    <button class="bg-black text-white py-3 px-6  w-full lg:w-[50%]">Talk to sales</button>
+                 </div>
+     </section>
+     <!-- feature ROI  -->
+      <section class="border-t-2 border-black mt-10 mx-4 ">
+        <div class="flex flex-col lg:flex-row  lg:gap-30"> 
+          <div>
+            <h1 class="font-normal text-4xl lg:text-3xl font-['Times_New_Roman'] mt-5 mb-7">Pays for itself in a single quarter</h1>
+          </div>
+          <div class="flex flex-col gap-2 mt-5">
+            <h2 class="text-2xl bg-[#E7E7E7] ">Your average deal size</h2>
+            <h2 class="text-2xl bg-[#E7E7E7]"><i class="fa fa-times" aria-hidden="true bg-none "></i>the number of deals that quietly stall each quarter</h2>
+             <div class="border-t-2 border-[#d3d3d3] mt-10 flex gap-5">
+              <div class="mt-5">
+                <img src="data:image/webp;base64,UklGRnADAABXRUJQVlA4WAoAAAAwAAAAEwAAEwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBISQEAAAWQK9u2aVv92rZtRbZt2362M9u2bSO1bVvXttb5h4iYAL+OnpdA/ICMdI/MBcBZVqXhnGcTMMu2od/gzWJA63505y+dX9R1PPknJ9Vt4Ka6AaN6oy8ANXEpA4D02bNbEacPfvvS2gkoqVqZclJQHDumHrHOhgv7BFPUDr4drzQgJdWxzj6/eaUgI2xe/VT97gGlf8t05l8/IZhguO0jLJeZBNYVf9YICm02/oVZg4tBf8zbAwKY6jihfQVTVNY9X4nkOdoL65czVWdm8/xRflWL3lDlNKcDUF70fBsOs7aqOV97ToXOyVY5qW6N1PrtuIc/v4JwnFGLlPqP9Ui0+iffQMmADIODe9Du0fsEhK4IbEeyys26GwS9zb7z+TdhfcrSLYrXMTL3OWL/96pHIzDHrgG9VwsBrWfh2p1dr4D4AVl6Zc8DLvKKAFZQOCAwAAAA0AIAnQEqFAAUAD5tMpVHpCKiISgIAIANiWkAAD2joAD++dW+gQBzevFyVghtpAAA" alt="deal-blockers" class="mb-3">
+                <h1 class="text-xl font-normal">Deal blockers surfaced early</h1>
+                <p class="text-sm text-[#8d8a8a]">Patterns appear weeks sooner, protecting pipeline before the forecast feels it.</p>
+              </div>
+              <div class="mt-5">
+                <img src="data:image/webp;base64,UklGRloDAABXRUJQVlA4WAoAAAAwAAAAEwAAEwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBIJwEAAAGAI9u2aWt+27at7Jnftm3bto3MtjO2gV1iFyJiAvivi1DN//W+RD9VF85UD7Q2teJUuJO3HZ/1LXeveb1/bKYPnb2y65TXQEhOFZr52rg7OTrhUnaQ06vpAql39vxqdjp2lwbiermBJYV1tbXoNtSYhug7QexZMDCwubSB3lY/P0aPhVA+ZAH0dwMuYxkQORpIxZgZMNL3bSQTYk9DaNy1YH4Dve0+XC6yILVRSkWHA5W1GI90E9RRCrJHX2qOzQB0d/pwuEuDwnY1JV0BNu5Ojh49tYQNNkPwkzVQt9I3PtYNGN0oISO+xNiSxprBlpY2jC3j0koBZG96/Kr1nM2P4cKSoHxhcmR4iiBLHvUT5Dx0bU8tLI7vtfBHeUi8MFymiBDIfgIAVlA4IDwAAAAQAwCdASoUABQAPm0ulUakIqIhKAqogA2JaWtyABwbRwAA/vnSbOQXyqw5CswKJ7VY7P1L7Gpy2z7RAAA=" alt="churn" class="mb-3">
+                <h1 class="text-xl font-normal">Churn prevented</h1>
+                <p class="text-sm text-[#8d8a8a]">Renewal threats show up 60–90 days ahead. Early enough to save the account.</p>
+              </div>
+              
+             </div>
+              <div class="border-t-2 border-[#d3d3d3] mt-10 flex gap-5">
+              <div class="mt-5">
+                <img src="data:image/webp;base64,UklGRmACAABXRUJQVlA4WAoAAAAwAAAAEwAAEwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBIPwAAAAEXQJBtG9p28EdE8IFp20iCjEaa7g49frT1LN3OI/of9q7+mezd9c03USpEqxLZ0heiVYk46iNKhVjL8+OKCQBWUDggKgAAABADAJ0BKhQAFAA+bS6TRqQioaEwGAgAgA2JaQAAPmTuAAD++dCOeNqAAA==" alt="wins" class="mb-3">
+                <h1 class="text-xl font-normal">Competitive wins</h1>
+                <p class="text-sm text-[#8d8a8a] ">Reps shift decisions with customer-powered evidence that actually moves deals.</p>
+              </div>
+              <div class="mt-5">
+                <img src="data:image/webp;base64,UklGRmICAABXRUJQVlA4WAoAAAAwAAAAEwAAEwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBIQAAAAAEXQJBtG9p28EdE8IFNG0mSnOzuDbuBcD+eTpd5RP+DFM6JwAkbPkRxmqSKc052wtcnJQynoBqjUANjJztf999WUDggLAAAABADAJ0BKhQAFAA+bSyTRqQiIaEwGAgAgA2JaQAAOrBWAAD++dKLg8/84AAA" alt="time-back" class="mb-3">
+                <h1 class="text-xl font-normal">Time back, everywhere</h1>
+                <p class="text-sm text-[#8d8a8a]">Roughly 2,500 hours a year return to the work that moves revenue forward.</p>
+              </div>
+              
+             </div>
+          </div>
+        </div>
+
+      </section>
+      <!-- card-slide -->
+       <div class="flex   overflow-x-auto items-stretch gap-4  px-5 mt-10 pb-10">
+           <div class="bg-[#e7e7e7] p-8 min-w-90 flex flex-col justify-between">
+       <div>
+        <img src="/assets/tom%20wright-BQbFZYaG.webp" alt="tom" class="w-32 mb-6 grayscale">
+        <h2 class="text-2xl mb-10 leading-tight font-instrument">“Twine goes the last mile, telling us what to build and which deals it’ll unlock. That’s what makes it irreplaceable.”</h2>
+       </div>
+       <div class="flex justify-between items-end mt-auto">
+        <div>
+          <p class="font-bold">Tom Wright</p>
+          <p class="text-gray-500">Co-Founder</p>
+        </div>
+        <img src="data:image/webp;base64,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" alt="cascade" class="w-28 object-contain">
+      </div>
+    </div>
+
+    <div class="bg-[#e7e7e7] p-8 min-w-90 flex flex-col justify-between">
+      <div>
+        <img src="/assets/rebecca-DUJb9W3f.webp" alt="rebecca" class="w-32 mb-6 grayscale">
+        <h2 class="text-2xl mb-10 leading-tight font-instrument">“Holy shit. Two minutes in, Twine answered two questions in my to follow up list. Incredible.”</h2>
+      </div>
+      <div class="flex justify-between items-end mt-auto">
+        <div>
+          <p class="font-bold">Rebecca Cook</p>
+          <p class="text-gray-500 text-sm">Principal Product Manager</p>
+        </div>
+        <img src="/assets/safetyculture-DoC3TlPY.webp" alt="safety" class="w-28 object-contain">
+      </div>
+    </div>
+
+    <div class="bg-[#e7e7e7] p-8 min-w-90 flex flex-col justify-between">
+      <div>
+        <img src="data:image/webp;base64,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" alt="tom" class="w-32 mb-6 grayscale">
+        <h2 class="text-2xl mb-10 leading-tight font-instrument">“We went from bottlenecked communication to consistent, reliable feedback moving freely across the org. Effortlessly.”</h2>
+      </div>
+      <div class="flex justify-between items-end mt-auto">
+        <div>
+          <p class="font-bold">Tom Mansfield</p>
+          <p class="text-gray-500">CRO</p>
+        </div>
+        <img src="data:image/webp;base64,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" alt="hatch" class="w-28 object-contain">
+      </div>
+    </div>
+
+       </div>
+       <!-- skipped plan detailes section -->
+        <div class="grid grid-cols-2 gap-5 my-4 ml-5 border-t-2 font-instrument">
+          <div class="">
+            <h1 class="text-sm  text-black font-medium">Plan details </h1>
+          </div>
+          <div class="flex justify-between items-center  ">
+            <div class=" lg:ml-40">
+              <h2 class="text-2xl">Start</h2>
+              <p  class="text-gray-400 hidden lg:block" >Universal clarity</p>
+              
+              <button  class=" bg-[#141414] text-white p-1 mt-3 text-sm rounded-sm font-medium transition-all hover:opacity-90 active:scale-95 hidden lg:block">Book a demo</button>
+            </div>
+            <div class="lg:mr-25">
+              <h2 class="text-2xl mr-20">Scale</h2>
+              <p class="hidden lg:block text-gray-400">Precision & actionability</p>
+              <button  class=" bg-[#141414] text-white p-1 mt-3 rounded-sm font-medium transition-all hover:opacity-90 active:scale-95 hidden lg:block text-sm">Talk to sales</button>
+            </div>
+          </div>
+        </div>
+
+         <div class="container mx-auto p-6">  
+             <!-- Baseline agents Section -->
+           <div class="flex flex-col lg:flex-row justify-center gap-5 lg:border-t-2 ">
+   <div class="mr-50   ">
+    <h3 class="text-sm  text-black font-medium">Baseline agents</h3>
+    <p class="text-sm hidden lg:block text-gray-400">Your always-on company agents deliver the fundamentals every org needs. Weekly. No manual effort required.</p>
+  </div>
+  <div class="space-y-6">
+
+    <!-- Feature Table (Start & Scale columns for large screen) -->
+    <div class="grid grid-cols-3 gap-6 my-4">
+      <div class="col-span-1">
+        <p class="text-sm text-black font-medium">Revenue intelligence</p>
+        <p class="text-sm hidden lg:block text-gray-400">Observes how conversations connect to revenue impact, reporting back on what's driving or stalling deals across the business.</p>
+      </div>
+      <div class="col-span-1 text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+      <div class="col-span-1 text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- Product Intelligence Section -->
+    <div class="grid grid-cols-3 md:grid-cols-3 gap-6 items-center my-4 border-t-2 border-gray-200">
+      <div class="col-span-1 ">
+        <h3 class="text-sm text-black font-medium">Product intelligence</h3>
+        <p class="text-sm hidden lg:block text-gray-400">Keeps watch on your customer conversations, surfacing recurring feedback, product gaps, and blockers that impact growth.</p>
+      </div>
+      <div class="col-span-1 text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+      <div class="col-span-1 text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- Service Intelligence Section -->
+    <div class="grid grid-cols-3 md:grid-cols-3 gap-6 items-center my-4 border-t-2 border-gray-200">
+      <div class="col-span-1">
+        <h3 class="text-sm text-black font-medium">Service intelligence</h3>
+        <p class="text-sm hidden lg:block text-gray-400">Looks beyond the product to everything that shapes the customer experience. Pre-sale, during evaluation, and post-sale.</p>
+      </div>
+      <div class="col-span-1 text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+      <div class="col-span-1 text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- Competitive Intelligence Section -->
+    <div class="grid grid-cols-3 md:grid-cols-3 gap-6 items-center my-4 border-t-2 border-gray-200">
+      <div class="col-span-1">
+        <h3 class="text-sm text-black font-medium">Competitive intelligence</h3>
+        <p class="text-sm hidden lg:block  text-gray-400">Monitors competitor mentions and deal outcomes to show how you stack up. Reports back with a live leaderboard of your biggest threats and advantages.</p>
+      </div>
+      <div class="col-span-1 text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+      <div class="col-span-1 text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- Customer Love Spotlight Section -->
+    <div class="grid grid-cols-3 md:grid-cols-3 gap-6 items-center my-4 border-t-2 border-gray-200">
+      <div class="col-span-1">
+        <h3 class="text-sm text-black font-medium">Customer love spotlight</h3>
+        <p class="text-sm hidden lg:block  text-gray-400">Spotlights the happiest customers and the value drivers behind their success. Reports back on what's resonating in your customers’ own words.</p>
+      </div>
+      <div class="col-span-1 text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+      <div class="col-span-1 text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+    </div>
+  </div>
+           </div>
+          </div>
+           <div class="container mx-auto p-6">  
+             <!-- Baseline agents Section -->
+           <div class="flex flex-col lg:flex-row justify-center gap-5 lg:border-t-2 ">
+   <div class="mr-50   ">
+    <h3 class="text-sm  text-black font-medium">Focus agents</h3>
+    <p class="text-sm hidden lg:block text-gray-400">Each team gets an analyst tuned to their world: patch, product area, segment, or a specific competitor.</p>
+  </div>
+  <div class="space-y-6">
+
+    <!-- Feature Table (Start & Scale columns for large screen) -->
+    <div class="grid grid-cols-3 gap-6 my-4">
+      <div class="col-span-1">
+        <p class="text-sm text-black font-medium">Revenue  area intelligence</p>
+        <p class="text-sm hidden lg:block text-gray-400">Follows deal momentum across your region or segment. Flags what's driving wins and what's slowing them down.</p>
+      </div>
+      <div class="col-span-1 text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+      <div class="col-span-1 text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- Product Intelligence Section -->
+    <div class="grid grid-cols-3 md:grid-cols-3 gap-6 items-center my-4 border-t-2 border-gray-200">
+      <div class="col-span-1 ">
+        <h3 class="text-sm text-black font-medium">Product area intelligence</h3>
+        <p class="text-sm hidden lg:block text-gray-400">Focused on one product area. Watches for recurring feedback, issues, and opportunities shaping its direction.</p>
+      </div>
+      <div class="col-span-1 text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+      <div class="col-span-1 text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- Service Intelligence Section -->
+    <div class="grid grid-cols-3 md:grid-cols-3 gap-6 items-center my-4 border-t-2 border-gray-200">
+      <div class="col-span-1">
+        <h3 class="text-sm text-black font-medium">Competitor battlecard</h3>
+        <p class="text-sm hidden lg:block text-gray-400">Keeps an eye on a named competitor. Surfaces customer comparisons, deal outcomes, and changing perceptions.</p>
+      </div>
+      <div class="col-span-1 text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+      <div class="col-span-1 text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- Competitive Intelligence Section -->
+    <div class="grid grid-cols-3 md:grid-cols-3 gap-6 items-center my-4 border-t-2 border-gray-200">
+      <div class="col-span-1">
+        <h3 class="text-sm text-black font-medium">Bulletin</h3>
+        <p class="text-sm hidden lg:block  text-gray-400">A lightweight stream of new high-signal intel for your focus area. No reports, just what's new and worth noticing.</p>
+      </div>
+      <div class="col-span-1 text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+      <div class="col-span-1 text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+    </div>
+
+    
+  </div>
+           </div>
+          </div>
+           <div class="container mx-auto p-6">  
+             <!-- Baseline agents Section -->
+           <div class="flex flex-col lg:flex-row justify-center gap-5 lg:border-t-2 ">
+   <div class="mr-50   ">
+    <h3 class="text-sm  text-black font-medium">Personal agents</h3>
+    <p class="text-sm hidden lg:block text-gray-700">Your always-on company agents deliver the fundamentals every org needs. Weekly. No manual effort required.</p>
+  </div>
+  <div class="space-y-6">
+
+    <!-- Feature Table (Start & Scale columns for large screen) -->
+    <div class="grid grid-cols-3 gap-6 my-4">
+      <div class="col-span-1">
+        <p class="text-sm text-black font-medium">Pulse</p>
+        <p class="text-sm hidden lg:block text-gray-400">Creates personalized digests, surfaces new findings relevant to your focus areas.</p>
+      </div>
+      <div class="col-span-1 text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+      <div class="col-span-1 text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- Product Intelligence Section -->
+    <div class="grid grid-cols-3 md:grid-cols-3 gap-6 items-center my-4 border-t-2 border-gray-200">
+      <div class="col-span-1 ">
+        <h3 class="text-sm text-black font-medium">Get evidence</h3>
+        <p class="text-sm hidden lg:block text-gray-400">Instantly gather customer proof tied to revenue. Validate ideas, support decisions, and align stakeholders fast.</p>
+      </div>
+      <div class="col-span-1 text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+      <div class="col-span-1 text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- Service Intelligence Section -->
+    <div class="grid grid-cols-3 md:grid-cols-3 gap-6 items-center my-4 border-t-2 border-gray-200">
+      <div class="col-span-1">
+        <h3 class="text-sm text-black font-medium">Compare ideas</h3>
+        <p class="text-sm hidden lg:block text-gray-400">Weigh opportunities with customer demand and impact. Prioritize the bets that move revenue or adoption in your domain.</p>
+      </div>
+      <div class="col-span-1 text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+      <div class="col-span-1 text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- Competitive Intelligence Section -->
+    <div class="grid grid-cols-3 md:grid-cols-3 gap-6 items-center my-4 border-t-2 border-gray-200">
+      <div class="col-span-1">
+        <h3 class="text-sm text-black font-medium">Customer matches</h3>
+        <p class="text-sm hidden lg:block  text-gray-400">Find the exact customers who care about what you're building. Recruit for early access, co-design, or targeted outreach.</p>
+      </div>
+      <div class="col-span-1 text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+      <div class="col-span-1 text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- Customer Love Spotlight Section -->
+    <div class="grid grid-cols-3 md:grid-cols-3 gap-6 items-center my-4 border-t-2 border-gray-200">
+      <div class="col-span-1">
+        <h3 class="text-sm text-black font-medium">Smart enablement</h3>
+        <p class="text-sm hidden lg:block  text-gray-400">Generate customer-specific messaging that helps reps drive adoption and accelerate deals.</p>
+      </div>
+      <div class="col-span-1 text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+      <div class="col-span-1 text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+    </div>
+  </div>
+           </div>
+          </div>
+           <div class="container mx-auto p-6">  
+             <!-- Baseline agents Section -->
+           <div class="flex flex-col lg:flex-row justify-center gap-5 lg:border-t-2 ">
+   <div class="mr-50   ">
+    <h3 class="text-sm  text-black font-medium">Governance & control</h3>
+    <p class="text-sm hidden lg:block text-gray-400">Enterprise controls that keep your data protected, your access managed, and your deployment compliant.</p>
+  </div>
+  <div class="space-y-6">
+
+    <!-- Feature Table (Start & Scale columns for large screen) -->
+    <div class="grid grid-cols-3 gap-6 my-4">
+      <div class="col-span-1">
+        <p class="text-sm text-black font-medium">Custom SSO/SAML</p>
+        <p class="text-sm hidden lg:block text-gray-400">Centralized, secure authentication that aligns with your identity management policies.</p>
+      </div>
+      <div class="col-span-1 text-center">
+       <h1 class="text-sm text-gray-400">Enterprise add-on</h1>
+      </div>
+     
+    </div>
+
+     <div class="grid grid-cols-3 gap-6 my-4 border-t-2 border-gray-300">
+      <div class="col-span-1">
+        <p class="text-sm text-black font-medium">User provisioning (SCIM)</p>
+        <p class="text-sm hidden lg:block text-gray-400">Automated onboarding and offboarding at scale, managed directly through your identity provider.</p>
+      </div>
+      <div class="col-span-1 text-center">
+       <h1 class="text-sm text-gray-400">Enterprise add-on</h1>
+      </div>
+     
+    </div>
+
+     <div class="grid grid-cols-3 gap-6 my-4 border-t-2 border-gray-300">
+      <div class="col-span-1">
+        <p class="text-sm text-black font-medium">Audit log</p>
+        <p class="text-sm hidden lg:block text-gray-400">A complete activity trail to support compliance reviews, security audits, and internal governance.</p>
+      </div>
+      <div class="col-span-1 text-center">
+       <h1 class="text-sm text-gray-400">Enterprise add-on</h1>
+      </div>
+     
+    </div>
+
+     <div class="grid grid-cols-3 gap-6 my-4  border-t-2 border-gray-300">
+      <div class="col-span-1">
+        <p class="text-sm text-black font-medium">SIEM integration</p>
+        <p class="text-sm hidden lg:block text-gray-400">Stream event-level logs into your security stack for continuous monitoring and threat detection.</p>
+      </div>
+      <div class="col-span-1 text-center">
+       <h1 class="text-sm text-gray-400">Enterprise add-on</h1>
+      </div>
+     
+    </div>
+
+    <div class="grid grid-cols-3 gap-6 my-4  border-t-2 border-gray-300">
+      <div class="col-span-1">
+        <p class="text-sm text-black font-medium">Domain claiming</p>
+        <p class="text-sm hidden lg:block text-gray-400">Ensures only verified users from your organization can access your Twine workspace.</p>
+      </div>
+      <div class="col-span-1 text-center">
+       <h1 class="text-sm text-gray-400">Enterprise add-on</h1>
+      </div>
+     
+    </div>
+
+    <div class="grid grid-cols-3 gap-6 my-4 border-t-2 border-gray-300">
+      <div class="col-span-1">
+        <p class="text-sm text-black font-medium">Security & compliance</p>
+        <p class="text-sm hidden lg:block text-gray-400">Enterprise-grade controls, certifications, and data protections designed for regulated and high-trust environments.</p>
+      </div>
+      <div class="col-span-1 text-center">
+       <h1 class="text-sm text-gray-400">Enterprise add-on</h1>
+      </div>
+     
+    </div>
+  </div>
+           </div>
+          </div>
+            <div class="container mx-auto p-6">  
+             <!-- Baseline agents Section -->
+           <div class="flex flex-col lg:flex-row justify-center gap-5 lg:border-t-2 ">
+   <div class="mr-50   ">
+    <h3 class="text-sm  text-black font-medium">Support</h3>
+    <p class="text-sm hidden lg:block text-gray-400">Guidance and partnership for complex, multi-team environments.</p>
+  </div>
+  <div class="space-y-6">
+
+    <!-- Feature Table (Start & Scale columns for large screen) -->
+    <div class="grid grid-cols-3 gap-6 my-4">
+      <div class="col-span-1">
+        <p class="text-sm text-black font-medium">Dedicated Slack channelL</p>
+        <p class="text-sm hidden lg:block text-gray-400">Get a direct line to the Twine team for support, feedback, and the opportunity to help shape our roadmap.</p>
+      </div>
+      <div class="col-span-1 text-center">
+       
+      </div>
+       <div class="col-span-1 text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+     
+    </div>
+
+     <div class="grid grid-cols-3 gap-6 my-4 border-t-2 border-gray-300">
+      <div class="col-span-1">
+        <p class="text-sm text-black font-medium">Custom contracts</p>
+        <p class="text-sm hidden lg:block text-gray-400">Flexible legal and security terms tailored to your procurement and compliance requirements.</p>
+      </div>
+      <div class="col-span-1 text-center">
+       <h1 class="text-sm text-gray-400">Enterprise add-on</h1>
+      </div>
+     
+    </div>
+
+     <div class="grid grid-cols-3 gap-6 my-4 border-t-2 border-gray-300">
+      <div class="col-span-1">
+        <p class="text-sm text-black font-medium">Dedicated success team</p>
+        <p class="text-sm hidden lg:block text-gray-400">Hands-on partnership focused on adoption, outcomes, and executive alignment across your org.</p>
+      </div>
+      <div class="col-span-1 text-center">
+       <h1 class="text-sm text-gray-400">Enterprise add-on</h1>
+      </div>
+     
+    </div>
+
+     <div class="grid grid-cols-3 gap-6 my-4  border-t-2 border-gray-300">
+      <div class="col-span-1">
+        <p class="text-sm text-black font-medium">Priority support</p>
+        <p class="text-sm hidden lg:block text-gray-400">Accelerated response times and elevated care for mission-critical workflows and teams.</p>
+      </div>
+      <div class="col-span-1 text-center">
+       <h1 class="text-sm text-gray-400">Enterprise add-on</h1>
+      </div>
+     
+    </div>
+
+    
+  </div>
+           </div>
+          </div>
+         <!-- twine transform -->
+         <div class="flex flex-col lg:flex-row justify-center items-center gap-8 px-6 py-12 md:px-12 lg:py-20 max-w-7xl mx-auto">
+         <div class="flex flex-1 flex-col justify-center items-center lg:items-start text-center lg:text-left">
+        <h3 class="font-serif text-4xl lg:text-4xl  leading-tight w-sm">
+         See how Twine can transform your pipeline in the first 90 days.
+       </h3>
+       <div>
+        <button class="bg-[#141414] text-white p-1 mt-8 rounded-sm font-medium transition-all hover:opacity-90 active:scale-95">
+        Book a conversation
+       </button>
+       <button class="bg-[#EDEDED] text-black p-1 mt-8 rounded-sm font-medium transition-all hover:opacity-90 active:scale-95">
+        See a live demo
+       </button>
+       </div>
+       </div>
+
+       <div class="flex-1 w-full max-w-2xl lg:max-w-none">
+        <img 
+        src="/assets/twine-transform-Br7MYlXE.webp" 
+        alt="twine-transform" 
+        class="w-full h-[70%] object-cover " /> 
+       </div>
+    </div>
+   <footer class="bg-white py-10 px-6 md:px-20 text-[#1a1a1a]">
+  <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+  
+    <!-- Logo and Description Section (Visible on medium and up screens) -->
+    <div class="md:col-span-3 space-y-6">
+      <div class="flex items-center gap-2">
+        <div>
+          <img src="data:image/webp;base64,UklGRhYEAABXRUJQVlA4WAoAAAAwAAAANwAADwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBIzQEAAA2QLMm2aVvj6iBuz7Zt27Ztt201n22zadu2bdtecfZaax98QUQobNu2cbpbZ6JPIL7K20sOaBH8uHp19QFoTNK7Vys00a5F5F5e1QmaQ9t8LcKsCWNge4aqcHjxQxn8BX3MW9bAo+sUuntZTN/EweT4iWplMGL0CS6wBgzesx5AFvrkPgjv3etJG6WBS4VbwS2eIPlN8S8RFuvWLaruvok8v1nvw9JWfNXVbtn6svDOdsAoQ7rrMbSZLkL49wec89Ai7nWzno3hyP5Wo+5pl043/2yG8/a5FdOekNKak8xalCCegz3J8VfNEXcw+qBEH4CL099j/atmrOv6s/5BuSgDytvRwHSCVcvuyOZLqBtr8e97piV+95HdtuS/sqZk+HNsWOfko3Fn7JZQj34DfyVy6tCJ3Sb/CcdgDfzRU7Lt8B6XRo28fyihGWCiuu3yeBns7HR+SwSGGOELlF2YrcK5ko2K8JkM0LjuPdzs+TzheO9bIwVL9PI1j+9nrICrD+U6WGn3Av+PmFpccAQufUFh9DzzKbtxwR/cwFT0Co8X5ZSX/QNYuRz4mwS0Aui9jk/j56hHczt5BnOep7n/tDt1zYoIZ5Zw/3xKh8YAAFZQOCBSAAAA0AMAnQEqOAAQAD5tLJNGpCIhoTAYCACADYlpAAA6rXIgtoS6CIqAAP750oqM/H2q/g2gFbAyKuwSMm51DzphOyRX7zqeWpUVGiqr0+NcPMwAAA==" alt="logo" />
+        </div>
+      </div>
+      <p class="text-gray-500 leading-relaxed max-w-[60%]">
+        Twine closes the gap between customer conversations and company action.
+      </p>
+    </div>
+
+    <!-- Links Section -->
+    <div class="md:col-span-6 grid grid-cols-2 md:grid-cols-3 gap-10">
+      <!-- Product Links -->
+      <div class="space-y-4">
+        <h4 class="text-xs font-medium text-gray-400 uppercase tracking-wider">Product</h4>
+        <ul class="space-y-3 text-[15px]">
+          <li><a href="#" class="hover:text-gray-600">Baseline agent</a></li>
+          <li><a href="#" class="hover:text-gray-600">Personal agent</a></li>
+          <li><a href="#" class="hover:text-gray-600">Focus agents</a></li>
+          <li><a href="#" class="hover:text-gray-600">Integrations</a></li>
+          <li><a href="#" class="hover:text-gray-600">Security</a></li>
+          <li><a href="#" class="hover:text-gray-600">Pricing</a></li>
+          <li><a href="#" class="hover:text-gray-600">Changelog</a></li>
+          <li><a href="#" class="hover:text-gray-600">Status</a></li>
+        </ul>
+        <div class="pt-10 space-y-4">
+          <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Use Cases</h4>
+          <ul class="space-y-3 text-[15px]">
+            <li><a href="#" class="hover:text-gray-600">Product</a></li>
+            <li><a href="#" class="hover:text-gray-600">Customer Success</a></li>
+            <li><a href="#" class="hover:text-gray-600">Leadership</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Resources Links -->
+      <div class="space-y-4">
+        <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Resources</h4>
+        <ul class="space-y-3 text-[15px]">
+          <li><a href="#" class="hover:text-gray-600">Help center</a></li>
+          <li><a href="#" class="hover:text-gray-600">Blog</a></li>
+          <li><a href="#" class="hover:text-gray-600">Guides</a></li>
+          <li><a href="#" class="hover:text-gray-600">Legal</a></li>
+          <li><a href="#" class="hover:text-gray-600">Trust center</a></li>
+        </ul>
+        <div class="pt-10 space-y-4">
+          <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Community</h4>
+          <ul class="space-y-3 text-[15px]">
+            <li><a href="#" class="hover:text-gray-600">Customer</a></li>
+            <li><a href="#" class="hover:text-gray-600">Community</a></li>
+          </ul>
+        </div>
+        <div class="pt-10 space-y-4">
+          <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Company</h4>
+          <ul class="space-y-3 text-[15px]">
+            <li><a href="#" class="hover:text-gray-600">About</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Twine in Action Links -->
+      <div class="space-y-4">
+        <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Twine in action</h4>
+        <ul class="space-y-3 text-[15px]">
+          <li><a href="#" class="hover:text-gray-600 font-medium">Book a demo</a></li>
+          <li><a href="#" class="hover:text-gray-600">Sign in</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Social and Certifications Section -->
+    <div class="md:col-span-3 space-y-12">
+      <div class="space-y-4">
+        <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Social</h4>
+        <ul class="space-y-3 text-[15px]">
+          <li><a href="#" class="hover:text-gray-600">LinkedIn</a></li>
+          <li><a href="#" class="hover:text-gray-600">Youtube</a></li>
+          <li><a href="#" class="hover:text-gray-600">X</a></li>
+        </ul>
+      </div>
+      <div class="space-y-4 pt-4">
+        <div class="flex gap-3">
+          <div class="bg-[#DED6D1] rounded-4xl">
+            <img src="data:image/svg+xml,%3csvg%20width='1em'%20height='1em'%20class='h-full%20w-full'%20data-icon='gdpr'%20xmlns='http://www.w3.org/2000/svg'%3e%3csymbol%20id='ai:local:gdpr'%20viewBox='0%200%20144%20144'%3e%3cg%20fill='%23161616'%3e%3cpath%20d='m66.86%2031.5%201.353-5.854-4.541-3.937%206-.521%202.333-5.521%202.334%205.52%206%20.522-4.542%203.937L77.15%2031.5l-5.146-3.104zM47.524%2078.297q1.554.898%203.604.898%201.836%200%203.252-.732a5.5%205.5%200%200%200%202.236-2.12q.81-1.376.81-3.29v-1.836h-6.083v2.314h3.114q-.02.866-.4%201.514-.39.684-1.132%201.064-.732.372-1.777.372-1.153%200-2.003-.557-.84-.566-1.308-1.631-.47-1.065-.469-2.578%200-1.515.469-2.578.478-1.065%201.318-1.612.85-.555%201.963-.556.596%200%201.084.156.498.146.889.43.39.273.654.683.273.4.42.918h3.115a5.2%205.2%200%200%200-.674-1.972%205.4%205.4%200%200%200-1.347-1.553%206%206%200%200%200-1.895-1.016%207.1%207.1%200%200%200-2.295-.361q-1.923%200-3.467.889-1.542.888-2.45%202.568-.9%201.67-.9%204.033%200%202.295.86%203.975.87%201.67%202.412%202.578'%3e%3c/path%3e%3cpath%20fill-rule='evenodd'%20d='M65.443%2079h-5.156V64.45h5.205q2.198%200%203.78.878a5.9%205.9%200%200%201%202.43%202.5q.85%201.62.85%203.887%200%202.275-.859%203.906a5.94%205.94%200%200%201-2.441%202.51Q67.66%2079%2065.443%2079m-.137-2.637h-1.953v-9.277h1.963q1.368%200%202.295.488.938.479%201.406%201.504.48%201.026.479%202.637%200%201.62-.479%202.656-.468%201.026-1.406%201.514-.927.478-2.305.478M75.374%2064.45V79h3.066v-4.717h2.588q1.68%200%202.861-.615%201.191-.625%201.817-1.729.625-1.103.625-2.548%200-1.456-.625-2.569a4.3%204.3%200%200%200-1.788-1.738q-1.162-.635-2.812-.635zm3.066%207.372h2.09q.888%200%201.465-.312.585-.313.869-.86.293-.546.293-1.26%200-.731-.293-1.269a1.96%201.96%200%200%200-.87-.85q-.585-.302-1.474-.302h-2.08zm10.438-7.372V79h3.067v-5.156h2.249L96.954%2079h3.399l-3.09-5.645.065-.028.016-.007.05-.023q1.192-.556%201.816-1.602.625-1.044.625-2.49%200-1.445-.625-2.51-.614-1.075-1.787-1.66-1.162-.585-2.812-.586zm3.067%206.923h2.09q.888%200%201.464-.244.586-.245.87-.723.293-.48.293-1.2%200-.734-.293-1.222-.284-.497-.87-.752-.585-.263-1.474-.263h-2.08z'%20clip-rule='evenodd'%3e%3c/path%3e%3cpath%20d='m92.214%2032.077-1.355%205.854%205.146-3.104%205.146%203.104-1.354-5.854%204.542-3.938-6-.52-2.334-5.521-2.333%205.52-6%20.521zM108.429%2055.5l1.354-5.854-4.542-3.937%206-.521%202.334-5.52%202.333%205.52%206%20.52-4.542%203.938%201.354%205.854-5.145-3.104zm-40.215%2066.146-1.355%205.854%205.146-3.104%205.146%203.104-1.354-5.854%204.541-3.937-6-.521-2.333-5.521-2.333%205.521-6%20.521zm-25.354-.576%201.354-5.855-4.542-3.937%206-.521%202.333-5.521%202.334%205.521%206%20.521-4.542%203.937%201.354%205.855-5.146-3.105zM26.644%2097.646%2025.29%20103.5l5.146-3.104%205.146%203.104-1.355-5.854%204.542-3.937-6-.521-2.333-5.521-2.334%205.52-6%20.522zM114.859%2079.5l1.355-5.854-4.542-3.937%206-.521%202.333-5.521%202.334%205.52%206%20.522-4.542%203.937%201.354%205.854-5.146-3.104zm-5.076%2018.146-1.354%205.854%205.146-3.104%205.145%203.104-1.354-5.854%204.542-3.937-6-.521-2.333-5.521-2.334%205.52-6%20.522zM90.86%20121.07l1.353-5.855-4.541-3.937%206-.521%202.333-5.521%202.334%205.521%206%20.521-4.542%203.937%201.354%205.855-5.146-3.105zM20.214%2073.646%2018.859%2079.5l5.146-3.104%205.146%203.104-1.354-5.854%204.542-3.937-6-.521-2.334-5.521-2.333%205.52-6%20.522zM25.29%2055.5l1.354-5.854-4.541-3.937%206-.521%202.333-5.521%202.333%205.52%206%20.522-4.541%203.937%201.354%205.854-5.146-3.104zm18.924-23.423-1.355%205.854%205.146-3.104%205.146%203.104-1.354-5.854%204.542-3.938-6-.52-2.334-5.521-2.333%205.52-6%20.521z'%3e%3c/path%3e%3c/g%3e%3c/symbol%3e%3cuse%20href='%23ai:local:gdpr'%3e%3c/use%3e%3c/svg%3e" alt="AICPA certification badge with stars" class="w-15">
+          </div>
+          <div class="bg-[#DED6D1] rounded-4xl">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABqUlEQVR4AbSRTUsCURiF/ZhRCD+K1OyTFAoXLaOW1raf0CZC6D9Vq/oVCS1aCEGLFkFRKEY4ojg4oa0cdex5h3EY00UQDe/hPXPec8+9cyfg++PzPwGpVEoDVdBxIFybddipE8iC0WiUa7VaWRB3kBVNZj9DJgIwlDGuYjpNJBL5ZDJ5kk6nj9DPAoFAwe/3r8DLzN1yAxi8x2KxHYyHGBfBEtgYDofLuJ8JXrAsKy8e8aLZ5QbwplQqlR4L3uBFFtfot/QXugWKhGCp9OAKsMsbMC8Ku6gYg3RzMBjU4Kr08Uw6sL10nzdAdvGFQqEUg20+JacoSoGuGIahcbJPVVUzzKRsrxBvQFsEdm4Hg8EqO7dN07xCmwM+gjbRn4QDA9jlDQhx6xFMHUL2WLAbDoePCTrg0i5wR/v9/r544Cqwyw3gf69xYfVGo/HB4gd4iaBHPukcZ4lgXYBeFy+aXW6AvDGIs1s5EoncN5vNO13XbzRNK6Nfi0bgJTwu3jEmAkTEsNXtdl8JqoEvBzXRZCYeL6YCZIgxA9ZB1IHw8R8Qi4uZAe70F+QbAAD//y55MG8AAAAGSURBVAMA06nUIf0XC7MAAAAASUVORK5CYII=" alt="gdpr" class="w-15">
+          </div>
+        </div>
+        <div class="text-sm text-gray-500 leading-snug">
+          <p>End-to-end encryption.</p>
+          <p>Never trained on your data.</p>
+          <a href="#" class="text-black font-semibold underline underline-offset-4 decoration-1">Learn more</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</foo<script type="module"
+     <script type="module" src="./hamburger.js"></script>
+     <script src="./twine.js"></script> 
+</body>
+</html>

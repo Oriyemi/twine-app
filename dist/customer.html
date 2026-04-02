@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>customer</title>
+     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" crossorigin href="/assets/input-VpHW57WK.css">
+</head>
+<body>
+   <header class="m-5 ">
+       <nav class="flex items-center justify-between p-4 sticky top-0">
+        <img src="data:image/webp;base64,UklGRhYEAABXRUJQVlA4WAoAAAAwAAAANwAADwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBIzQEAAA2QLMm2aVvj6iBuz7Zt27Ztt201n22zadu2bdtecfZaax98QUQobNu2cbpbZ6JPIL7K20sOaBH8uHp19QFoTNK7Vys00a5F5F5e1QmaQ9t8LcKsCWNge4aqcHjxQxn8BX3MW9bAo+sUuntZTN/EweT4iWplMGL0CS6wBgzesx5AFvrkPgjv3etJG6WBS4VbwS2eIPlN8S8RFuvWLaruvok8v1nvw9JWfNXVbtn6svDOdsAoQ7rrMbSZLkL49wec89Ai7nWzno3hyP5Wo+5pl043/2yG8/a5FdOekNKak8xalCCegz3J8VfNEXcw+qBEH4CL099j/atmrOv6s/5BuSgDytvRwHSCVcvuyOZLqBtr8e97piV+95HdtuS/sqZk+HNsWOfko3Fn7JZQj34DfyVy6tCJ3Sb/CcdgDfzRU7Lt8B6XRo28fyihGWCiuu3yeBns7HR+SwSGGOELlF2YrcK5ko2K8JkM0LjuPdzs+TzheO9bIwVL9PI1j+9nrICrD+U6WGn3Av+PmFpccAQufUFh9DzzKbtxwR/cwFT0Co8X5ZSX/QNYuRz4mwS0Aui9jk/j56hHczt5BnOep7n/tDt1zYoIZ5Zw/3xKh8YAAFZQOCBSAAAA0AMAnQEqOAAQAD5tLJNGpCIhoTAYCACADYlpAAA6rXIgtoS6CIqAAP750oqM/H2q/g2gFbAyKuwSMm51DzphOyRX7zqeWpUVGiqr0+NcPMwAAA==" alt="logo" class="w-20 text-black">
+
+       <div class="hidden md:flex items-center gap-8 text-gray-700 font-medium">
+        <a href="/product.html" class="hover:text-black flex items-center gap-1 text-sm">Product 
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+        </a>
+        <a href="/customer.html" class="hover:text-black text-sm">Customers</a>
+        <a href="/blog.html" class="hover:text-black text-sm">Blog</a>
+        <a href="/pricing.html" class="hover:text-black text-sm">Pricing</a>
+    </div>
+
+    <div class="hidden md:block items-center gap-6">
+        <a href="#" class="text-black hover:text-black text-sm mr-6">Log in</a>
+        <a href="#" class="bg-black text-sm text-white px-5 py-2.5 rounded-lg font-medium hover:bg-gray-800 transition-colors">
+            Book a demo
+        </a>
+    </div>
+
+                  <button id="hamburger" class="md:hidden block p-2">
+        <img src="data:image/webp;base64,UklGRjQCAABXRUJQVlA4WAoAAAAwAAAADwAADwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBIJQAAAAEXIBBIYZMfEeFAJmDhpX8A94oSIaL/QtOEJZt3aCqk4D/mpwAAVlA4IBgAAAAwAQCdASoQABAAAUAmJaQAA3AA/v02aAA=" alt="hamburger" class="w-6 h-6">
+    </button>
+
+    <div id="navigator" class="hidden bg-[#FAFAFA] w-full sm:w-3/4  h-220 p-8  absolute  items-center inset-0 mx-auto rounded-2xl z-10 top-14">
+    <button id="closeBtn" class="absolute top-2 right-2 text-xl">
+        &times; 
+    </button>
+
+    <a href="/product.html" class="block border-b p-4">Product</a>
+    <a href="/customer.html" class="block border-b p-4">Customers</a>
+    <a href="/blog.html" class="block border-b p-4">Blog</a>
+    <a href="/pricing.html" class="block p-4">Pricing</a>
+  </div>
+
+</nav>
+    </header>
+    <!-- hero-section -->
+     <section>
+        <div class="flex flex-col items-center justify-center text-center py-8 px-10">
+            <h1 class="text-xl md:text-2xl lg:text-2xl   text-gray-900 max-w-2xl font-medium ">
+               Customer stories
+           </h1>
+
+           <p class="mt-3 text-3xl md:text-5xl text-gray-900 font-['Times_New_Roman']  max-w-2xl ">
+             Meet the teams who've cracked the code on cross-functional alignment
+           </p>
+
+        </div>
+     </section>
+     <section>
+        <div class="grid grid-cols-1 lg:grid-cols-2 min-h-screen gap-3 mx-2 md:mx-15" >
+            <div class=" flex flex-col p-5 rounded-2xl bg-[#E9E8E5]  ">
+               <img src="data:image/webp;base64,UklGRnwJAABXRUJQVlA4WAoAAAAwAAAA/QAAPwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBIwQYAAA2wl/9/mMjTexVcVsF8V8HkFExGAUVBWwUFBaUKAAW0CigGboOCyyj4ZRRcVkPStMDe038jYgJYUhl5U8C38461bTaFIv2mRdxg/YqqSmYqXRrb+ZVkLixatbbzK0guLF41w2n1mCMPVK3ah3XTFDy2arZ+zbQ/yfQ350JQSumPYgq51H69ND+Z7gdPHEJwd1u0kkIutV8rumLS1uSHsTOtJJDjdqXIkXToHPP7oSkS6HK/TlrSvmZRv9dtgp2za6Qi7WuWPvxoE1zqrKNewu3VNfp8pqNObUNW0aTO4/+BNhW2LH/42SSkOOVotURwSkf2mbRKSZ91JO3C368i3fHIXaUj2i7nr7u55RheUisI7vnKVB8ewvaaUGb8e5ngMsrXOGoYz08nkup4rB/aiOb896IYM4rX0LzkjmTPo0+ViowLU1uXKI7RfkzISzXnqYrXVK/xkRpmFBvBnX1WcCaiGKdCSCgVhZDINloFZ/OUEYXzbjGl7US5hDKignWLqEK89aCZr4wonPNztBaCsyklCe+z9BVAN+M+h3OT+LhPPbg4AkrLp58yrQbQorp+gYCCtkuJAF6yVFMByqhPv9sAQw/8A/jPZgdC/RsfmRbuh4RpNYDW4dznNBWA0mI7D2iSllx9JL3bfOY4UZF2z9FqknKtXao1TEortZ9334D2IVEADGWOXEnL78OXArwHBKD8SdKQFIF/vqOjZlI37ENKLkyKKTubccu6Mm3MISMEicQ/x4FJdalDdCTbtNswh74CVfSJBvDeZMiFzN6Tr3YsfSG7Krchkgu5cuksKuVzKnKbIUzx9R4p5Z8iV4oTUKkojN/yIYCU3SyrFWxukQEYDJkt2TKHpVviMH7LhwB600VXkiEI8bUOskCZpcRleIme1u292pUAH3dQDYCrwd+rFtg5O4dzAwYLlFGfIybRD17pVpjt9ha94xe7BrjtQIFUkduC/9qVwG70UBH72sGhBFR1Ih1yJAudMyn+KXwN4VQUgLFQAPg98cEYoBhnnXZAMQIFYJGMHXHnIbjhInP8HnAWj1LA//4QGwC/Bwi7ygBVD03ka8AffrVAc57469bE5wZAPGVkSXctUA6zgjNQ3gIVwEDue9R7Yt9d5nQsW0Zn0kMJbG6IijqSh50K3qsJ8RlOZ7lXsQkvESARh5QDUIQ5DCUocZSAt1k6upG2Ws1wC+nofZsaAbRDAMKY4t8ewEtChYz7R473Oe8p/xyzE9VbKq3mjUZB24kAlmwVuQmcnhEWUlH1lkqLTzgmPVnaZfRGMgZyVSq8xHOGWwnGFQBD3t99iVBf1MTwT47Sr+QFsD5PzWMsgN3/AO8XED8hzxEUYH2eSomf4XSiHDJw9VUS5/+Sa0h6XtJp4OuUt6RVGhqAjnwvQDmkNM/pNHDv88CaSGzqKt5/98GZSGmbgf+U4i189eRvXur+AZS3kJDKurAItw2oyM64bYDK20hdHiU+cf8AmiEkdGFdADwCtF2iApG3PfePiLbLATt+M1dM6us1+kKBum4DIBeM9nu7xGlH8sbMsQC43vuAaXmgF8CoMTrtANXuIzlitN96GErANHsPxQdAD32VMMFlLdmStq8Rzi2gL4NTHwZAjSwZnEn0cywGUG0VFA91GuCq1HdBOLdA1Z6dvBsA5YBTIUDRBm9IduC9iTjuHyNmwr8GJ20AaTTpmmW7NvJuDvtWEQtAUMsFA2D45w+cjAak0STDFiDUFwUoLSQ7gK5NGH16yG/SPrwI27IgM9Qs7EQBltluOCbiTm8Wo2ujdNi2hsywJen2FyFzT2wxEe3NPeDIpOVVQ61amejPLB1uJdDNo+9+SyJ0HFjeDkc1RdhKK6kwdky6fVVO2I501ybUZe8Xa5m+LdDXM/yvHP8rA/pOijcVwn1k5qfNYHdm2n7m4D+leMd/jVANUz9m0Z/Nh/J/QgR9p82bCt/OkusPd6Pf8V+OafvVRMhl7xY6Mu3dAs9sx+/Ay9rxiyf04z2QO9rvwHxv3RczD5VEyHU4LSEXMi1rNNQXFcHRbP2spiK3WyW44ZhCX+1gc1RTkW1Zqf13m4KqFPvlQkDJh9bM7NYKh+/LBIh510qxpAurhf58lYkH1qxYt6/KR/WsWn/40cpD/LBuoO9MaR7QsX77wRcbkxPGP81Ezyr2481pEfUv/vhgg/kPaX9eR0Bw3oc/xE1BOmxZ36r9weQn69scma5Z3eooTNesbdVUTIealW02BZm+Zl23Fdm2Y2X/InvvWNtOZ9g967uvJkLnWOEhSBTOPev8tgF7G1nrox4sK97WrGYAVlA4IMQAAADQDACdASr+AEAAPm0ulEckIiIhLZHLAIANiWlu4MAD+AMNX2AH4AcpLYbeWA/qv2ACkygMSfRCXid8itlXa47mkTmxu7NvyuyGM+eyuR2CKJ07mQ6kemkGlpOnDAWu9jeN+9mvDZSeCOmD/8WiVAAA/IadL71yFf0XQ7v/+gTIzOb2JHpeM1nAxNiw32jX/20HAj+7jBTuNYMToEukgkHwYp/H3P1AClfZTSC6ujV9CJtooA+Hl/vJQkTcegq+yYAAAAAA" alt="martec logo" class="w-45 object-contain">
+               <h1 class="text-3xl md:text-4xl font-instrument font-medium py-10"><span class="text-[#504f53]">From data drudgery to daily rhythm</span>How The Martec made the customer intelligence  effortless</h1>
+               <a href="#" class="inline-block text-lg font-medium  pb-1 hover:opacity-70 transition">
+               Read more
+              </a>
+               <div class="flex flex-col md:flex-row gap-5 justify-center ">
+                <div class="border-t-2 border-black pt-5 mt-2 md:mt-14">
+                    
+                    <h1 class="font-['Times_New_Roman']  text-3xl font-medium">90% time reduction</h1>
+                    <p class="font-medium font-instruments">from 3-week manuel analysis to instant commercial insights</p>
+                </div>
+                <div  class="border-t border-black pt-5 mt-14">
+                    
+                    <h1  class="font-['Times_New_Roman']  text-3xl font-medium">2-week lag eliminated</h1>
+                    <p class="font-medium">with same-day feature feedback to egineering teams</p>
+                </div>
+
+               </div>
+
+            </div>
+            <div class=" flex flex-col p-10 rounded-2xl bg-[#0d3f31] text-[#ffff]">
+                <img src="data:image/webp;base64,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" alt="freshclinics logo" class="w-45 object-contain brightness-0 invert  ">
+                <h1 class="text-3xl md:text-4xl   font-instrument font-medium py-10"><span class="text-[#504f53]">From quarterly planning to daily intelligence</span>How Fresh Clinics transformed 1,500+ monthly calls into a continuous discovery engine</h1>
+                <a href="#" class="inline-block text-lg font-medium  pb-1 hover:opacity-70 transition">
+                Read more
+                </a>
+                 <div class="flex flex-col md:flex-row gap-5 justify-center">
+                <div  class="border-t-2 border-black pt-5 mt-14">
+                    
+                    <h1  class="font-['Times_New_Roman']  text-3xl font-medium">100% visibility</h1>
+                    <p>into customer conversations across 1,500+ monthly calls</p>
+                </div>
+                <div class="border-t border-black pt-5 mt-2 md:mt-14">
+                    
+                    <h1  class="font-['Times_New_Roman']  text-3xl font-medium">30 hrs saved monthly</h1>
+                    <p class="font-medium font-instruments">on manuel discovery and feedback synthesis</p>
+                </div>
+
+               </div>
+            </div>
+            <div class=" flex flex-col p-10 rounded-2xl bg-[#ede6bf] ">
+                 <img src="data:image/webp;base64,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" alt="hatch logo" class="w-38 object-contain">
+                 <h1 class="text-3xl md:text-4xl   font-instrument font-medium py-10"><span class="text-[#504f53]">From bottleneck to breakthrough</span>How Hatch eliminated customer feedback silos during their biggest product launch</h1>
+                  <a href="#" class="inline-block text-lg font-medium  pb-1 hover:opacity-70 transition">
+                  Read more
+                 </a>
+                  <div class="flex flex-col md:flex-row gap-5 justify-center">
+                <div class="border-t-2 border-black pt-5 mt-14">
+                    
+                    <h1  class="font-['Times_New_Roman']  text-3xl font-medium">70%+ reduction </h1>
+                    <p class="font-medium font-instruments">in time spent searching for customer insights</p>
+                </div>
+                <div  class="border-t border-black pt-5 mt-2 md:mt-14">
+                    
+                    <h1  class="font-['Times_New_Roman']  text-3xl font-medium">5* faster</h1>
+                    <p class="font-medium font-instruments">product iteractions with small wins deployed within days instead of months</p>
+                </div>
+
+               </div>
+            </div>
+            <div class="flex flex-col p-10 rounded-2xl bg-[#B8B5BE] " >
+                <img src="data:image/webp;base64,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" alt="smokeball logo" class="w-38 object-contain">
+                <h1 class="text-3xl md:text-4xl   font-instrument font-medium py-10"><span class="text-[#504f53]">Scaling customer centricity</span>How Smokeball created a unified customer intelligence system across continents</h1>
+                 <a href="#" class="inline-block text-lg font-medium  pb-1 hover:opacity-70 transition">
+               Read more
+              </a>
+                 <div class="flex flex-col md:flex-row gap-5 justify-center">
+                <div class="border-t-2 border-black pt-5 mt-14">
+                    
+                    <h1  class="font-['Times_New_Roman']  text-3xl font-medium">5 hours saved per week</h1>
+                    <p  class="font-medium font-instruments">per product manager on manuel documentation</p>
+                </div>
+                <div  class="border-t border-black pt-5 mt-2 md:mt-14">
+
+                    <h1  class="font-['Times_New_Roman']  text-3xl font-medium">3* faster</h1>
+                    <p class="font-medium font-instruments">discovery cycles through immediate access to objective evidence</p>
+                </div>
+                   
+                </div>
+
+               </div>
+               <div class="flex flex-col p-10 rounded-2xl bg-[#3A332A] text-[#ffff]">
+                    <img src="data:image/webp;base64,UklGRkYEAABXRUJQVlA4WAoAAAAwAAAARgAADwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBIJwIAAA2QLUm2aVt1bD1d28e2bdu2bV/btm3btm3b5lrXPxARE8BPKyo+rsh4x/8uMRpkfMP83/9ncvMQ2pf7vf+PtKud6q3aRQDYFwe/E3N6fujf0QieCFREsnYno4wLAZwLgt4JPAuj7/0727bMAzs3qAWKYvUAHAtC3kH5AyK7LzlhEqN9co7HCnzX+RhcGHQLHAM0H/c9SoBvx0177MZZag4OkLzm/FQ67t64XLjxAGBAqQBn53Ioh4juSzULOesTxUp87F8eC00JPTNMh73ODQEF7TlZYMB4S4Ng1l9zQj32/jhzOIvwhK4IecNB3WOuzypOvLb8eH98MDArk8/nm4eGrIviiaVy4ykX7m/VBO66QsWla87wVQLVF4KvEmIovkG8y0p4OzsZmAonH+dIMxOub9FiLjzYEQwE8PP9ZugdF+givhDgq4TkF6643H6HHkCP88h3PP6yg+ERlHsu6qh7AnQA7olIfoGhBSh2PAOUi22aIbjTOsNiUc7wlSt0EU5pdc6XfjxYHbXN9mX47BU1a534xXuevpqhu1b1o74exiO6aTjCnWeWqpzJ+NIv9FR+QPdW1E4NYtAn/I2aM180MtSzyGPTIPeuymIljf32vqD/rPp5ai2iEd0yFPH08UDeCGAp3mwsOA3wcuDiM8CTqHXAOupni+wNvAdwqn4xmZ1FNg7lj0og8ZV/tE6+Alg7lD+7cogq/2zl1fGqM5bzh++e5x8EAFZQOCAoAAAA8AIAnQEqRwAQAD5tNJZIJCMiISZoAIANiWkAADEXiwAA/vucwAAAAA==" alt="tapcart logo" class="w-38 object-contain brightness-0 invert">
+                    <h1 class="text-3xl md:text-4xl   font-instrument font-medium py-10 "><span class="text-[#504f53]">From filtered to firsthand</span>How Tapcart achieved 100* more customer feedback by letting AI do the work</h1>
+                    <a href="#" class="inline-block text-lg font-medium  pb-1 hover:opacity-70 transition">
+                    Read more
+                    </a>
+                     <div class="flex flex-col md:flex-row gap-5 justify-center">
+                   <div class="border-t-2 border-black pt-5 mt-14">
+                       <h1  class="font-['Times_New_Roman']  text-3xl font-medium">100+ insights daily</h1>
+                       <p class="font-medium font-instruments">(instead of 1-2 captured per day) by automating the process</p>
+                   </div>
+                   <div class="border-t border-black pt-5 mt-2 md:mt-14">
+                       
+                       <h1  class="font-['Times_New_Roman']  text-3xl font-medium">10* improvement</h1>
+                       <p  class="font-medium">in roadmap decision-making based on voice of customer </p>
+                   </div>
+                  </div>
+               </div>
+               <div class="flex flex-col p-10 rounded-2xl bg-[#5E938B]">
+                    <img src="data:image/webp;base64,UklGRroDAABXRUJQVlA4WAoAAAAwAAAAMwAADwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBInQEAAAGQdNu2qceyd2zbtnpG2a5q2bZt27Ztu2Lbtm0nuxG/iJgAdHf7XdiSdlsdgj7E+G+8U1kzVEiezJGeSRlX5ssI6H9MQ/w33qmMbVwrlM8+vlxgfCGaH3dIfa708ZnRw+6qwWn//IEdl5RnUsbpP1ueZmzvZny7bqi6o536UEmYOGCILmA81BaAvLtLt7Jtqnxdn3GQy9tSwn0QuqrbAZJTf4SU0SWGDOhcIRNIcjrONES27gHg/xIJD/SjSF5WKTko0zaxG3ZUAD+6Fsh/ytLFMa44WKSr8ijHjfpw7rIB9jSrz+Js/XJ+lXpVp7aEun3xBwr2ApJcEXENANZ2+vgEcCKg2XhP9DpfXuemxNqpaiUf0VMV8OMNkHgLsOeKP58A3aELusYOHTpUBcA8HsCYf2TrTSP1qCL9npZxrV23NS075/hxxYL2PSNDY9Vqbgy91Ww0/yywhm8NMYuyIjNKiqzRs2wmt546COBYY/vxv5NxtJHPLTE0vTN0Jm4lAZjZ1vn2LU9kMEYXAtbe8jKHYZemikPgsygH4QsMAFZQOCAmAAAA0AIAnQEqNAAQAD5tNJZHpCMiISgIAIANiWkAAD2joAD++5zAAAA=" alt="trace logo" class="w-38 object-contain">
+                    <h1 class="text-3xl md:text-4xl   font-instrument font-medium py-10"><span class="text-[#504f53]">Building a customer-centric climate tech company</span>How Trace turned time zone challenges into an intelligence engine that never sleeps</h1>
+                     <a href="#" class="inline-block text-lg font-medium  pb-1 hover:opacity-70 transition">
+                    Read more
+                    </a>
+                     <div class="flex flex-col md:flex-row gap-5 justify-center">
+                   <div class="border-t-2 border-black pt-5 mt-14">
+                      
+                       <h1  class="font-['Times_New_Roman']  text-3xl font-medium">10* faster</h1>
+                       <p  class="font-medium">to get relevant customer feedback in front of decision makers across the org</p>
+                   </div>
+                   <div  class="border-t border-black pt-5 mt-2 md:mt-14">
+                       
+                       <h1  class="font-['Times_New_Roman']  text-3xl font-medium">4 continents</h1>
+                       <p  class="font-medium">collaborating seamlessly across Uk,South Africa,India, and Australia</p>
+                   </div>
+   
+                  </div>
+               </div>
+               <div class="flex flex-col p-10 rounded-2xl bg-[#8DA5AC]">
+                   <img src="data:image/webp;base64,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" alt="cascade logo" class="w-38 object-contain">
+                   <h1 class="text-3xl md:text-4xl   font-instrument font-medium py-10"><span class="text-[#504f53]">From manual to magic</span>How Cascade creted an objective, scalable system for product discovery</h1>
+                    <a href="#" class="inline-block text-lg font-medium  pb-1 hover:opacity-70 transition">
+                    Read more
+                    </a>
+                    <div class="flex flex-col md:flex-row gap-5 justify-center">
+                   <div class="border-t-2 border-black pt-5 mt-14">
+                       
+                       <h1  class="font-['Times_New_Roman']  text-3xl font-medium">10+ hrs saved</h1>
+                       <p  class="font-medium">weekly on manuel call reviews, freeing up time for strategic product decisions</p>
+                   </div>
+                   <div class="border-t border-black pt-5 mt-2 md:mt-14">
+                       
+                       <h1  class="font-['Times_New_Roman']  text-3xl font-medium">15* more feedback</h1>
+                       <p  class="font-medium">captured across all customer conversations, not just priority accounts</p>
+                   </div>
+   
+                  </div>
+               </div>
+               <div class="flex flex-col p-10 rounded-2xl bg-[#A788AF]">
+                   <img src="/assets/nvaas-CFTpy7wE.png" alt="nvaas logo" class="w-38 object-contain">
+                   <h1 class="text-3xl md:text-4xl   font-instrument font-medium py-10"><span class="text-[#504f53]">From chaos to clarity</span>A Customer Success expets's guide to scaling customer intelligence</h1>
+                   <a href="#" class="inline-block text-lg font-medium  pb-1 hover:opacity-70 transition">
+                    Read more
+                    </a>
+                    <div class="flex flex-col md:flex-row gap-5 justify-center">
+                   <div class="border-t-2 border-black pt-5 mt-14">
+                       
+                       <h1  class="font-['Times_New_Roman']  text-3xl font-medium">5+ hrs saved</h1>
+                       <p  class="font-medium">weekly per CSM on feedback documentation and reporting</p>
+                   </div>
+                   <div class="border-t border-black pt-5 mt-2 md:mt-14">
+                       
+                       <h1  class="font-['Times_New_Roman']  text-3xl font-medium">5* increase</h1>
+                       <p  class="font-medium ">in actionable feedback captured from interactions</p>
+                   </div>
+   
+                  </div>
+               </div>
+            </div>
+
+        </div>
+     </section>
+     <!-- footer -->
+      <footer class="bg-white py-10 px-6 md:px-20 text-[#1a1a1a]">
+  <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+  
+    <!-- Logo and Description Section (Visible on medium and up screens) -->
+    <div class="md:col-span-3 space-y-6">
+      <div class="flex items-center gap-2">
+        <div>
+          <img src="data:image/webp;base64,UklGRhYEAABXRUJQVlA4WAoAAAAwAAAANwAADwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBIzQEAAA2QLMm2aVvj6iBuz7Zt27Ztt201n22zadu2bdtecfZaax98QUQobNu2cbpbZ6JPIL7K20sOaBH8uHp19QFoTNK7Vys00a5F5F5e1QmaQ9t8LcKsCWNge4aqcHjxQxn8BX3MW9bAo+sUuntZTN/EweT4iWplMGL0CS6wBgzesx5AFvrkPgjv3etJG6WBS4VbwS2eIPlN8S8RFuvWLaruvok8v1nvw9JWfNXVbtn6svDOdsAoQ7rrMbSZLkL49wec89Ai7nWzno3hyP5Wo+5pl043/2yG8/a5FdOekNKak8xalCCegz3J8VfNEXcw+qBEH4CL099j/atmrOv6s/5BuSgDytvRwHSCVcvuyOZLqBtr8e97piV+95HdtuS/sqZk+HNsWOfko3Fn7JZQj34DfyVy6tCJ3Sb/CcdgDfzRU7Lt8B6XRo28fyihGWCiuu3yeBns7HR+SwSGGOELlF2YrcK5ko2K8JkM0LjuPdzs+TzheO9bIwVL9PI1j+9nrICrD+U6WGn3Av+PmFpccAQufUFh9DzzKbtxwR/cwFT0Co8X5ZSX/QNYuRz4mwS0Aui9jk/j56hHczt5BnOep7n/tDt1zYoIZ5Zw/3xKh8YAAFZQOCBSAAAA0AMAnQEqOAAQAD5tLJNGpCIhoTAYCACADYlpAAA6rXIgtoS6CIqAAP750oqM/H2q/g2gFbAyKuwSMm51DzphOyRX7zqeWpUVGiqr0+NcPMwAAA==" alt="logo" />
+        </div>
+      </div>
+      <p class="text-gray-500 leading-relaxed max-w-[60%]">
+        Twine closes the gap between customer conversations and company action.
+      </p>
+    </div>
+
+    <!-- Links Section -->
+    <div class="md:col-span-6 grid grid-cols-2 md:grid-cols-3 gap-10">
+      <!-- Product Links -->
+      <div class="space-y-4">
+        <h4 class="text-xs font-medium text-gray-400 uppercase tracking-wider">Product</h4>
+        <ul class="space-y-3 text-[15px]">
+          <li><a href="#" class="hover:text-gray-600">Baseline agent</a></li>
+          <li><a href="#" class="hover:text-gray-600">Personal agent</a></li>
+          <li><a href="#" class="hover:text-gray-600">Focus agents</a></li>
+          <li><a href="#" class="hover:text-gray-600">Integrations</a></li>
+          <li><a href="#" class="hover:text-gray-600">Security</a></li>
+          <li><a href="#" class="hover:text-gray-600">Pricing</a></li>
+          <li><a href="#" class="hover:text-gray-600">Changelog</a></li>
+          <li><a href="#" class="hover:text-gray-600">Status</a></li>
+        </ul>
+        <div class="pt-10 space-y-4">
+          <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Use Cases</h4>
+          <ul class="space-y-3 text-[15px]">
+            <li><a href="#" class="hover:text-gray-600">Product</a></li>
+            <li><a href="#" class="hover:text-gray-600">Customer Success</a></li>
+            <li><a href="#" class="hover:text-gray-600">Leadership</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Resources Links -->
+      <div class="space-y-4">
+        <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Resources</h4>
+        <ul class="space-y-3 text-[15px]">
+          <li><a href="#" class="hover:text-gray-600">Help center</a></li>
+          <li><a href="#" class="hover:text-gray-600">Blog</a></li>
+          <li><a href="#" class="hover:text-gray-600">Guides</a></li>
+          <li><a href="#" class="hover:text-gray-600">Legal</a></li>
+          <li><a href="#" class="hover:text-gray-600">Trust center</a></li>
+        </ul>
+        <div class="pt-10 space-y-4">
+          <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Community</h4>
+          <ul class="space-y-3 text-[15px]">
+            <li><a href="#" class="hover:text-gray-600">Customer</a></li>
+            <li><a href="#" class="hover:text-gray-600">Community</a></li>
+          </ul>
+        </div>
+        <div class="pt-10 space-y-4">
+          <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Company</h4>
+          <ul class="space-y-3 text-[15px]">
+            <li><a href="#" class="hover:text-gray-600">About</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Twine in Action Links -->
+      <div class="space-y-4">
+        <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Twine in action</h4>
+        <ul class="space-y-3 text-[15px]">
+          <li><a href="#" class="hover:text-gray-600 font-medium">Book a demo</a></li>
+          <li><a href="#" class="hover:text-gray-600">Sign in</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Social and Certifications Section -->
+    <div class="md:col-span-3 space-y-12">
+      <div class="space-y-4">
+        <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Social</h4>
+        <ul class="space-y-3 text-[15px]">
+          <li><a href="#" class="hover:text-gray-600">LinkedIn</a></li>
+          <li><a href="#" class="hover:text-gray-600">Youtube</a></li>
+          <li><a href="#" class="hover:text-gray-600">X</a></li>
+        </ul>
+      </div>
+      <div class="space-y-4 pt-4">
+        <div class="flex gap-3">
+          <div class="bg-[#DED6D1] rounded-4xl">
+            <img src="data:image/svg+xml,%3csvg%20width='1em'%20height='1em'%20class='h-full%20w-full'%20data-icon='gdpr'%20xmlns='http://www.w3.org/2000/svg'%3e%3csymbol%20id='ai:local:gdpr'%20viewBox='0%200%20144%20144'%3e%3cg%20fill='%23161616'%3e%3cpath%20d='m66.86%2031.5%201.353-5.854-4.541-3.937%206-.521%202.333-5.521%202.334%205.52%206%20.522-4.542%203.937L77.15%2031.5l-5.146-3.104zM47.524%2078.297q1.554.898%203.604.898%201.836%200%203.252-.732a5.5%205.5%200%200%200%202.236-2.12q.81-1.376.81-3.29v-1.836h-6.083v2.314h3.114q-.02.866-.4%201.514-.39.684-1.132%201.064-.732.372-1.777.372-1.153%200-2.003-.557-.84-.566-1.308-1.631-.47-1.065-.469-2.578%200-1.515.469-2.578.478-1.065%201.318-1.612.85-.555%201.963-.556.596%200%201.084.156.498.146.889.43.39.273.654.683.273.4.42.918h3.115a5.2%205.2%200%200%200-.674-1.972%205.4%205.4%200%200%200-1.347-1.553%206%206%200%200%200-1.895-1.016%207.1%207.1%200%200%200-2.295-.361q-1.923%200-3.467.889-1.542.888-2.45%202.568-.9%201.67-.9%204.033%200%202.295.86%203.975.87%201.67%202.412%202.578'%3e%3c/path%3e%3cpath%20fill-rule='evenodd'%20d='M65.443%2079h-5.156V64.45h5.205q2.198%200%203.78.878a5.9%205.9%200%200%201%202.43%202.5q.85%201.62.85%203.887%200%202.275-.859%203.906a5.94%205.94%200%200%201-2.441%202.51Q67.66%2079%2065.443%2079m-.137-2.637h-1.953v-9.277h1.963q1.368%200%202.295.488.938.479%201.406%201.504.48%201.026.479%202.637%200%201.62-.479%202.656-.468%201.026-1.406%201.514-.927.478-2.305.478M75.374%2064.45V79h3.066v-4.717h2.588q1.68%200%202.861-.615%201.191-.625%201.817-1.729.625-1.103.625-2.548%200-1.456-.625-2.569a4.3%204.3%200%200%200-1.788-1.738q-1.162-.635-2.812-.635zm3.066%207.372h2.09q.888%200%201.465-.312.585-.313.869-.86.293-.546.293-1.26%200-.731-.293-1.269a1.96%201.96%200%200%200-.87-.85q-.585-.302-1.474-.302h-2.08zm10.438-7.372V79h3.067v-5.156h2.249L96.954%2079h3.399l-3.09-5.645.065-.028.016-.007.05-.023q1.192-.556%201.816-1.602.625-1.044.625-2.49%200-1.445-.625-2.51-.614-1.075-1.787-1.66-1.162-.585-2.812-.586zm3.067%206.923h2.09q.888%200%201.464-.244.586-.245.87-.723.293-.48.293-1.2%200-.734-.293-1.222-.284-.497-.87-.752-.585-.263-1.474-.263h-2.08z'%20clip-rule='evenodd'%3e%3c/path%3e%3cpath%20d='m92.214%2032.077-1.355%205.854%205.146-3.104%205.146%203.104-1.354-5.854%204.542-3.938-6-.52-2.334-5.521-2.333%205.52-6%20.521zM108.429%2055.5l1.354-5.854-4.542-3.937%206-.521%202.334-5.52%202.333%205.52%206%20.52-4.542%203.938%201.354%205.854-5.145-3.104zm-40.215%2066.146-1.355%205.854%205.146-3.104%205.146%203.104-1.354-5.854%204.541-3.937-6-.521-2.333-5.521-2.333%205.521-6%20.521zm-25.354-.576%201.354-5.855-4.542-3.937%206-.521%202.333-5.521%202.334%205.521%206%20.521-4.542%203.937%201.354%205.855-5.146-3.105zM26.644%2097.646%2025.29%20103.5l5.146-3.104%205.146%203.104-1.355-5.854%204.542-3.937-6-.521-2.333-5.521-2.334%205.52-6%20.522zM114.859%2079.5l1.355-5.854-4.542-3.937%206-.521%202.333-5.521%202.334%205.52%206%20.522-4.542%203.937%201.354%205.854-5.146-3.104zm-5.076%2018.146-1.354%205.854%205.146-3.104%205.145%203.104-1.354-5.854%204.542-3.937-6-.521-2.333-5.521-2.334%205.52-6%20.522zM90.86%20121.07l1.353-5.855-4.541-3.937%206-.521%202.333-5.521%202.334%205.521%206%20.521-4.542%203.937%201.354%205.855-5.146-3.105zM20.214%2073.646%2018.859%2079.5l5.146-3.104%205.146%203.104-1.354-5.854%204.542-3.937-6-.521-2.334-5.521-2.333%205.52-6%20.522zM25.29%2055.5l1.354-5.854-4.541-3.937%206-.521%202.333-5.521%202.333%205.52%206%20.522-4.541%203.937%201.354%205.854-5.146-3.104zm18.924-23.423-1.355%205.854%205.146-3.104%205.146%203.104-1.354-5.854%204.542-3.938-6-.52-2.334-5.521-2.333%205.52-6%20.521z'%3e%3c/path%3e%3c/g%3e%3c/symbol%3e%3cuse%20href='%23ai:local:gdpr'%3e%3c/use%3e%3c/svg%3e" alt="AICPA certification badge with stars" class="w-15">
+          </div>
+          <div class="bg-[#DED6D1] rounded-4xl">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABqUlEQVR4AbSRTUsCURiF/ZhRCD+K1OyTFAoXLaOW1raf0CZC6D9Vq/oVCS1aCEGLFkFRKEY4ojg4oa0cdex5h3EY00UQDe/hPXPec8+9cyfg++PzPwGpVEoDVdBxIFybddipE8iC0WiUa7VaWRB3kBVNZj9DJgIwlDGuYjpNJBL5ZDJ5kk6nj9DPAoFAwe/3r8DLzN1yAxi8x2KxHYyHGBfBEtgYDofLuJ8JXrAsKy8e8aLZ5QbwplQqlR4L3uBFFtfot/QXugWKhGCp9OAKsMsbMC8Ku6gYg3RzMBjU4Kr08Uw6sL10nzdAdvGFQqEUg20+JacoSoGuGIahcbJPVVUzzKRsrxBvQFsEdm4Hg8EqO7dN07xCmwM+gjbRn4QDA9jlDQhx6xFMHUL2WLAbDoePCTrg0i5wR/v9/r544Cqwyw3gf69xYfVGo/HB4gd4iaBHPukcZ4lgXYBeFy+aXW6AvDGIs1s5EoncN5vNO13XbzRNK6Nfi0bgJTwu3jEmAkTEsNXtdl8JqoEvBzXRZCYeL6YCZIgxA9ZB1IHw8R8Qi4uZAe70F+QbAAD//y55MG8AAAAGSURBVAMA06nUIf0XC7MAAAAASUVORK5CYII=" alt="gdpr" class="w-15">
+          </div>
+        </div>
+        <div class="text-sm text-gray-500 leading-snug">
+          <p>End-to-end encryption.</p>
+          <p>Never trained on your data.</p>
+          <a href="#" class="text-black font-semibold underline underline-offset-4 decoration-1">Learn more</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</fo<script type="module"
+    <scri<script type="module""./hamburger.js"></script>
+    <!-- <script src="./twine.js"></script> -->
+</body>
+</html>
