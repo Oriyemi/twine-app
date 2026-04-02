@@ -1,13 +1,20 @@
 import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
+import { resolve } from 'path'
 
 export default defineConfig({
-    root:'assets',
     plugins: [
         tailwindcss(),
     ],
     build: {
-        outDir: '../dist', // Moves the build output back to the main project folder
-        emptyOutDir: true,
-    }
+        rollupOptions: {
+            input: {
+                main: resolve(__dirname, 'index.html'),
+                product: resolve(__dirname, 'product.html'),
+                customer: resolve(__dirname, 'customer.html'),
+                blog: resolve(__dirname, 'blog.html'),
+                pricing: resolve(__dirname, 'pricing.html'),
+            },
+        },
+    },
 })

@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>twine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./input.css">
+
+</head>
+<body class="bg-[#DED6D1]">
+    <header class="m-5 ">
+        <nav class=" flex  items-center justify-between  p-4 sticky top-0 ">
+           <img src="./assets/images/logo.webp" alt="logo" class="w-20 text-black"> 
+
+           <div class="hidden md:flex items-center gap-8 text-gray-700 font-medium">
+              <a href="/product.html" class="hover:text-black flex items-center gap-1 text-sm">Product 
+               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+              </a>
+              <a href="/customer.html" class="hover:text-black text-sm">Customers</a>
+              <a href="/blog.html" class="hover:text-black text-sm">Blog</a>
+              <a href="/pricing.html" class="hover:text-black text-sm">Pricing</a>
+           </div>
+           
+           <div class="hidden md:block items-center gap-6">
+             <a href="#" class="text-black hover:text-black text-sm mr-6">Log in</a>
+             <a href="#" class="bg-black text-sm text-white px-5 py-2.5 rounded-lg font-medium hover:bg-gray-800 transition-colors">
+               Book a demo
+              </a>
+            </div>
+                         <button id="hamburger" class="md:hidden block p-2">
+        <img src="./assets/images/hambuger.webp" alt="hamburger" class="w-6 h-6">
+    </button>
+
+      <div id="navigator" class="hidden bg-[#FAFAFA] w-full sm:w-3/4  h-220 p-8  absolute  items-center inset-0 mx-auto rounded-2xl z-10 top-14">
+    <button id="closeBtn" class="absolute top-2 right-2 text-xl">
+        &times; 
+    </button>
+
+    <a href="/product.html" class="block border-b p-4">Product</a>
+    <a href="/customer.html" class="block border-b p-4">Customers</a>
+    <a href="/blog.html" class="block border-b p-4">Blog</a>
+    <a href="/pricing.html" class="block p-4">Pricing</a>
+  </div>
+        </nav>
+    </header>
+    
+   
+    <!-- hero section -->
+    <section class="bg-[#DED6D1]">
+        <div class="w-100 mx-auto">
+            <img src="./assets/images/new product area.webp" alt="product">
+        </div>
+        <div class="flex flex-col items-center justify-center text-center px-6 py-20">
+            <h1 class="text-[2rem] md:text-5xl lg:text-5xl font-serif  text-gray-900 max-w-2xl ">
+               Customer intelligence that grows revenue.
+           </h1>
+
+           <p class="mt-8 text-lg md:text-xl text-gray-700 max-w-2xl leading-relaxed">
+             Twine analyzes every customer conversation, ties it to revenue, and delivers the signals that move roadmaps, deals, and decisions. Automatically.
+           </p>
+
+        </div>
+        <div class="flex item-center justify-center gap-3 p-8 ">
+           <button class="bg-[#141414] text-white px-2 py-1 rounded-sm font-medium transition-opacity hover:opacity-90 active:scale-95 ">Book a demo</button>
+           <button class="bg-[#d6d1c9] text-[#141414] px-2 py-1 rounded-sm font-medium transition-colors hover:bg-[#cec9c1] active:scale-95">Watch a demo</button>
+        </div>
+        <div>
+            <img src="./assets/images/hero image.webp" alt="hero image" class="mx-auto w-120">
+
+        </div>
+    </section>
+    <!-- dashboard section -->
+     <section class="bg-[#FFFFFF]">
+        <h2 class="font-['Times_New_Roman'] text-center text-4xl pt-30 pb-4 ">Not another dashboard.</h2>
+        <div class="flex flex-col lg:flex-row items-center justify-between">
+           <div class="flex items-center justify-between m-6 gap-6">
+            <div>
+                <div class="w-7 h-7">
+                    <img src="./assets/images/invisible.png" alt="invisible"  class="w-full h-ful opacity-80">
+                </div>
+                <div>
+                 <h3 class="text-sm font-medium text-gray-900 leading-tight py-2">Invisible, until it matters</h3>
+                 <p class="text-[#adadad]   text-sm">Twine does the work for you. Delivering what matters, where you work. No tags. No forms. No quarterly note‑taking campaigns.</p>
+                </div>
+            </div>
+            <div>
+                <div class="w-7 h-7">
+                    <img src="./assets/images/built dots.webp" alt="dots" class="w-full h-ful opacity-80">
+                </div>
+                <div>
+                 <h3  class="text-sm font-medium text-gray-900 leading-tight py-2">Built for decisions, not reporting</h3>
+                 <p class="text-[#adadad]  leading-relaxed text-sm">It connects the dots that actually matter. What’s blocking revenue, where competitors are winning, what customers keep repeating.</p>
+                </div>
+            </div>
+            <div>
+                <div class="w-7 h-7">
+                     <img src="./assets/images/arrow pro.webp" alt="arrow" class="w-full h-ful opacity-80">
+                </div>
+                <div>
+                 <h3  class="text-sm font-medium text-gray-900 leading-tight py-2">Personalized, proactive</h3>
+                 <p class="text-[#adadad] leading-relaxed text-sm">Each teammate gets the blockers, risks, and opportunities that matter to their role—while there’s still time to act.</p>
+                </div>
+            </div>
+           </div>
+
+           <div class="bg-[#e7e7e7] w-[95%] flex justify-center items-center ">
+            <div>
+                <img src="./assets/images/personal agent.webp" alt="agent" class="w-40 lg:w-140 ">
+            </div>
+           </div>
+
+           
+        </div>
+        <div class="bg-[#ffffff]">
+         <h4 class="text-sm text-center font-instrument font-normal pt-16">Chosen by companies who run on clarity, not guesswork</h4>
+        </div>
+         
+     </section>
+     <!-- marquee section -->
+     <div class="bg-[#ffffff]">
+         <div class="overflow-hidden  translate-y-13 whitespace-nowrap bg-[#ffffff] p-5 flex items-center" id="marquee-wrapper">
+         <div class="flex items-center gap-x-10 shrink-0 " id="marquee-content">
+            <img src="./assets/images/adora.webp" alt="adora" class="w-40">
+            <img src="./assets/images/cascade.webp" alt="cascade" class="w-40">
+            <img src="./assets/images/continious.webp" alt="continious" class="w-40">
+            <img src="./assets/images/cuttable.webp" alt="cuttable" class="w-40">
+            <img src="./assets/images/eql.webp" alt="eql" class="w-20">
+            <img src="./assets/images/freshclinics.webp" alt="fresh" class="w-40">
+            <img src="./assets/images/hatch.webp" alt="hatch" class="w-40">
+            <img src="./assets/images/heidi.webp" alt="heidi" class="w-40">
+            <img src="./assets/images/lorikeet.webp" alt="lorikeet" class="w-40">
+            <img src="./assets/images/martec.webp" alt="martec" class="w-40">
+            <img src="./assets/images/prepared.webp" alt="prepared" class="w-40">
+            <img src="./assets/images/recordpoint.webp" alt="RecordPoint logo, a company featured in customer testimonials" class="w-40">
+            <img src="./assets/images/safetyculture.webp" alt="safety" class="w-40">
+            <img src="./assets/images/smokeball.webp" alt="smokeball" class="w-40">
+            <img src="./assets/images/tapcart.webp" alt="secure" class="w-40">
+            <img src="./assets/images/secure.webp" alt="secure" class="w-40">
+
+
+        
+         </div>
+      </div>
+     </div>
+     <!-- slideshow -->
+     <section class="bg-[#ffff] pt-18">
+  <div class="flex gap-4 px-5 overflow-x-auto items-stretch pb-10">
+    
+    <div class="bg-[#e7e7e7] p-8 min-w-90 flex flex-col justify-between">
+      <div>
+        <img src="./assets/images/tom wright.webp" alt="tom" class="w-32 mb-6 grayscale">
+        <h2 class="text-2xl mb-10 leading-tight font-instrument">“Twine goes the last mile, telling us what to build and which deals it’ll unlock. That’s what makes it irreplaceable.”</h2>
+      </div>
+      <div class="flex justify-between items-end mt-auto">
+        <div>
+          <p class="font-bold">Tom Wright</p>
+          <p class="text-gray-500">Co-Founder</p>
+        </div>
+        <img src="./assets/images/cascade.webp" alt="cascade" class="w-28 object-contain">
+      </div>
+    </div>
+
+    <div class="bg-[#e7e7e7] p-8 min-w-90 flex flex-col justify-between">
+      <div>
+        <img src="./assets/images/rebecca.webp" alt="rebecca" class="w-32 mb-6 grayscale">
+        <h2 class="text-2xl mb-10 leading-tight font-instrument">“Holy shit. Two minutes in, Twine answered two questions in my to follow up list. Incredible.”</h2>
+      </div>
+      <div class="flex justify-between items-end mt-auto">
+        <div>
+          <p class="font-bold">Rebecca Cook</p>
+          <p class="text-gray-500 text-sm">Principal Product Manager</p>
+        </div>
+        <img src="./assets/images/safetyculture.webp" alt="safety" class="w-28 object-contain">
+      </div>
+    </div>
+
+    <div class="bg-[#e7e7e7] p-8 min-w-90 flex flex-col justify-between">
+      <div>
+        <img src="./assets/images/ryan.webp" alt="tom" class="w-32 mb-6 grayscale">
+        <h2 class="text-2xl mb-10 leading-tight font-instrument">“We went from bottlenecked communication to consistent, reliable feedback moving freely across the org. Effortlessly.”</h2>
+      </div>
+      <div class="flex justify-between items-end mt-auto">
+        <div>
+          <p class="font-bold">Tom Mansfield</p>
+          <p class="text-gray-500">CRO</p>
+        </div>
+        <img src="./assets/images/hatch.webp" alt="hatch" class="w-28 object-contain">
+      </div>
+    </div>
+
+    <div class="bg-[#e7e7e7] p-8 min-w-90 flex flex-col justify-between">
+      <div>
+        <img src="./assets/images/adele.webp" alt="adele" class="w-32 mb-6 grayscale">
+        <h2 class="text-2xl mb-10 leading-tight font-instrument">“Twine has been a game changer. If you’re looking to scale insights, speed up discovery, and give your teams more time back, I can’t recommend Twine enough.”</h2>
+      </div>
+      <div class="flex justify-between items-end mt-auto">
+        <div>
+          <p class="font-bold">Adele Hoyle</p>
+          <p class="text-gray-500">CPO</p>
+        </div>
+        <img src="./assets/images/smokeball.webp" alt="smoke" class="w-28 object-contain">
+      </div>
+    </div>
+
+    <div class="bg-[#e7e7e7] p-8 min-w-90 flex flex-col justify-between">
+      <div>
+        <img src="./assets/images/luka.webp" alt="luka" class="w-32 mb-6 grayscale">
+        <h2 class="text-2xl mb-10 leading-tight font-instrument">“Forget sitting in on calls. Twine’s already there, listening to every word and serving up the insights that matter.”</h2>
+      </div>
+      <div class="flex justify-between items-end mt-auto">
+        <div>
+          <p class="font-bold">Luka Kasalovic</p>
+          <p class="text-gray-500">Product Manager</p>
+        </div>
+        <img src="./assets/images/freshclinics.webp" alt="fresh" class="w-28 object-contain">
+      </div>
+    </div>
+
+    <div class="bg-[#e7e7e7] p-8 min-w-90 flex flex-col justify-between">
+      <div>
+        <img src="./assets/images/liam.webp" alt="liam" class="w-32 mb-6 grayscale">
+        <h2 class="text-2xl mb-10 leading-tight font-instrument">“Twine's made it effortless to get valuable insights. It helps me keep a pulse on our customers and know where to take the product next.”</h2>
+      </div>
+      <div class="flex justify-between items-end mt-auto">
+        <div>
+          <p class="font-bold">Liam Manoogian</p>
+          <p class="text-gray-500">Product Ops</p>
+        </div>
+        <img src="./assets/images/adora.webp" alt="adora" class="w-28 object-contain">
+      </div>
+    </div>
+
+    <div class="bg-[#e7e7e7] p-8 min-w-90 flex flex-col justify-between">
+      <div>
+        <img src="./assets/images/dylan.webp" alt="dylan" class="w-32 mb-6 grayscale">
+        <h2 class="text-2xl mb-10 leading-tight font-instrument">“One import, and Twine did the work we’d been slogging through for hours every week. On day one, it uncovered product gaps we’d missed entirely.”</h2>
+      </div>
+      <div class="flex justify-between items-end mt-auto">
+        <div>
+          <p class="font-bold">Dylan Mathiesen</p>
+          <p class="text-gray-500">Head of Product</p>
+        </div>
+        <img src="./assets/images/cascade.webp" alt="cascade" class="w-28 object-contain">
+      </div>
+    </div>
+
+    <div class="bg-[#e7e7e7] p-8 min-w-90 flex flex-col justify-between">
+      <div>
+        <img src="./assets/images/ben.webp" alt="ben" class="w-32 mb-6 grayscale">
+        <h2 class="text-2xl mb-10 leading-tight font-instrument">“It’s like having a virtual customer insights specialist in your team, working around the clock, across the globe.”</h2>
+      </div>
+      <div class="flex justify-between items-end mt-auto">
+        <div>
+          <p class="font-bold">Ben Hanley</p>
+          <p class="text-gray-500">Head of Product</p>
+        </div>
+        <img src="./assets/images/trace.webp" alt="trace" class="w-28 object-contain">
+      </div>
+    </div>
+
+    <div class="bg-[#e7e7e7] p-8 min-w-90 flex flex-col justify-between">
+      <div>
+        <img src="./assets/images/james.webp" alt="james" class="w-32 mb-6 grayscale">
+        <h2 class="text-2xl mb-10 leading-tight font-instrument">“Twine helped us deeply understand the pain points and objections blocking sales, showing us where to evolve the product to better support healthcare professionals.”</h2>
+      </div>
+      <div class="flex justify-between items-end mt-auto">
+        <div>
+          <p class="font-bold">James Entwisle</p>
+          <p class="text-gray-500">Product Manager</p>
+        </div>
+        <img src="./assets/images/freshclinics.webp" alt="fresh" class="w-28 object-contain">
+      </div>
+    </div>
+
+    <div class="bg-[#e7e7e7] p-8 min-w-90 flex flex-col justify-between">
+      <div>
+        <img src="./assets/images/emma.webp" alt="emma" class="w-32 mb-6 grayscale">
+        <h2 class="text-2xl mb-10 leading-tight font-instrument">“Twine is incredible at surfacing the product themes and service feedback we care about most.”</h2>
+      </div>
+      <div class="flex justify-between items-end mt-auto">
+        <div>
+          <p class="font-bold">Emma Erlach</p>
+          <p class="text-gray-500">Head of Product Strategy</p>
+        </div>
+        <img src="./assets/images/smokeball.webp" alt="smokeball" class="w-28 object-contain">
+      </div>
+    </div>
+
+    <div class="bg-[#e7e7e7] p-8 min-w-90 flex flex-col justify-between">
+      <div>
+        <img src="./assets/images/phil.webp" alt="phil" class="w-32 mb-6 grayscale">
+        <h2 class="text-2xl mb-10 leading-tight font-instrument">“I used to spend weekends piecing together customer insights. Now Twine does that heavy lifting, so I can focus on building great experiences for our customers.”</h2>
+      </div>
+      <div class="flex justify-between items-end mt-auto">
+        <div>
+          <p class="font-bold">Phil Ngo</p>
+          <p class="text-gray-500">Product Manager</p>
+        </div>
+        <img src="./assets/images/heidi.webp" alt="heidi" class="w-28 object-contain">
+      </div>
+    </div>
+
+    <div class="bg-[#e7e7e7] p-8 min-w-90 flex flex-col justify-between">
+      <div>
+        <img src="./assets/images/tom wright.webp" alt="tom" class="w-32 mb-6 grayscale">
+        <h2 class="text-2xl mb-10 leading-tight font-instrument">“We’ve cut the time wasted searching old repositories for product insights by more than 70%.”</h2>
+      </div>
+      <div class="flex justify-between items-end mt-auto">
+        <div>
+          <p class="font-bold">Tom Mansfield</p>
+          <p class="text-gray-500">CRO</p>
+        </div>
+        <img src="./assets/images/hatch.webp" alt="hatch" class="w-28 object-contain">
+      </div>
+    </div>
+
+    <div class="bg-[#e7e7e7] p-8 min-w-90 flex flex-col justify-between">
+      <div>
+        <img src="./assets/images/sambarati.webp" alt="sam" class="w-32 mb-6 grayscale">
+        <h2 class="text-2xl mb-10 leading-tight font-instrument">“We had plenty of roadmap ideas. Twine shows us which ones customers actually want.”</h2>
+      </div>
+      <div class="flex justify-between items-end mt-auto">
+        <div>
+          <p class="font-bold">Sam Barati</p>
+          <p class="text-gray-500">VP of Customer Success</p>
+        </div>
+        <img src="./assets/images/tapcart.webp" alt="tapcart" class="w-28 object-contain">
+      </div>
+    </div>
+
+    <div class="bg-[#e7e7e7] p-8 min-w-90 flex flex-col justify-between">
+      <div>
+        <img src="./assets/images/maria coffey.webp" alt="maria" class="w-32 mb-6 grayscale">
+        <h2 class="text-2xl mb-10 leading-tight font-instrument">“The quantitative feedback Twine surfaces has been a game changer in showing which features will have the biggest customer impact.”</h2>
+      </div>
+      <div class="flex justify-between items-end mt-auto">
+        <div>
+          <p class="font-bold">Maria Coffey</p>
+          <p class="text-gray-500">Customer Success Manager</p>
+        </div>
+        <img src="./assets/images/hatch.webp" alt="hatch" class="w-28 object-contain">
+      </div>
+    </div>
+
+    <div class="bg-[#e7e7e7] p-8 min-w-90 flex flex-col justify-between">
+      <div>
+        <img src="./assets/images/alex young.webp" alt="alex" class="w-32 mb-6 grayscale">
+        <h2 class="text-2xl mb-10 leading-tight font-instrument">“For us, Twine solved the biggest problem—keeping decisions rooted in customer needs, not our opinions.”</h2>
+      </div>
+      <div class="flex justify-between items-end mt-auto">
+        <div>
+          <p class="font-bold">Alex Young</p>
+          <p class="text-gray-500">VP of Product</p>
+        </div>
+        <img src="./assets/images/tapcart.webp" alt="tapcart" class="w-28 object-contain">
+      </div>
+    </div>
+
+    <div class="bg-[#e7e7e7] p-8 min-w-90 flex flex-col justify-between">
+      <div>
+        <img src="./assets/images/joseph.webp" alt="joseph" class="w-32 mb-6 grayscale">
+        <h2 class="text-2xl mb-10 leading-tight font-instrument">“Twine gives us the superpower to see every reason customers love our product and every snag they face. The priorities are crystal clear, and our product team is thriving.”</h2>
+      </div>
+      <div class="flex justify-between items-end mt-auto">
+        <div>
+          <p class="font-bold">Joseph Pearce</p>
+          <p class="text-gray-500">Head of Product</p>
+        </div>
+        <img src="./assets/images/recordpoint.webp" alt="record" class="w-28 object-contain">
+      </div>
+    </div>
+
+    <div class="bg-[#e7e7e7] p-8 min-w-90 flex flex-col justify-between">
+      <div>
+        <img src="./assets/images/ryan.webp" alt="ryan" class="w-32 mb-6 grayscale">
+        <h2 class="text-2xl mb-10 leading-tight font-instrument">“Twine gives us a live feed of the most up-to-date customer insights, making it easier than ever to align the team on what problems matter most.”</h2>
+      </div>
+      <div class="flex justify-between items-end mt-auto">
+        <div>
+          <p class="font-bold">Ryan Clement</p>
+          <p class="text-gray-500">Principal Product Manager</p>
+        </div>
+        <img src="./assets/images/safetyculture.webp" alt="safety" class="w-28 object-contain">
+      </div>
+    </div>
+
+  </div>
+     </section>
+     <!-- twine revenue section -->
+      <section class="bg-[#ffff] py-50 px-4">
+        <div class="flex flex-col gap-6 p-6 md:p-20 max-w-6xl mx-auto">
+            <p class="font-['Times_New_Roman'] text-[#7c7c7c] text-5xl md:text-5xl lg:text-[3rem] max-w-2xl ">96% of revenue-critical signals never reach the teams who can act.</p>
+            <p class="font-['Times_New_Roman'] text-black text-5xl md:text-5xl lg:text-6xl self-end my-6">
+             Twine fixes that.</p>
+        </div>
+       <div class="flex flex-col justify-between gap-5">
+         <div>
+           <img src="./assets/images/twine fix.webp" alt="twine-fix" class="rounded-2xl w-full aspect-square object-cover "> 
+         </div>
+         <div>
+            <img src="./assets/images/twine-rev.webp" alt="twine-woman" class="rounded-2xl w-full aspect-square object-cover">
+         </div>
+         <div>
+            <img src="./assets/images/twine-woman.webp" alt="twine-woman" class="rounded-2xl w-full aspect-square object-top">
+         </div>
+       </div>
+      <div class="relative w-full overflow-hidden pt-5 lg:max-h-200">
+         <img src="./assets/images/twine-wallpaper.webp" alt="twine-wallpaper" class="w-full  object-cover  ">
+
+          <div class="absolute inset-0 flex flex-col justify-start px-6 pt-30  md:pt-50">
+             <div class="max-w-6xl mx-auto w-full">
+      
+               <h1 class="font-['Times_New_Roman']  leading-[0.85] tracking-tight text-gray-800 lg:mx-auto lg:w-fit">
+               <span class="block text-5xl opacity-50">Like having an analyst in every call.</span>
+            
+               <span class="block text-[2.9rem]  text-black mt-2 font-medium">
+               Only faster. And effortless.
+               </span>
+               </h1>
+
+               <div class="mt-12 flex justify-end">
+                <p class="max-w-md text-lg text-gray-700 leading-snug font-sans">
+                Twine hears every word, finds the patterns, and surfaces what moves revenue. 
+               <span class="block mt-2 font-sans">
+               All of it delivered before issues become losses.
+               </span>
+               </p>
+               </div>
+           </div>
+       </div>
+
+        <div class="absolute bottom-8 right-8">
+         <div class="bg-black p-4 rounded-full cursor-pointer shadow-lg hover:scale-110 transition-transform">
+          <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+           <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
+          </svg>
+         </div>
+        </div>
+     </div>
+     <!-- pre-built -->
+     <div class="border-t-2 mt-20 flex flex-col md:flex-row md:gap-25 md:items-center ">
+        <div>
+            <h1 class="font-['Times_New_Roman'] text-4xl md:text-5xl pt-5 md:hidden ">Pre-built agents. <br>Experts at what they do.</h1>
+              <h1 class="font-['Times_New_Roman'] text-4xl md:text-5xl pt-5 hidden md:block">Pre-built agents. <br>
+             Experts at what <br>they do.</h1>
+        </div>
+        <div>
+            <p class="pt-2 text-sm font-normal md:hidden ">Delivering the kind of work you wish your team had the bandwidth for.</p>
+            <p class="pt-1 text-sm font-normal  md:text-xl hidden md:block ">Delivering the kind of work your <br>wish your team had the bandwidth for.</p>
+        </div>
+     </div>
+     <div class="flex flex-col lg:flex-row justify-center items-center gap-9 m-2">
+        <div class="relative  ">
+           <img src="./assets/images/competitor img.webp" alt="competitor-wallpaper" class="w-full  object-cover  ">
+
+          <div class="absolute inset-0 flex flex-col  items-center justify-center">
+             <div class="  w-full">
+              <img src="./assets/images/competitor.webp" alt="competitor-watch" class="mx-auto"></div>
+              <button class="bg-[#d6d1c9] text-[#141414] px-2 py-1 rounded-sm font-medium transition-colors hover:bg-[#cec9c1] active:scale-95">Learn more</button>
+           </div>
+        </div>
+        <div class="relative mx-auto">
+           <img src="./assets/images/team img.webp" alt="team-wallpaper" class="w-full  object-cover  ">
+
+          <div class="absolute inset-0 flex flex-col items-center justify-center">
+             <div class=" w-full">
+              <img src="./assets/images/team.webp" alt="team" class="mx-auto"></div>
+              <button class="bg-[#d6d1c9] text-[#141414] px-2 py-1 rounded-sm font-medium transition-colors hover:bg-[#cec9c1] active:scale-95">Learn more</button>
+           </div>
+        </div>
+        <div class="relative mx-auto">
+           <img src="./assets/images//agent img.webp" alt="pa agent-wallpaper" class="w-full  object-cover  ">
+
+          <div class="absolute inset-0 flex flex-col items-center justify-center">
+             <div class=" w-full">
+              <img src="./assets/images/pa brief.webp" alt="pa brief" class="mx-auto"></div>
+              <button class="bg-[#d6d1c9] text-[#141414] px-2 py-1 rounded-sm font-medium transition-colors hover:bg-[#cec9c1] active:scale-95">Learn more</button>
+           </div>
+        </div>
+       </div>
+       <div class="border-t-2 mt-20 flex flex-col md:flex-row md:gap-25 md:items-center ">
+            <div>
+            <h1 class="font-['Times_New_Roman'] text-4xl md:text-5xl pt-5 md:w-[60%] ">From the boardroom to your inbox. Intelligence at every level.</h1>
+              
+        </div>
+       </div>
+       <div class="flex px-10 overflow-x-auto items-stretch pb-10 scroll-smooth no-scrollbar">
+        <div class="min-w-75 pt-12 shrink">
+          <img src="./assets/images/cables.webp" alt="cables" class="w-full h-full object-cover">
+        </div>
+        <div class="w-100 shrink-0 flex flex-col justify-between">
+          <img src="./assets/images/blue agent.webp" alt="blue agent" class="w-full">
+          <div class="pl-4">
+            <h1 class="font-bold">Product</h1>
+            <p class="text-gray-500 text-0.875em tracking-tight">See what’s blocking revenue. Build what matters.</p>
+          </div>
+        </div>
+        <div class="w-100 shrink-0 flex flex-col justify-between">
+          <img src="./assets/images/yellow agent.webp" alt="yellow
+          agent" class="w-ful">
+          <div class="pl-4">
+            <h1 class="font-bold">Sales</h1>
+            <p class="text-gray-500 text-sm">Clear blockers fast. Win more in your patch.</p>
+          </div>
+        </div>
+        <div class="w-100 shrink-0 flex flex-col justify-between">
+          <img src="./assets/images/green agent.webp" alt="green agent" class="w-full">
+          <div class="pl-4">
+            <h1 class="font-bold">Customer Success</h1>
+            <p class="text-gray-500 text-sm">Spot churn early. Escalate what really matters.</p>
+          </div>
+        </div>
+        <div class="w-100 shrink-0 flex flex-col justify-between">
+          <img src="./assets/images/pink agent.webp" alt="pink agent" class="w-full">
+          <div class="pl-4">
+            <h1 class="font-bold">Marketing</h1>
+            <p class="text-gray-500 text-sm">Find your loudest fans. Turn love into proof that wins markets.</p>
+          </div>
+         </div>
+        <div class="w-100 shrink-0 flex flex-col justify-between">
+          <img src="./assets/images/islam agent.webp"    alt="islam agent" class="w-full">
+          <div class="pl-4">
+            <h1 class="font-bold">Executive</h1>
+            <p class="text-gray-500 text-sm">See how the business is really moving. See teams move as one.</p>
+          </div>
+        </div>
+        
+
+       </div>
+
+
+      
+     </div>
+     <div class="flex flex-col lg:flex-row justify-center items-center gap-8 px-6 py-12 md:px-12 lg:py-20 max-w-7xl mx-auto">
+        <div class="flex flex-1 flex-col justify-center items-center lg:items-start text-center lg:text-left">
+        <h3 class="font-serif text-3xl md:text-5xl lg:text-6xl leading-tight">
+         The blockers that cost you the most are the ones you spot late.
+       </h3>
+       <button class="bg-[#141414] text-white px-6 py-3 mt-8 rounded-sm font-medium transition-all hover:opacity-90 active:scale-95">
+        Book a demo
+       </button>
+       </div>
+
+       <div class="flex-1 w-full max-w-2xl lg:max-w-none">
+        <img 
+        src="./assets/images/blockers.webp" 
+        alt="blockers" 
+        class="w-full h-auto object-cover rounded-lg" /> 
+       </div>
+    </div>
+
+      </section>
+       <footer class="bg-white py-10 px-6 md:px-20 text-[#1a1a1a]">
+  <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+  
+    <!-- Logo and Description Section (Visible on medium and up screens) -->
+    <div class="md:col-span-3 space-y-6">
+      <div class="flex items-center gap-2">
+        <div>
+          <img src="./assets/images/logo.webp" alt="logo" />
+        </div>
+      </div>
+      <p class="text-gray-500 leading-relaxed max-w-[60%]">
+        Twine closes the gap between customer conversations and company action.
+      </p>
+    </div>
+
+    <!-- Links Section -->
+    <div class="md:col-span-6 grid grid-cols-2 md:grid-cols-3 gap-10">
+      <!-- Product Links -->
+      <div class="space-y-4">
+        <h4 class="text-xs font-medium text-gray-400 uppercase tracking-wider">Product</h4>
+        <ul class="space-y-3 text-[15px]">
+          <li><a href="#" class="hover:text-gray-600">Baseline agent</a></li>
+          <li><a href="#" class="hover:text-gray-600">Personal agent</a></li>
+          <li><a href="#" class="hover:text-gray-600">Focus agents</a></li>
+          <li><a href="#" class="hover:text-gray-600">Integrations</a></li>
+          <li><a href="#" class="hover:text-gray-600">Security</a></li>
+          <li><a href="#" class="hover:text-gray-600">Pricing</a></li>
+          <li><a href="#" class="hover:text-gray-600">Changelog</a></li>
+          <li><a href="#" class="hover:text-gray-600">Status</a></li>
+        </ul>
+        <div class="pt-10 space-y-4">
+          <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Use Cases</h4>
+          <ul class="space-y-3 text-[15px]">
+            <li><a href="#" class="hover:text-gray-600">Product</a></li>
+            <li><a href="#" class="hover:text-gray-600">Customer Success</a></li>
+            <li><a href="#" class="hover:text-gray-600">Leadership</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Resources Links -->
+      <div class="space-y-4">
+        <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Resources</h4>
+        <ul class="space-y-3 text-[15px]">
+          <li><a href="#" class="hover:text-gray-600">Help center</a></li>
+          <li><a href="#" class="hover:text-gray-600">Blog</a></li>
+          <li><a href="#" class="hover:text-gray-600">Guides</a></li>
+          <li><a href="#" class="hover:text-gray-600">Legal</a></li>
+          <li><a href="#" class="hover:text-gray-600">Trust center</a></li>
+        </ul>
+        <div class="pt-10 space-y-4">
+          <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Community</h4>
+          <ul class="space-y-3 text-[15px]">
+            <li><a href="#" class="hover:text-gray-600">Customer</a></li>
+            <li><a href="#" class="hover:text-gray-600">Community</a></li>
+          </ul>
+        </div>
+        <div class="pt-10 space-y-4">
+          <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Company</h4>
+          <ul class="space-y-3 text-[15px]">
+            <li><a href="#" class="hover:text-gray-600">About</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Twine in Action Links -->
+      <div class="space-y-4">
+        <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Twine in action</h4>
+        <ul class="space-y-3 text-[15px]">
+          <li><a href="#" class="hover:text-gray-600 font-medium">Book a demo</a></li>
+          <li><a href="#" class="hover:text-gray-600">Sign in</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Social and Certifications Section -->
+    <div class="md:col-span-3 space-y-12">
+      <div class="space-y-4">
+        <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Social</h4>
+        <ul class="space-y-3 text-[15px]">
+          <li><a href="#" class="hover:text-gray-600">LinkedIn</a></li>
+          <li><a href="#" class="hover:text-gray-600">Youtube</a></li>
+          <li><a href="#" class="hover:text-gray-600">X</a></li>
+        </ul>
+      </div>
+      <div class="space-y-4 pt-4">
+        <div class="flex gap-3">
+          <div class="bg-[#DED6D1] rounded-4xl">
+            <img src="./assets/images/aicpa.svg" alt="AICPA certification badge with stars" class="w-15">
+          </div>
+          <div class="bg-[#DED6D1] rounded-4xl">
+            <img src="./assets/images/gdpr.png" alt="gdpr" class="w-15">
+          </div>
+        </div>
+        <div class="text-sm text-gray-500 leading-snug">
+          <p>End-to-end encryption.</p>
+          <p>Never trained on your data.</p>
+          <a href="#" class="text-black font-semibold underline underline-offset-4 decoration-1">Learn more</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+    <script type="module" src="./hamburger.js"></script>
+    <script type="module" src="./twine.js"></script>
+</body>
+</html>

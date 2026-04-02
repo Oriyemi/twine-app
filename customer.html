@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>customer</title>
+     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./input.css">
+</head>
+<body>
+   <header class="m-5 ">
+       <nav class="flex items-center justify-between p-4 sticky top-0">
+        <img src="./assets/images/logo.webp" alt="logo" class="w-20 text-black">
+
+       <div class="hidden md:flex items-center gap-8 text-gray-700 font-medium">
+        <a href="/product.html" class="hover:text-black flex items-center gap-1 text-sm">Product 
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+        </a>
+        <a href="/customer.html" class="hover:text-black text-sm">Customers</a>
+        <a href="/blog.html" class="hover:text-black text-sm">Blog</a>
+        <a href="/pricing.html" class="hover:text-black text-sm">Pricing</a>
+    </div>
+
+    <div class="hidden md:block items-center gap-6">
+        <a href="#" class="text-black hover:text-black text-sm mr-6">Log in</a>
+        <a href="#" class="bg-black text-sm text-white px-5 py-2.5 rounded-lg font-medium hover:bg-gray-800 transition-colors">
+            Book a demo
+        </a>
+    </div>
+
+                  <button id="hamburger" class="md:hidden block p-2">
+        <img src="./assets/images/hambuger.webp" alt="hamburger" class="w-6 h-6">
+    </button>
+
+    <div id="navigator" class="hidden bg-[#FAFAFA] w-full sm:w-3/4  h-220 p-8  absolute  items-center inset-0 mx-auto rounded-2xl z-10 top-14">
+    <button id="closeBtn" class="absolute top-2 right-2 text-xl">
+        &times; 
+    </button>
+
+    <a href="/product.html" class="block border-b p-4">Product</a>
+    <a href="/customer.html" class="block border-b p-4">Customers</a>
+    <a href="/blog.html" class="block border-b p-4">Blog</a>
+    <a href="/pricing.html" class="block p-4">Pricing</a>
+  </div>
+
+</nav>
+    </header>
+    <!-- hero-section -->
+     <section>
+        <div class="flex flex-col items-center justify-center text-center py-8 px-10">
+            <h1 class="text-xl md:text-2xl lg:text-2xl   text-gray-900 max-w-2xl font-medium ">
+               Customer stories
+           </h1>
+
+           <p class="mt-3 text-3xl md:text-5xl text-gray-900 font-['Times_New_Roman']  max-w-2xl ">
+             Meet the teams who've cracked the code on cross-functional alignment
+           </p>
+
+        </div>
+     </section>
+     <section>
+        <div class="grid grid-cols-1 lg:grid-cols-2 min-h-screen gap-3 mx-2 md:mx-15" >
+            <div class=" flex flex-col p-5 rounded-2xl bg-[#E9E8E5]  ">
+               <img src="./assets/images/martec.webp" alt="martec logo" class="w-45 object-contain">
+               <h1 class="text-3xl md:text-4xl font-instrument font-medium py-10"><span class="text-[#504f53]">From data drudgery to daily rhythm</span>How The Martec made the customer intelligence  effortless</h1>
+               <a href="#" class="inline-block text-lg font-medium  pb-1 hover:opacity-70 transition">
+               Read more
+              </a>
+               <div class="flex flex-col md:flex-row gap-5 justify-center ">
+                <div class="border-t-2 border-black pt-5 mt-2 md:mt-14">
+                    
+                    <h1 class="font-['Times_New_Roman']  text-3xl font-medium">90% time reduction</h1>
+                    <p class="font-medium font-instruments">from 3-week manuel analysis to instant commercial insights</p>
+                </div>
+                <div  class="border-t border-black pt-5 mt-14">
+                    
+                    <h1  class="font-['Times_New_Roman']  text-3xl font-medium">2-week lag eliminated</h1>
+                    <p class="font-medium">with same-day feature feedback to egineering teams</p>
+                </div>
+
+               </div>
+
+            </div>
+            <div class=" flex flex-col p-10 rounded-2xl bg-[#0d3f31] text-[#ffff]">
+                <img src="./assets/images/freshclinics.webp" alt="freshclinics logo" class="w-45 object-contain brightness-0 invert  ">
+                <h1 class="text-3xl md:text-4xl   font-instrument font-medium py-10"><span class="text-[#504f53]">From quarterly planning to daily intelligence</span>How Fresh Clinics transformed 1,500+ monthly calls into a continuous discovery engine</h1>
+                <a href="#" class="inline-block text-lg font-medium  pb-1 hover:opacity-70 transition">
+                Read more
+                </a>
+                 <div class="flex flex-col md:flex-row gap-5 justify-center">
+                <div  class="border-t-2 border-black pt-5 mt-14">
+                    
+                    <h1  class="font-['Times_New_Roman']  text-3xl font-medium">100% visibility</h1>
+                    <p>into customer conversations across 1,500+ monthly calls</p>
+                </div>
+                <div class="border-t border-black pt-5 mt-2 md:mt-14">
+                    
+                    <h1  class="font-['Times_New_Roman']  text-3xl font-medium">30 hrs saved monthly</h1>
+                    <p class="font-medium font-instruments">on manuel discovery and feedback synthesis</p>
+                </div>
+
+               </div>
+            </div>
+            <div class=" flex flex-col p-10 rounded-2xl bg-[#ede6bf] ">
+                 <img src="./assets/images/hatch.webp" alt="hatch logo" class="w-38 object-contain">
+                 <h1 class="text-3xl md:text-4xl   font-instrument font-medium py-10"><span class="text-[#504f53]">From bottleneck to breakthrough</span>How Hatch eliminated customer feedback silos during their biggest product launch</h1>
+                  <a href="#" class="inline-block text-lg font-medium  pb-1 hover:opacity-70 transition">
+                  Read more
+                 </a>
+                  <div class="flex flex-col md:flex-row gap-5 justify-center">
+                <div class="border-t-2 border-black pt-5 mt-14">
+                    
+                    <h1  class="font-['Times_New_Roman']  text-3xl font-medium">70%+ reduction </h1>
+                    <p class="font-medium font-instruments">in time spent searching for customer insights</p>
+                </div>
+                <div  class="border-t border-black pt-5 mt-2 md:mt-14">
+                    
+                    <h1  class="font-['Times_New_Roman']  text-3xl font-medium">5* faster</h1>
+                    <p class="font-medium font-instruments">product iteractions with small wins deployed within days instead of months</p>
+                </div>
+
+               </div>
+            </div>
+            <div class="flex flex-col p-10 rounded-2xl bg-[#B8B5BE] " >
+                <img src="./assets/images/smokeball.webp" alt="smokeball logo" class="w-38 object-contain">
+                <h1 class="text-3xl md:text-4xl   font-instrument font-medium py-10"><span class="text-[#504f53]">Scaling customer centricity</span>How Smokeball created a unified customer intelligence system across continents</h1>
+                 <a href="#" class="inline-block text-lg font-medium  pb-1 hover:opacity-70 transition">
+               Read more
+              </a>
+                 <div class="flex flex-col md:flex-row gap-5 justify-center">
+                <div class="border-t-2 border-black pt-5 mt-14">
+                    
+                    <h1  class="font-['Times_New_Roman']  text-3xl font-medium">5 hours saved per week</h1>
+                    <p  class="font-medium font-instruments">per product manager on manuel documentation</p>
+                </div>
+                <div  class="border-t border-black pt-5 mt-2 md:mt-14">
+
+                    <h1  class="font-['Times_New_Roman']  text-3xl font-medium">3* faster</h1>
+                    <p class="font-medium font-instruments">discovery cycles through immediate access to objective evidence</p>
+                </div>
+                   
+                </div>
+
+               </div>
+               <div class="flex flex-col p-10 rounded-2xl bg-[#3A332A] text-[#ffff]">
+                    <img src="./assets/images/tapcart.webp" alt="tapcart logo" class="w-38 object-contain brightness-0 invert">
+                    <h1 class="text-3xl md:text-4xl   font-instrument font-medium py-10 "><span class="text-[#504f53]">From filtered to firsthand</span>How Tapcart achieved 100* more customer feedback by letting AI do the work</h1>
+                    <a href="#" class="inline-block text-lg font-medium  pb-1 hover:opacity-70 transition">
+                    Read more
+                    </a>
+                     <div class="flex flex-col md:flex-row gap-5 justify-center">
+                   <div class="border-t-2 border-black pt-5 mt-14">
+                       <h1  class="font-['Times_New_Roman']  text-3xl font-medium">100+ insights daily</h1>
+                       <p class="font-medium font-instruments">(instead of 1-2 captured per day) by automating the process</p>
+                   </div>
+                   <div class="border-t border-black pt-5 mt-2 md:mt-14">
+                       
+                       <h1  class="font-['Times_New_Roman']  text-3xl font-medium">10* improvement</h1>
+                       <p  class="font-medium">in roadmap decision-making based on voice of customer </p>
+                   </div>
+                  </div>
+               </div>
+               <div class="flex flex-col p-10 rounded-2xl bg-[#5E938B]">
+                    <img src="./assets/images/trace.webp" alt="trace logo" class="w-38 object-contain">
+                    <h1 class="text-3xl md:text-4xl   font-instrument font-medium py-10"><span class="text-[#504f53]">Building a customer-centric climate tech company</span>How Trace turned time zone challenges into an intelligence engine that never sleeps</h1>
+                     <a href="#" class="inline-block text-lg font-medium  pb-1 hover:opacity-70 transition">
+                    Read more
+                    </a>
+                     <div class="flex flex-col md:flex-row gap-5 justify-center">
+                   <div class="border-t-2 border-black pt-5 mt-14">
+                      
+                       <h1  class="font-['Times_New_Roman']  text-3xl font-medium">10* faster</h1>
+                       <p  class="font-medium">to get relevant customer feedback in front of decision makers across the org</p>
+                   </div>
+                   <div  class="border-t border-black pt-5 mt-2 md:mt-14">
+                       
+                       <h1  class="font-['Times_New_Roman']  text-3xl font-medium">4 continents</h1>
+                       <p  class="font-medium">collaborating seamlessly across Uk,South Africa,India, and Australia</p>
+                   </div>
+   
+                  </div>
+               </div>
+               <div class="flex flex-col p-10 rounded-2xl bg-[#8DA5AC]">
+                   <img src="./assets/images/cascade.webp" alt="cascade logo" class="w-38 object-contain">
+                   <h1 class="text-3xl md:text-4xl   font-instrument font-medium py-10"><span class="text-[#504f53]">From manual to magic</span>How Cascade creted an objective, scalable system for product discovery</h1>
+                    <a href="#" class="inline-block text-lg font-medium  pb-1 hover:opacity-70 transition">
+                    Read more
+                    </a>
+                    <div class="flex flex-col md:flex-row gap-5 justify-center">
+                   <div class="border-t-2 border-black pt-5 mt-14">
+                       
+                       <h1  class="font-['Times_New_Roman']  text-3xl font-medium">10+ hrs saved</h1>
+                       <p  class="font-medium">weekly on manuel call reviews, freeing up time for strategic product decisions</p>
+                   </div>
+                   <div class="border-t border-black pt-5 mt-2 md:mt-14">
+                       
+                       <h1  class="font-['Times_New_Roman']  text-3xl font-medium">15* more feedback</h1>
+                       <p  class="font-medium">captured across all customer conversations, not just priority accounts</p>
+                   </div>
+   
+                  </div>
+               </div>
+               <div class="flex flex-col p-10 rounded-2xl bg-[#A788AF]">
+                   <img src="./assets/images/nvaas.png" alt="nvaas logo" class="w-38 object-contain">
+                   <h1 class="text-3xl md:text-4xl   font-instrument font-medium py-10"><span class="text-[#504f53]">From chaos to clarity</span>A Customer Success expets's guide to scaling customer intelligence</h1>
+                   <a href="#" class="inline-block text-lg font-medium  pb-1 hover:opacity-70 transition">
+                    Read more
+                    </a>
+                    <div class="flex flex-col md:flex-row gap-5 justify-center">
+                   <div class="border-t-2 border-black pt-5 mt-14">
+                       
+                       <h1  class="font-['Times_New_Roman']  text-3xl font-medium">5+ hrs saved</h1>
+                       <p  class="font-medium">weekly per CSM on feedback documentation and reporting</p>
+                   </div>
+                   <div class="border-t border-black pt-5 mt-2 md:mt-14">
+                       
+                       <h1  class="font-['Times_New_Roman']  text-3xl font-medium">5* increase</h1>
+                       <p  class="font-medium ">in actionable feedback captured from interactions</p>
+                   </div>
+   
+                  </div>
+               </div>
+            </div>
+
+        </div>
+     </section>
+     <!-- footer -->
+      <footer class="bg-white py-10 px-6 md:px-20 text-[#1a1a1a]">
+  <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+  
+    <!-- Logo and Description Section (Visible on medium and up screens) -->
+    <div class="md:col-span-3 space-y-6">
+      <div class="flex items-center gap-2">
+        <div>
+          <img src="./assets/images/logo.webp" alt="logo" />
+        </div>
+      </div>
+      <p class="text-gray-500 leading-relaxed max-w-[60%]">
+        Twine closes the gap between customer conversations and company action.
+      </p>
+    </div>
+
+    <!-- Links Section -->
+    <div class="md:col-span-6 grid grid-cols-2 md:grid-cols-3 gap-10">
+      <!-- Product Links -->
+      <div class="space-y-4">
+        <h4 class="text-xs font-medium text-gray-400 uppercase tracking-wider">Product</h4>
+        <ul class="space-y-3 text-[15px]">
+          <li><a href="#" class="hover:text-gray-600">Baseline agent</a></li>
+          <li><a href="#" class="hover:text-gray-600">Personal agent</a></li>
+          <li><a href="#" class="hover:text-gray-600">Focus agents</a></li>
+          <li><a href="#" class="hover:text-gray-600">Integrations</a></li>
+          <li><a href="#" class="hover:text-gray-600">Security</a></li>
+          <li><a href="#" class="hover:text-gray-600">Pricing</a></li>
+          <li><a href="#" class="hover:text-gray-600">Changelog</a></li>
+          <li><a href="#" class="hover:text-gray-600">Status</a></li>
+        </ul>
+        <div class="pt-10 space-y-4">
+          <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Use Cases</h4>
+          <ul class="space-y-3 text-[15px]">
+            <li><a href="#" class="hover:text-gray-600">Product</a></li>
+            <li><a href="#" class="hover:text-gray-600">Customer Success</a></li>
+            <li><a href="#" class="hover:text-gray-600">Leadership</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Resources Links -->
+      <div class="space-y-4">
+        <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Resources</h4>
+        <ul class="space-y-3 text-[15px]">
+          <li><a href="#" class="hover:text-gray-600">Help center</a></li>
+          <li><a href="#" class="hover:text-gray-600">Blog</a></li>
+          <li><a href="#" class="hover:text-gray-600">Guides</a></li>
+          <li><a href="#" class="hover:text-gray-600">Legal</a></li>
+          <li><a href="#" class="hover:text-gray-600">Trust center</a></li>
+        </ul>
+        <div class="pt-10 space-y-4">
+          <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Community</h4>
+          <ul class="space-y-3 text-[15px]">
+            <li><a href="#" class="hover:text-gray-600">Customer</a></li>
+            <li><a href="#" class="hover:text-gray-600">Community</a></li>
+          </ul>
+        </div>
+        <div class="pt-10 space-y-4">
+          <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Company</h4>
+          <ul class="space-y-3 text-[15px]">
+            <li><a href="#" class="hover:text-gray-600">About</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Twine in Action Links -->
+      <div class="space-y-4">
+        <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Twine in action</h4>
+        <ul class="space-y-3 text-[15px]">
+          <li><a href="#" class="hover:text-gray-600 font-medium">Book a demo</a></li>
+          <li><a href="#" class="hover:text-gray-600">Sign in</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Social and Certifications Section -->
+    <div class="md:col-span-3 space-y-12">
+      <div class="space-y-4">
+        <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Social</h4>
+        <ul class="space-y-3 text-[15px]">
+          <li><a href="#" class="hover:text-gray-600">LinkedIn</a></li>
+          <li><a href="#" class="hover:text-gray-600">Youtube</a></li>
+          <li><a href="#" class="hover:text-gray-600">X</a></li>
+        </ul>
+      </div>
+      <div class="space-y-4 pt-4">
+        <div class="flex gap-3">
+          <div class="bg-[#DED6D1] rounded-4xl">
+            <img src="./assets/images/aicpa.svg" alt="AICPA certification badge with stars" class="w-15">
+          </div>
+          <div class="bg-[#DED6D1] rounded-4xl">
+            <img src="./assets/images/gdpr.png" alt="gdpr" class="w-15">
+          </div>
+        </div>
+        <div class="text-sm text-gray-500 leading-snug">
+          <p>End-to-end encryption.</p>
+          <p>Never trained on your data.</p>
+          <a href="#" class="text-black font-semibold underline underline-offset-4 decoration-1">Learn more</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</footer>
+    <script type="module" src="./hamburger.js"></script>
+    <!-- <script type="module" src="./twine.js"></script> -->
+</body>
+</html>

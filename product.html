@@ -1,0 +1,823 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product-Baseline</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./input.css" />
+  </head>
+  <body>
+    <div
+      class="relative w-full min-h-screen bg-[url('/assets/images/baselineimg.webp')] bg-cover bg-center"
+    >
+      <!-- Navigation bar on top -->
+      <header class="relative w-full">
+        <nav
+          class="flex items-center justify-between p-4 sticky top-0 z-10 bg-opacity-70"
+        >
+          <img
+            src="./assets/images/logo.webp"
+            alt="logo"
+            class="w-20 text-black"
+          />
+
+          <div
+            class="hidden md:flex items-center gap-8 text-gray-700 font-medium"
+          >
+            <a
+              href="/product.html"
+              id="product"
+              class="hover:text-black flex items-center gap-1 text-sm"
+            >
+              Product
+              <svg
+                id="closenav"
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </a>
+            <a href="/customer.html" class="hover:text-black text-sm"
+              >Customers</a
+            >
+            <a href="/blog.html" class="hover:text-black text-sm">Blog</a>
+            <a href="/pricing.html" class="hover:text-black text-sm">Pricing</a>
+          </div>
+
+          <div class="hidden md:block items-center gap-6">
+            <a href="#" class="text-black hover:text-black text-sm mr-6"
+              >Log in</a
+            >
+            <a
+              href="#"
+              class="bg-black text-sm text-white px-5 py-2.5 rounded-lg font-medium hover:bg-gray-800 transition-colors"
+            >
+              Book a demo
+            </a>
+          </div>
+
+          <button id="hamburger" class="md:hidden block p-2">
+            <img
+              src="./assets/images/hambuger.webp"
+              alt="hamburger"
+              class="w-6 h-6"
+            />
+          </button>
+
+          <div
+            id="navigator"
+            class="hidden bg-[#FAFAFA] w-full sm:w-3/4 h-220 p-8 absolute items-center inset-0 mx-auto rounded-2xl z-10 top-14"
+          >
+            <button id="closeBtn" class="absolute top-2 right-2 text-xl">
+              &times;
+            </button>
+
+            <a href="/product.html" class="block border-b p-4">Product</a>
+            <a href="/customer.html" class="block border-b p-4">Customers</a>
+            <a href="/blog.html" class="block border-b p-4">Blog</a>
+            <a href="/pricing.html" class="block p-4">Pricing</a>
+          </div>
+        </nav>
+      </header>
+
+      <!-- product -->
+      <div
+        id="navigatorcontent"
+        class="hidden flex gap-20 bg-white p-6 rounded-lg shadow-lg max-w-4xl mx-auto"
+      >
+        <!-- Agents Section -->
+        <div class="mb-6">
+          <h2 class="text-gray-600 text-sm mb-4">Agents</h2>
+          <div class="grid grid-cols gap-4">
+            <div class="flex items-center space-x-2">
+              <div class="bg-[#615151] p-2 inline-block">
+                <img
+                  src="assets/images/product-6.png"
+                  alt="Leadership"
+                  class="w-6 h-6 text-[#bf92ea]"
+                />
+              </div>
+              <div>
+                <h3 class="text-sm font-medium">Baseline agent</h3>
+                <p class="text-sm text-gray-500">
+                  Extract feedback from calls, automatically
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center space-x-2">
+              <div class="bg-[#AFACD3] text-[#615151] p-2 inline-block">
+                <img
+                  src="assets/images/pro-5.svg"
+                  alt="Leadership"
+                  class="w-6 h-6"
+                />
+              </div>
+              <div>
+                <h3 class="text-sm font-medium">Personal agent</h3>
+                <p class="text-sm text-gray-500">
+                  Relevant intel delivered where you work
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center space-x-2">
+              <div class="bg-[#A6BFBC] p-2 inline-block">
+                <img
+                  src="assets/images/pro.svg"
+                  alt="Leadership"
+                  class="w-6 h-6"
+                />
+              </div>
+              <div>
+                <h3 class="text-sm font-medium">Focus agents</h3>
+                <p class="text-sm text-gray-500">
+                  Top themes, prioritized by revenue impact
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Team Section -->
+        <div>
+          <h2 class="text-sm text-gray-600 mb-4">Team</h2>
+          <div class="grid grid-cols gap-4">
+            <div class="flex items-center space-x-2">
+              <div class="bg-gray-100 p-2 inline-block">
+                <img
+                  src="assets/images/product-3.svg"
+                  alt="Leadership"
+                  class="w-6 h-6"
+                />
+              </div>
+              <div>
+                <h3 class="font-medium text-sm">Product</h3>
+                <p class="text-sm text-gray-500">
+                  Capture feedback, prioritize by revenue impact
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center space-x-2">
+              <div class="bg-gray-100 p-2 inline-block">
+                <img
+                  src="assets/images/product-2.webp"
+                  alt="Leadership"
+                  class="w-6 h-6"
+                />
+              </div>
+              <div>
+                <h3 class="font-medium text-sm">Customer Success</h3>
+                <p class="text-sm text-gray-500">
+                  Eliminate notes, prevent churn, drive adoption
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center space-x-2">
+              <div class="bg-gray-100 p-2 inline-block">
+                <img
+                  src="assets/images/product-1.svg"
+                  alt="Leadership"
+                  class="w-6 h-6"
+                />
+              </div>
+              <div>
+                <h3 class="text-sm font-medium">Leadership</h3>
+                <p class="text-sm text-gray-500">
+                  Align teams, spot trends, build momentum
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content below the navigation -->
+      <div class="relative w-full p-3 min-h-screen flex flex-col text-white">
+        <!-- Text content -->
+        <div class="flex flex-col px-4 py-2 md:px-6">
+          <h1 class="text-2xl md:text-4xl font-serif text-gray-900 max-w-2xl">
+            <span class="text-[#5B6368]">Baseline agent</span> <br />
+            What every company should know. <br />
+            Now, it’s automatic.
+          </h1>
+        </div>
+        <div class="flex py-6 gap-3 px-4 md:px-6">
+          <button
+            class="bg-[#141414] text-white px-2 py-1 rounded-sm font-medium transition-opacity hover:opacity-90 active:scale-95"
+          >
+            Book a demo
+          </button>
+          <button
+            class="bg-[#d6d1c9] text-[#141414] px-2 py-1 rounded-sm font-medium transition-colors hover:bg-[#cec9c1] active:scale-95"
+          >
+            Watch a demo
+          </button>
+        </div>
+        <div>
+          <img
+            src="./assets/images/baseline revenue.webp"
+            alt="hero image"
+            class="mx-auto w-400"
+          />
+        </div>
+
+        <div
+          class="flex flex-col md:flex-row items-center justify-center m-6 md:m-26 gap-10"
+        >
+          <div>
+            <div class="w-7 h-7">
+              <img
+                src="./assets/images/run baseline.webp"
+                alt="runs-baseline"
+                class="w-full h-ful opacity-80"
+              />
+            </div>
+            <div>
+              <h3 class="text-sm font-medium text-gray-900 leading-tight py-2">
+                Runs in the background
+              </h3>
+              <p class="text-[#686565] text-sm">
+                Set up once and Twine continuously monitors customer
+                conversations. See patterns across thousands of calls without
+                watching a single recording. Tied to revenue impact.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="w-7 h-7">
+              <img
+                src="./assets/images/always-baseline.svg"
+                alt="always"
+                class="w-full h-ful opacity-80"
+              />
+            </div>
+            <div>
+              <h3 class="text-sm font-medium text-gray-900 leading-tight py-2">
+                Always-on radar
+              </h3>
+              <p class="text-[#686565] leading-relaxed text-sm">
+                A live pulse of your business, showing you what’s hurting your
+                pipeline, what signals are emerging, and what customers love.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="w-7 h-7">
+              <img
+                src="./assets/images/day-baseline.webp"
+                alt="arrow"
+                class="w-full h-ful opacity-80"
+              />
+            </div>
+            <div>
+              <h3 class="text-sm font-medium text-gray-900 leading-tight py-2">
+                Day one value
+              </h3>
+              <p class="text-[#686565] leading-relaxed text-sm">
+                Just connect your calls and CRM. Baseline starts working
+                instantly. Product, Sales, CS, and execs finally working from
+                the same reality before lunchtime.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- baseline-staff -->
+    <div class="flex flex-col lg:flex-row gap-8 border-t mt-30 mx-4">
+      <div class="py-10">
+        <h1 class="font-['Times_New_Roman'] text-5xl pb-4 max-w-7xl">
+          Like having an analyst on staff.
+        </h1>
+        <p class="text-[#5B6368]">(Only faster, cheaper, and always on time)</p>
+      </div>
+      <div class="flex flex-col sm:flex md:flex-row gap-4">
+        <div class="py-10">
+          <img
+            src="./assets/images/baseline-proof.webp"
+            alt="baseline-proof"
+            class="w-90 lg:w-120"
+          />
+          <h1 class="pt-6 text-2xl font-semibold sm:max-w-6xl sm:mx-auto">
+            See the proof
+          </h1>
+          <p class="text-[#5B6368] text-lg md:text-2xl sm:max-w-6xl sm:mx-auto">
+            Every insight comes backed by real clips and CRM data.
+          </p>
+        </div>
+        <div class="py-10">
+          <img
+            src="./assets/images/baseline-shift.webp"
+            alt="baseline-shift"
+            class="w-90 lg:w-120"
+          />
+          <h1 class="font-semibold text-2xl pt-6">And the shifts</h1>
+          <p class="text-[#5B6368] text-lg md:text-2xl">
+            Highlights what’s rising, falling, or newly emerging over time.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Baseline reports -->
+    <div class="flex flex-col md:flex-row gap-5 lg:gap-95 border-t mt-30 mx-8">
+      <div class="pt-4">
+        <h1 class="text-sm text-black font-medium">Baseline reports</h1>
+      </div>
+
+      <!-- Title  -->
+      <div class="lg:text-right">
+        <h1
+          class="font-['Times_New_Roman'] text-4xl lg:text-5xl pb-4 max-w-7xl font-normal"
+        >
+          The view your board thinks you already have.
+        </h1>
+        <p class="text-[#5B6368] text-sm">(Now you get these out of the box)</p>
+      </div>
+    </div>
+
+    <!-- Intelligence Sections -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 mt-6 mx-6">
+      <!--  Product Intelligence -->
+      <div>
+        <img
+          src="./assets/images/product intelligence.webp"
+          alt="product intelligence"
+          class="w-full h-auto"
+        />
+        <h3 class="text-xl font-semibold pt-2">Product intelligence</h3>
+        <p class="text-[#5B6368] text-lg font-instrument">
+          The top 10 themes each week, with evidence and revenue context. Know
+          what to build, fix, or drop before the roadmap drifts off course.
+        </p>
+      </div>
+
+      <!-- Revenue Intelligence -->
+      <div>
+        <img
+          src="/assets/images/revenue inte.webp"
+          alt="revenue intelligence"
+          class="w-full h-auto"
+        />
+        <h3 class="text-xl font-semibold pt-2">Revenue intelligence</h3>
+        <p class="text-[#5B6368] text-lg font-instrument">
+          A running pulse on what’s strategically blocking or advancing deals.
+          Spot the patterns behind pipeline risk and revenue acceleration.
+        </p>
+      </div>
+
+      <!--  Competitive Intelligence -->
+      <div>
+        <img
+          src="/assets/images/competive inte.webp"
+          alt="competitive intelligence"
+          class="w-full h-auto"
+        />
+        <h3 class="text-xl font-semibold pt-2">Competitive intelligence</h3>
+        <p class="text-[#5B6368] text-lg font-instrument">
+          A customer-powered leaderboard. Your biggest threats clearly flagged.
+          See who you’re beating, who you’re losing to, and why.
+        </p>
+      </div>
+
+      <!--  Customer Love Spotlight -->
+      <div>
+        <img
+          src="/assets/images/customer love.webp"
+          alt="customer love"
+          class="w-full h-auto"
+        />
+        <h3 class="text-xl font-semibold pt-2">Customer love spotlight</h3>
+        <p class="text-[#5B6368] text-lg font-instrument">
+          Your strongest advocates and what they value most. Steal quotes for
+          testimonials, decks, and campaigns - or just remind the team what’s
+          working.
+        </p>
+      </div>
+    </div>
+    <!--  -->
+    <div
+      class="border-t mx-4 mt-20 flex flex-col lg:flex-row justify-between gap-10 items-center"
+    >
+      <!-- Text Content Section -->
+      <div class="mt-10 flex flex-col justify-start items-start md:mb-44">
+        <h4
+          class="font-['Times_New_Roman'] text-4xl lg:text-5xl pb-4 font-normal max-w-7xl"
+        >
+          Clear, revenue-weighted themes that end debates and align teams.
+        </h4>
+        <h4
+          class="font-['Times_New_Roman'] text-4xl lg:text-5xl pb-4 font-normal max-w-7xl"
+        >
+          Delivered on schedule.
+        </h4>
+      </div>
+
+      <!-- Information Boxes Section -->
+      <div class="mt-2 grid grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+        <!-- Product Box -->
+        <div class="p-3">
+          <h4 class="text-xl font-semibold">Product</h4>
+          <p class="text-[#686565] text-sm">
+            Prioritize with receipts. Debates end when everyone sees
+            stack-ranked themes. Delivered with revenue impact attached.
+          </p>
+        </div>
+        <!-- Sales Box -->
+        <div class="p-3">
+          <h4 class="text-xl font-semibold">Sales</h4>
+          <p class="text-[#686565] text-sm">
+            Back every ask with direct quotes, logos affected, and $$$ at risk.
+            See fixes move fast. Kill blockers before deals stall.
+          </p>
+        </div>
+        <!-- Customer Success Box -->
+        <div class="p-3">
+          <h4 class="text-xl font-semibold">Customer Success</h4>
+          <p class="text-[#686565] text-sm">
+            Trade anecdotes for evidence. Spot and escalate issues emerging
+            across key accounts. Protect renewals, drive expansion.
+          </p>
+        </div>
+        <!-- Product Marketing Box -->
+        <div class="p-3">
+          <h4 class="text-xl font-semibold">Product Marketing</h4>
+          <p class="text-[#686565] text-sm">
+            Learn how customers stack you against rivals. Lift crisp quotes for
+            positioning, proof, and launch materials.
+          </p>
+        </div>
+        <!-- Executives Box -->
+        <div class="p-3">
+          <h4 class="text-xl font-semibold">Executives</h4>
+          <p class="text-[#686565] text-sm">
+            A live pulse of the business. No waiting, no decks. See everyone
+            operate from the same truth.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="mx-auto text-center mt-50">
+      <h4 class="font-['Times_New_Roman'] text-5xl">
+        Out of the chaos,<br />
+        into the clear.
+      </h4>
+    </div>
+
+    <!--  -->
+    <div
+      class="flex flex-col lg:flex-row justify-center items-center gap-8 mt-16"
+    >
+      <div class="mx-6">
+        <h4 class="border-b mt-2 text-2xl text-start pb-2">Before</h4>
+        <div class="flex gap-4">
+          <div>
+            <img
+              src="/assets/images/before.webp"
+              alt="before"
+              class="w-100 lg:w-full"
+            />
+          </div>
+
+          <div class="mt-10">
+            <ul class="list-none">
+              <li class="flex items-start mb-3 text-md font-semibold">
+                <img
+                  src="/assets/images/cross icon.webp"
+                  alt="Cross"
+                  class="w-5 h-5 mr-2"
+                />
+                Fragmented signals dictate million-dollar decisions
+              </li>
+              <li class="flex items-start mb-3 text-md font-semibold">
+                <img
+                  src="/assets/images/cross icon.webp"
+                  alt="Cross"
+                  class="w-5 h-5 mr-2"
+                />
+                Blockers stay invisible until the quarter collapses
+              </li>
+              <li class="flex items-start mb-3 text-md font-semibold">
+                <img
+                  src="/assets/images/cross icon.webp"
+                  alt="Cross"
+                  class="w-5 h-5 mr-2"
+                />
+                Opportunities vanish while teams argue
+              </li>
+              <li class="flex items-start mb-3 text-md font-semibold">
+                <img
+                  src="/assets/images/cross icon.webp"
+                  alt="Cross"
+                  class="w-5 h-5 mr-2"
+                />
+                Everything’s urgent, everyone’s pissed
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="mx-6 mb-20">
+        <h4 class="border-b mt-2 text-start text-2xl pb-2">After</h4>
+        <div class="flex gap-4">
+          <div>
+            <img
+              src="/assets/images/after.webp"
+              alt="after"
+              class="w-100 lg:w-full"
+            />
+          </div>
+          <div class="mt-10">
+            <ul class="list-none">
+              <li class="flex items-start mb-3 text-md font-semibold">
+                <img
+                  src="/assets/images/check icons.webp"
+                  alt="Cross"
+                  class="w-5 h-5 mr-2"
+                />
+                The biggest opportunities, delivered
+              </li>
+              <li class="flex items-start mb-3 text-md font-semibold">
+                <img
+                  src="/assets/images/check icons.webp"
+                  alt="Cross"
+                  class="w-5 h-5 mr-2"
+                />
+                Blockers spotted early enough to save deals
+              </li>
+              <li class="flex items-start text-md font-semibold mb-3">
+                <img
+                  src="/assets/images/check icons.webp"
+                  alt="Cross"
+                  class="w-5 h-5 mr-2"
+                />
+                Competitive threats flagged before they hit pipeline
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-t mx-4 my-25">
+      <h4 class="font-['Times_New_Roman'] mt-12 text-5xl">
+        Reclaim 10+ hours / week. <br />
+        Per team member.
+      </h4>
+      <div class="flex gap-4 mt-4">
+        <p class="text-[#7d7d7d] text-sm hidden lg:block">
+          See what your baseline agent <br />
+          will surface this week ⟶
+        </p>
+        <button
+          class="bg-[#141414] text-white px-1 py-1 rounded-sm text-sm font-medium transition-opacity hover:opacity-90 active:scale-95"
+        >
+          Book a demo
+        </button>
+      </div>
+    </div>
+    <!--  -->
+    <div class="flex gap-4 px-5 overflow-x-auto items-stretch pb-10">
+      <div class="bg-[#e7e7e7] p-8 min-w-90 flex flex-col justify-between">
+        <div>
+          <img
+            src="./assets/images/dylan.webp"
+            alt="dylan"
+            class="w-32 mb-6 grayscale"
+          />
+          <h2 class="text-2xl mb-10 leading-tight font-instrument">
+            “One import, and Twine did the work we’d been slogging through for
+            hours every week. On day one, it uncovered product gaps we’d missed
+            entirely.”
+          </h2>
+        </div>
+        <div class="flex justify-between items-end mt-auto">
+          <div>
+            <p class="font-bold">Dylan Mathiesen</p>
+            <p class="text-gray-500">Head of Product</p>
+          </div>
+          <img
+            src="./assets/images/cascade.webp"
+            alt="cascade"
+            class="w-28 object-contain"
+          />
+        </div>
+      </div>
+      <div class="bg-[#e7e7e7] p-8 min-w-90 flex flex-col justify-between">
+        <div>
+          <img
+            src="./assets/images/mansfield.webp"
+            alt="tom"
+            class="w-32 mb-6 grayscale"
+          />
+          <h2 class="text-2xl mb-10 leading-tight font-instrument">
+            “We went from bottlenecked communication to consistent, reliable
+            feedback moving freely across the org. Effortlessly.”
+          </h2>
+        </div>
+        <div class="flex justify-between items-end mt-auto">
+          <div>
+            <p class="font-bold">Tom Mansfield</p>
+            <p class="text-gray-500">CRO</p>
+          </div>
+          <img
+            src="./assets/images/hatch.webp"
+            alt="hatch"
+            class="w-28 object-contain"
+          />
+        </div>
+      </div>
+      <div class="bg-[#e7e7e7] p-8 min-w-90 flex flex-col justify-between">
+        <div>
+          <img
+            src="./assets/images/ryan.webp"
+            alt="tom"
+            class="w-32 mb-6 grayscale"
+          />
+          <h2 class="text-2xl mb-10 leading-tight font-instrument">
+            “We went from bottlenecked communication to consistent, reliable
+            feedback moving freely across the org. Effortlessly.”
+          </h2>
+        </div>
+        <div class="flex justify-between items-end mt-auto">
+          <div>
+            <p class="font-bold">Tom Mansfield</p>
+            <p class="text-gray-500">CRO</p>
+          </div>
+          <img
+            src="./assets/images/hatch.webp"
+            alt="hatch"
+            class="w-28 object-contain"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-white py-10 px-6 md:px-20 text-[#1a1a1a]">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+        <!-- Logo and Description Section (Visible on medium and up screens) -->
+        <div class="md:col-span-3 space-y-6">
+          <div class="flex items-center gap-2">
+            <div>
+              <img src="./assets/images/logo.webp" alt="logo" />
+            </div>
+          </div>
+          <p class="text-gray-500 leading-relaxed max-w-[60%]">
+            Twine closes the gap between customer conversations and company
+            action.
+          </p>
+        </div>
+
+        <!-- Links Section -->
+        <div class="md:col-span-6 grid grid-cols-2 md:grid-cols-3 gap-10">
+          <!-- Product Links -->
+          <div class="space-y-4">
+            <h4
+              class="text-xs font-medium text-gray-400 uppercase tracking-wider"
+            >
+              Product
+            </h4>
+            <ul class="space-y-3 text-[15px]">
+              <li>
+                <a href="#" class="hover:text-gray-600">Baseline agent</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-gray-600">Personal agent</a>
+              </li>
+              <li><a href="#" class="hover:text-gray-600">Focus agents</a></li>
+              <li><a href="#" class="hover:text-gray-600">Integrations</a></li>
+              <li><a href="#" class="hover:text-gray-600">Security</a></li>
+              <li><a href="#" class="hover:text-gray-600">Pricing</a></li>
+              <li><a href="#" class="hover:text-gray-600">Changelog</a></li>
+              <li><a href="#" class="hover:text-gray-600">Status</a></li>
+            </ul>
+            <div class="pt-10 space-y-4">
+              <h4
+                class="text-xs font-semibold text-gray-400 uppercase tracking-wider"
+              >
+                Use Cases
+              </h4>
+              <ul class="space-y-3 text-[15px]">
+                <li><a href="#" class="hover:text-gray-600">Product</a></li>
+                <li>
+                  <a href="#" class="hover:text-gray-600">Customer Success</a>
+                </li>
+                <li><a href="#" class="hover:text-gray-600">Leadership</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Resources Links -->
+          <div class="space-y-4">
+            <h4
+              class="text-xs font-semibold text-gray-400 uppercase tracking-wider"
+            >
+              Resources
+            </h4>
+            <ul class="space-y-3 text-[15px]">
+              <li><a href="#" class="hover:text-gray-600">Help center</a></li>
+              <li><a href="#" class="hover:text-gray-600">Blog</a></li>
+              <li><a href="#" class="hover:text-gray-600">Guides</a></li>
+              <li><a href="#" class="hover:text-gray-600">Legal</a></li>
+              <li><a href="#" class="hover:text-gray-600">Trust center</a></li>
+            </ul>
+            <div class="pt-10 space-y-4">
+              <h4
+                class="text-xs font-semibold text-gray-400 uppercase tracking-wider"
+              >
+                Community
+              </h4>
+              <ul class="space-y-3 text-[15px]">
+                <li><a href="#" class="hover:text-gray-600">Customer</a></li>
+                <li><a href="#" class="hover:text-gray-600">Community</a></li>
+              </ul>
+            </div>
+            <div class="pt-10 space-y-4">
+              <h4
+                class="text-xs font-semibold text-gray-400 uppercase tracking-wider"
+              >
+                Company
+              </h4>
+              <ul class="space-y-3 text-[15px]">
+                <li><a href="#" class="hover:text-gray-600">About</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Twine in Action Links -->
+          <div class="space-y-4">
+            <h4
+              class="text-xs font-semibold text-gray-400 uppercase tracking-wider"
+            >
+              Twine in action
+            </h4>
+            <ul class="space-y-3 text-[15px]">
+              <li>
+                <a href="#" class="hover:text-gray-600 font-medium"
+                  >Book a demo</a
+                >
+              </li>
+              <li><a href="#" class="hover:text-gray-600">Sign in</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Social and Certifications Section -->
+        <div class="md:col-span-3 space-y-12">
+          <div class="space-y-4">
+            <h4
+              class="text-xs font-semibold text-gray-400 uppercase tracking-wider"
+            >
+              Social
+            </h4>
+            <ul class="space-y-3 text-[15px]">
+              <li><a href="#" class="hover:text-gray-600">LinkedIn</a></li>
+              <li><a href="#" class="hover:text-gray-600">Youtube</a></li>
+              <li><a href="#" class="hover:text-gray-600">X</a></li>
+            </ul>
+          </div>
+          <div class="space-y-4 pt-4">
+            <div class="flex gap-3">
+              <div class="bg-[#DED6D1] rounded-4xl">
+                <img
+                  src="./assets/images/aicpa.svg"
+                  alt="AICPA certification badge with stars"
+                  class="w-15"
+                />
+              </div>
+              <div class="bg-[#DED6D1] rounded-4xl">
+                <img src="./assets/images/gdpr.png" alt="gdpr" class="w-15" />
+              </div>
+            </div>
+            <div class="text-sm text-gray-500 leading-snug">
+              <p>End-to-end encryption.</p>
+              <p>Never trained on your data.</p>
+              <a
+                href="#"
+                class="text-black font-semibold underline underline-offset-4 decoration-1"
+                >Learn more</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="./hamburger.js"></script>
+    <!-- <script type="module" src="./twine.js"></script> -->
+  </body>
+</html>
