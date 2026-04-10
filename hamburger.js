@@ -19,7 +19,10 @@ const getCloseNav = document.querySelector("#closenav");
 
 getProductBtn.addEventListener("click", (e) => {
     e.preventDefault(); 
-    getNavigatorContent.classList.toggle("hidden"); 
+    
+      if (window.innerWidth >= 768) {
+        getNavigatorContent.classList.toggle("hidden");
+      }
 });
 
 
