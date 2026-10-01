@@ -1,10 +1,15 @@
-// modals.js: Log in / Sign up / Book a demo for every page
+// modals.js: Log in / Sign up / Book a demo / Watch a demo for every page
 
 // Optional: paste a form endpoint here (e.g. a Formspree URL) so demo requests
 // are sent to your email. Leave it empty to only save requests in this browser.
 const DEMO_ENDPOINT = "";
 
+// Paste a YouTube/Vimeo embed URL (e.g. https://www.youtube.com/embed/VIDEO_ID)
+// or a local file (e.g. ./assets/videos/demo.mp4). Leave empty to show a placeholder.
+const DEMO_VIDEO = "";
+
 const LOGIN_LABELS = ["log in", "sign in"];
+const WATCH_LABELS = ["watch a demo"];
 const DEMO_LABELS = ["book a demo", "book a conversation", "see a live demo", "talk to sales"];
 
 const USERS_KEY = "twine_users";
@@ -64,6 +69,7 @@ style.textContent = `
 .twm-overlay[hidden]{display:none}
 .twm-dialog{position:relative;width:100%;max-width:440px;max-height:calc(100vh - 32px);overflow-y:auto;background:#fff;color:#141414;border-radius:16px;padding:32px 28px;box-shadow:0 20px 60px rgba(0,0,0,.25);box-sizing:border-box}
 .twm-dialog.twm-wide{max-width:580px}
+.twm-dialog.twm-video{max-width:900px;padding:44px 20px 20px}
 .twm-close{position:absolute;top:10px;right:14px;border:0;background:none;font-size:30px;line-height:1;cursor:pointer;color:#555}
 .twm-title{font-family:'Times New Roman',serif;font-size:30px;font-weight:400;margin:0 0 6px}
 .twm-sub{color:#717171;font-size:14px;margin:0 0 20px}
@@ -85,8 +91,17 @@ style.textContent = `
 .twm-switch{text-align:center;font-size:14px;color:#717171;margin:16px 0 0}
 .twm-link{border:0;background:none;padding:0;font:inherit;color:#141414;font-weight:600;text-decoration:underline;cursor:pointer}
 .twm-summary{background:#f6f6f6;border-radius:10px;padding:14px 16px;font-size:14px;line-height:1.7;margin:16px 0 20px}
+.twm-video-frame{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:10px;overflow:hidden}
+.twm-video-frame iframe,.twm-video-frame video{position:absolute;inset:0;width:100%;height:100%;border:0}
+.twm-video-empty{display:flex;align-items:center;justify-content:center;height:100%;color:#fff;font-size:15px;text-align:center;padding:20px}
 .twm-toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:10000;background:#141414;color:#fff;padding:12px 18px;border-radius:10px;font:500 14px 'Instrument Sans',system-ui,sans-serif;box-shadow:0 8px 24px rgba(0,0,0,.25)}
 .twm-nav-actions{display:flex;align-items:center;white-space:nowrap}
+@media (min-width:1024px){
+.twm-dialog.twm-wide{max-width:760px;padding:40px 44px}
+}
+@media (min-width:1280px){
+.twm-dialog.twm-wide{max-width:820px}
+}
 @media (max-width:767px){
 .twm-nav-actions{margin-left:auto;margin-right:4px;gap:10px}
 .twm-nav-actions a{font-size:13px}
@@ -121,6 +136,7 @@ function openModal(view) {
 
 function closeModal() {
     overlay.hidden = true;
+    dialog.innerHTML = ""; // stops any playing video
     document.body.style.overflow = "";
     if (lastFocus && lastFocus.focus) lastFocus.focus();
 }
@@ -209,6 +225,22 @@ function demoHTML() {
   </form>`;
 }
 
+function watchHTML() {
+    let media;
+    if (!DEMO_VIDEO) {
+        media = `<div class="twm-video-empty">Demo video coming soon.</div>`;
+    } else if (/\.(mp4|webm|ogg)$/i.test(DEMO_VIDEO)) {
+        media = `<video src="${esc(DEMO_VIDEO)}" controls autoplay playsinline></video>`;
+    } else {
+        const sep = DEMO_VIDEO.includes("?") ? "&" : "?";
+        media = `<iframe src="${esc(DEMO_VIDEO)}${sep}autoplay=1" title="Twine demo" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>`;
+    }
+    return `
+  <h2 class="twm-title" id="twm-title" style="margin-bottom:14px">Watch a demo</h2>
+  <div class="twm-video-frame">${media}</div>
+  <button class="twm-btn" type="button" data-switch="demo" style="margin-top:16px">Book a live demo</button>`;
+}
+
 function doneHTML(r) {
     const when = new Date(`${r.date}T00:00`).toLocaleDateString(undefined, {
         weekday: "long",
@@ -229,7 +261,14 @@ function doneHTML(r) {
 
 function render(view, data) {
     dialog.classList.toggle("twm-wide", view === "demo");
-    const views = { login: loginHTML, signup: signupHTML, demo: demoHTML, "demo-done": () => doneHTML(data) };
+    dialog.classList.toggle("twm-video", view === "watch");
+    const views = {
+        login: loginHTML,
+        signup: signupHTML,
+        demo: demoHTML,
+        watch: watchHTML,
+        "demo-done": () => doneHTML(data),
+    };
     dialog.innerHTML = `<button type="button" class="twm-close" aria-label="Close">&times;</button>` + views[view]();
 
     dialog.querySelector(".twm-close").addEventListener("click", closeModal);
@@ -409,6 +448,7 @@ function markTriggers() {
         if (el.dataset.twine) return;
         const label = el.textContent.replace(/\s+/g, " ").trim().toLowerCase();
         if (LOGIN_LABELS.includes(label)) el.dataset.twine = "login";
+        else if (WATCH_LABELS.includes(label)) el.dataset.twine = "watch";
         else if (DEMO_LABELS.includes(label)) el.dataset.twine = "demo";
     });
 }
@@ -432,6 +472,8 @@ document.addEventListener("click", (e) => {
     if (el.dataset.twine === "login") {
         if (getSession()) logout();
         else openModal("login");
+    } else if (el.dataset.twine === "watch") {
+        openModal("watch");
     } else {
         openModal("demo");
     }
